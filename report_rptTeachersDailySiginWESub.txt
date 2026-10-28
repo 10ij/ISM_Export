@@ -1,0 +1,443 @@
+Version =20
+VersionRequired =20
+Checksum =-1888925906
+Begin Report
+    LayoutForPrint = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    TabularFamily =0
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =9865
+    DatasheetFontHeight =10
+    ItemSuffix =35
+    Right =13800
+    Bottom =6825
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x7321695280e1e440
+    End
+    RecordSource ="SELECT qryCalendar1a.DOY, qryCalendar1a.Date, qryCalendar1a.DayW FROM qryCalenda"
+        "r1a WHERE (((qryCalendar1a.DayW)=\"Sat\" Or (qryCalendar1a.DayW)=\"Sun\"));"
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0x000000000000000000000000000000000000000089260000fe01000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x010400069c005803032f0000010009009a0b34086400010001002c0102000100 ,
+        0x2c01020000004134000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000010000000000000001000000 ,
+        0x0200000001000000ffffffff0000000000000000000000000000000044494e55 ,
+        0x220010014c030c00cad2f6720000000000000000000000000000000000000000 ,
+        0x0000000000000000090000000000000000000100000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000001000000000000000000000010010000534d544a ,
+        0x00000000100000014d006900630072006f0073006f0066007400200058005000 ,
+        0x5300200044006f00630075006d0065006e007400200057007200690074006500 ,
+        0x72000000496e70757442696e00464f524d534f5552434500524553444c4c0055 ,
+        0x6e69726573444c4c00496e7465726c656176696e67004f464600496d61676554 ,
+        0x797065004a5045474d6564004f7269656e746174696f6e00504f525452414954 ,
+        0x00436f6c6c617465004f4646005265736f6c7574696f6e004f7074696f6e3100 ,
+        0x506170657253697a65004c455454455200436f6c6f724d6f6465003234627070 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000c0000004d58445701010000
+    End
+    PrtDevNames = Begin
+        0x0800260044000100000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000585053506f72743a00
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            FontItalic = NotDefault
+            BackStyle =0
+            TextAlign =1
+            TextFontFamily =18
+            FontSize =11
+            FontWeight =700
+            ForeColor =8388608
+            FontName ="Times New Roman"
+        End
+        Begin Rectangle
+            BackStyle =0
+            BorderWidth =1
+            Width =850
+            Height =850
+            BorderColor =8388608
+        End
+        Begin Line
+            Width =1701
+            BorderColor =8388608
+        End
+        Begin Image
+            OldBorderStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CheckBox
+            LabelX =230
+            LabelY =-30
+        End
+        Begin BoundObjectFrame
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            OldBorderStyle =0
+            BackStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Arial"
+            AsianLineBreak =255
+        End
+        Begin ListBox
+            OldBorderStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontName ="Arial"
+        End
+        Begin ComboBox
+            OldBorderStyle =0
+            BackStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Arial"
+        End
+        Begin Subform
+            OldBorderStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            Width =4536
+            Height =2835
+        End
+        Begin BreakLevel
+            GroupHeader = NotDefault
+            GroupFooter = NotDefault
+            ControlSource ="DOY"
+        End
+        Begin FormHeader
+            KeepTogether = NotDefault
+            Height =1020
+            Name ="ReportHeader"
+            GUID = Begin
+                0xf428422619805d49aa2da7e8c4c45737
+            End
+            Begin
+                Begin Label
+                    FontItalic = NotDefault
+                    TextFontFamily =34
+                    Left =6916
+                    Width =1245
+                    Height =300
+                    FontSize =12
+                    ForeColor =0
+                    Name ="TCCLDesc_Label"
+                    Caption ="Time In"
+                    FontName ="Arial Narrow"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0xa263a27c224b9c4dbd312ea21dbe8f82
+                    End
+                End
+                Begin Label
+                    FontItalic = NotDefault
+                    TextFontFamily =34
+                    Left =2265
+                    Width =4545
+                    Height =315
+                    FontSize =12
+                    ForeColor =0
+                    Name ="TCSName_Label"
+                    Caption ="Signature"
+                    FontName ="Arial Narrow"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0xbc7fc2550830974f91c23f042340c099
+                    End
+                End
+                Begin Label
+                    FontItalic = NotDefault
+                    TextFontFamily =34
+                    Width =1695
+                    Height =315
+                    FontSize =12
+                    ForeColor =0
+                    Name ="Label21"
+                    Caption ="Date"
+                    FontName ="Arial Narrow"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0x73d810ddbf91cc42957375175eabc22c
+                    End
+                End
+                Begin Label
+                    FontItalic = NotDefault
+                    TextFontFamily =34
+                    Left =8447
+                    Width =1418
+                    Height =300
+                    FontSize =12
+                    ForeColor =0
+                    Name ="Label25"
+                    Caption ="Time Out"
+                    FontName ="Arial Narrow"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0x2a175d0ed650ca45beb0fa427bc2ef01
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =1
+                    IMESentenceMode =3
+                    Left =6916
+                    Top =453
+                    Width =1418
+                    Height =450
+                    FontSize =12
+                    Name ="Text27"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xbf6aa78b6a6da944b2df6e793f414b6c
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =1
+                    IMESentenceMode =3
+                    Left =2267
+                    Top =453
+                    Width =4536
+                    Height =450
+                    FontSize =12
+                    TabIndex =1
+                    Name ="Text28"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x0e3e56182528fe4fbcb53c5a0e7282e5
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =1
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Top =453
+                    Width =2145
+                    Height =450
+                    FontSize =12
+                    TabIndex =2
+                    Name ="Text29"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x2a588cfd9e04204081988619d8a13539
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =1
+                    IMESentenceMode =3
+                    Left =8447
+                    Top =453
+                    Width =1418
+                    Height =450
+                    FontSize =12
+                    TabIndex =3
+                    Name ="Text30"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xb07ac5280e7d4449bc764e6f9ce9a8c3
+                    End
+                End
+            End
+        End
+        Begin PageHeader
+            Height =0
+            Name ="PageHeaderSection"
+            GUID = Begin
+                0x2e089d826ddaf547a7a3bd4257607f1d
+            End
+        End
+        Begin BreakHeader
+            KeepTogether = NotDefault
+            Height =0
+            Name ="GroupHeader0"
+            GUID = Begin
+                0xb2e834459244b543a70e50332284d486
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =510
+            Name ="Detail"
+            GUID = Begin
+                0x2ef0dfec6978cf4baf4b1887608b7be2
+            End
+            Begin
+                Begin TextBox
+                    OldBorderStyle =1
+                    IMESentenceMode =3
+                    Left =6916
+                    Width =1418
+                    Height =450
+                    FontSize =12
+                    Name ="TCCLDesc"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x7c1223f9653ffd44bc6bf3b801aacc41
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =1
+                    IMESentenceMode =3
+                    Left =2267
+                    Width =4536
+                    Height =450
+                    ColumnWidth =2055
+                    FontSize =12
+                    TabIndex =1
+                    Name ="TCSName"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xb970e14bd85eae41b0174bb6d232fbd6
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =1
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Width =2145
+                    Height =450
+                    FontSize =12
+                    TabIndex =2
+                    Name ="Text22"
+                    ControlSource ="=[Date] & \" \" & [DayW]"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x68bf678af97881458ac5df099f365dbc
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =1
+                    IMESentenceMode =3
+                    Left =8447
+                    Width =1418
+                    Height =450
+                    FontSize =12
+                    TabIndex =3
+                    Name ="Text26"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x976c5abf5b2be3488d5cd76fed0d8126
+                    End
+                End
+            End
+        End
+        Begin BreakFooter
+            KeepTogether = NotDefault
+            Height =0
+            Name ="GroupFooter1"
+            GUID = Begin
+                0xb3e70820ae9ff248aeef49e0385bf71e
+            End
+        End
+        Begin PageFooter
+            Height =0
+            Name ="PageFooterSection"
+            GUID = Begin
+                0x45d9aacadeeb4f4797807be47535523e
+            End
+        End
+        Begin FormFooter
+            KeepTogether = NotDefault
+            Height =506
+            Name ="ReportFooter"
+            GUID = Begin
+                0xb834cda0e4101d4a945d55eb6dbb8171
+            End
+            Begin
+                Begin TextBox
+                    OldBorderStyle =1
+                    IMESentenceMode =3
+                    Left =6916
+                    Top =56
+                    Width =1418
+                    Height =450
+                    FontSize =12
+                    Name ="Text31"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x7f00dc883189e34f8f8f3cfdafb05f5c
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =1
+                    IMESentenceMode =3
+                    Left =2267
+                    Top =56
+                    Width =4536
+                    Height =450
+                    FontSize =12
+                    TabIndex =1
+                    Name ="Text32"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x48b27cbd377fd648bc3dc772d6f67037
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =1
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Top =56
+                    Width =2145
+                    Height =450
+                    FontSize =12
+                    TabIndex =2
+                    Name ="Text33"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x218ebedc6455874795cf9f10fd85d878
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =1
+                    IMESentenceMode =3
+                    Left =8447
+                    Top =56
+                    Width =1418
+                    Height =450
+                    FontSize =12
+                    TabIndex =3
+                    Name ="Text34"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x513f93929bacbc46b35838f12c4cc8df
+                    End
+                End
+            End
+        End
+    End
+End

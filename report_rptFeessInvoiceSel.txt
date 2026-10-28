@@ -1,0 +1,637 @@
+Version =20
+VersionRequired =20
+Checksum =-2002310055
+Begin Report
+    LayoutForPrint = NotDefault
+    DefaultView =0
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =9015
+    DatasheetFontHeight =10
+    ItemSuffix =57
+    Left =2130
+    Right =13215
+    Bottom =7530
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xf80e7d6af4dae440
+    End
+    RecordSource ="qryFeesInvoiceSel"
+    Caption ="FeesInvoice"
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0x890500008905000089050000890500000000000037230000a604000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x010400049c00900003ff800701000900000000006400010001002c0102000100 ,
+        0x2c01010000004c65747465720000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000000000000000000000000000000000007769646d ,
+        0x00000000010000000000000000000000fe0000000100000000000000c8000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000
+    End
+    PrtDevNames = Begin
+        0x080036005d000100000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000000000000000000000000000000000000004d6963 ,
+        0x726f736f667420446f63756d656e7420496d6167696e67205772697465722050 ,
+        0x6f72743a00
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            FontItalic = NotDefault
+            BackStyle =0
+            TextAlign =1
+            TextFontFamily =18
+            FontSize =11
+            FontWeight =700
+            ForeColor =8388608
+            FontName ="Times New Roman"
+        End
+        Begin Rectangle
+            BackStyle =0
+            BorderWidth =1
+            Width =850
+            Height =850
+            BorderColor =8388608
+        End
+        Begin Line
+            Width =1701
+            BorderColor =8388608
+        End
+        Begin Image
+            OldBorderStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CheckBox
+            LabelX =230
+            LabelY =-30
+        End
+        Begin BoundObjectFrame
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            OldBorderStyle =0
+            BackStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Arial"
+        End
+        Begin ListBox
+            OldBorderStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontName ="Arial"
+        End
+        Begin ComboBox
+            OldBorderStyle =0
+            BackStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Arial"
+        End
+        Begin Subform
+            OldBorderStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            Width =4536
+            Height =2835
+        End
+        Begin BreakLevel
+            ControlSource ="TCCLDesc"
+        End
+        Begin BreakLevel
+            GroupHeader = NotDefault
+            GroupFooter = NotDefault
+            ControlSource ="FESTID"
+        End
+        Begin PageHeader
+            Height =0
+            Name ="PageHeader"
+            GUID = Begin
+                0x6926ed1bb1f82847a52df4bc7e846fff
+            End
+        End
+        Begin BreakHeader
+            KeepTogether = NotDefault
+            Height =7042
+            BreakLevel =1
+            Name ="GroupHeader0"
+            GUID = Begin
+                0xa62cbd5d3626a541a5d61bb280eb03d3
+            End
+            Begin
+                Begin TextBox
+                    TextFontFamily =18
+                    Top =2895
+                    Width =3972
+                    Height =313
+                    FontSize =12
+                    Name ="STSName"
+                    ControlSource ="=\"Ref: \" & [FESTID] & \"/\" & [TCCLDesc] & \"/\" & [TCName]"
+                    FontName ="Times New Roman"
+                    GUID = Begin
+                        0x34176a1f6ad14344bf960aac88a07bfe
+                    End
+                End
+                Begin Label
+                    FontItalic = NotDefault
+                    TextAlign =0
+                    Top =5265
+                    Width =1860
+                    Height =915
+                    FontSize =12
+                    FontWeight =400
+                    ForeColor =0
+                    Name ="Text19"
+                    Caption ="Dear Parent(s),\015\012\015\012As salamu alaikum"
+                    GUID = Begin
+                        0xb7f87d9fb84b0549b047e5323a1ad050
+                    End
+                End
+                Begin TextBox
+                    TextAlign =1
+                    TextFontFamily =18
+                    Top =6517
+                    Width =9009
+                    Height =525
+                    FontSize =12
+                    TabIndex =1
+                    Name ="Text28"
+                    ControlSource ="=\"Your child \" & [STName] & \"'s madrasah fees are now due for payment.\""
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Times New Roman"
+                    GUID = Begin
+                        0xc41fb1ddb661ea42a0c2d4e9b6742700
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =18
+                    Left =6236
+                    Top =2895
+                    Width =2772
+                    Height =313
+                    FontSize =12
+                    TabIndex =2
+                    Name ="Text33"
+                    ControlSource ="=\"Date: \" & Format(Now(),\"Long Date\")"
+                    FontName ="Times New Roman"
+                    GUID = Begin
+                        0x5d0cabdfd873f44dbfed9eb82b8da76c
+                    End
+                End
+                Begin Label
+                    FontItalic = NotDefault
+                    SpecialEffect =4
+                    OldBorderStyle =1
+                    BorderWidth =3
+                    TextAlign =2
+                    Left =53
+                    Top =1927
+                    Width =8895
+                    Height =615
+                    FontSize =22
+                    ForeColor =0
+                    Name ="Label46"
+                    Caption ="INVOICE / REMINDER"
+                    GUID = Begin
+                        0xe517f67886cd374890d1c81d8d157c94
+                    End
+                End
+                Begin TextBox
+                    TextFontFamily =18
+                    Top =3859
+                    Width =3411
+                    Height =313
+                    FontSize =12
+                    TabIndex =3
+                    Name ="STParents"
+                    ControlSource ="=\"Parent(s) of \" & [STName]"
+                    FontName ="Times New Roman"
+                    GUID = Begin
+                        0xa5a31638bb1c674e9f803f8cabbff895
+                    End
+                End
+                Begin TextBox
+                    TextFontFamily =18
+                    Top =4142
+                    Width =3411
+                    Height =313
+                    FontSize =12
+                    TabIndex =4
+                    Name ="STAddress1"
+                    ControlSource ="STAddress1"
+                    FontName ="Times New Roman"
+                    GUID = Begin
+                        0x2214ced82112c941a360eebbc4868b5b
+                    End
+                End
+                Begin TextBox
+                    TextFontFamily =18
+                    Top =4426
+                    Width =3411
+                    Height =313
+                    FontSize =12
+                    TabIndex =5
+                    Name ="STAddress2"
+                    ControlSource ="STAddress2"
+                    FontName ="Times New Roman"
+                    GUID = Begin
+                        0x7e42dff781e2614fbe04eb886d811adf
+                    End
+                End
+                Begin TextBox
+                    TextFontFamily =18
+                    Top =4709
+                    Width =3411
+                    Height =313
+                    FontSize =12
+                    TabIndex =6
+                    Name ="STAddress3"
+                    ControlSource ="STAddress3"
+                    FontName ="Times New Roman"
+                    GUID = Begin
+                        0xf3b9ca0edf404447bcee004ccd619315
+                    End
+                End
+                Begin Image
+                    SizeMode =1
+                    PictureType =1
+                    Width =9008
+                    Height =1205
+                    Name ="Image54"
+                    Picture ="C:\\ISM_2016\\LOGO\\LOGO_LH_P.jpg"
+                    GUID = Begin
+                        0x8c602eb64447a24fa388fb793a524078
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =18
+                    Left =5555
+                    Top =4081
+                    Width =3411
+                    Height =418
+                    FontSize =14
+                    FontWeight =700
+                    TabIndex =7
+                    Name ="Text55"
+                    ControlSource ="Note"
+                    FontName ="Times New Roman"
+                    GUID = Begin
+                        0xb0d18ed8e3cc74488f43d71fe7771aa9
+                    End
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =1190
+            Name ="Detail"
+            GUID = Begin
+                0x644c4c287e9cbf4b8f446794fb869a4e
+            End
+            Begin
+                Begin TextBox
+                    FontItalic = NotDefault
+                    TextAlign =3
+                    Left =7086
+                    Top =620
+                    Width =1367
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    ForeColor =255
+                    Name ="FEAmtDue"
+                    ControlSource ="AmtDue"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x44c7c3394f39aa4a95529356d2661a64
+                    End
+                End
+                Begin TextBox
+                    FontItalic = NotDefault
+                    TextAlign =3
+                    Left =170
+                    Top =623
+                    Width =1247
+                    Height =285
+                    FontSize =10
+                    TabIndex =1
+                    Name ="FEPayDate"
+                    ControlSource ="BalBF"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x975baef206fff54889593700159d9498
+                    End
+                End
+                Begin TextBox
+                    FontItalic = NotDefault
+                    TextAlign =3
+                    Left =1531
+                    Top =623
+                    Width =1247
+                    Height =285
+                    FontSize =10
+                    TabIndex =2
+                    Name ="Text23"
+                    ControlSource ="DueCur"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x9845cdf29e3efc41b4757999af299163
+                    End
+                End
+                Begin TextBox
+                    FontItalic = NotDefault
+                    TextAlign =3
+                    Left =2892
+                    Top =623
+                    Width =1247
+                    Height =285
+                    FontSize =10
+                    TabIndex =3
+                    Name ="Text25"
+                    ControlSource ="TotalDue"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xcd04267cec495e4c9d715f607aee8ec1
+                    End
+                End
+                Begin TextBox
+                    FontItalic = NotDefault
+                    TextAlign =3
+                    Left =4252
+                    Top =623
+                    Width =1247
+                    Height =285
+                    FontSize =10
+                    TabIndex =4
+                    ForeColor =6723891
+                    Name ="Text38"
+                    ControlSource ="Exemp"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x610556cd4e1a7143913b3beb2d9bd497
+                    End
+                End
+                Begin TextBox
+                    FontItalic = NotDefault
+                    TextAlign =3
+                    Left =5725
+                    Top =623
+                    Width =1247
+                    Height =285
+                    FontSize =10
+                    TabIndex =5
+                    Name ="Text39"
+                    ControlSource ="ReceivedCur"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xd7977c623253df42850de33d364ffa2f
+                    End
+                End
+                Begin Label
+                    FontUnderline = NotDefault
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =170
+                    Top =283
+                    Width =1247
+                    Height =257
+                    FontSize =10
+                    FontWeight =400
+                    ForeColor =0
+                    Name ="FEAmtDue Label"
+                    Caption =" Prev. Balance"
+                    FontName ="Arial Narrow"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="FEAmtDue_Label"
+                    GUID = Begin
+                        0x533c89fdb3b381418a8eac88a83ac039
+                    End
+                End
+                Begin Label
+                    FontUnderline = NotDefault
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =1575
+                    Top =285
+                    Width =1185
+                    Height =270
+                    FontSize =10
+                    FontWeight =400
+                    ForeColor =0
+                    Name ="Label40"
+                    Caption ="Due Cur Month"
+                    FontName ="Arial Narrow"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0xc78bb96a6c76844b8a7384c434a36d44
+                    End
+                End
+                Begin Label
+                    FontUnderline = NotDefault
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =2892
+                    Top =283
+                    Width =1247
+                    Height =257
+                    FontSize =10
+                    FontWeight =400
+                    ForeColor =0
+                    Name ="Label41"
+                    Caption ="Total Due"
+                    FontName ="Arial Narrow"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0x098846446ac60c419ea3a0f4d4a44d9b
+                    End
+                End
+                Begin Label
+                    FontUnderline = NotDefault
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =4252
+                    Top =283
+                    Width =1247
+                    Height =257
+                    FontSize =10
+                    FontWeight =400
+                    ForeColor =6723891
+                    Name ="Label42"
+                    Caption ="Exemption"
+                    FontName ="Arial Narrow"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0xcb53cece7b78c24aa6ce9e38b29f411d
+                    End
+                End
+                Begin Label
+                    FontUnderline = NotDefault
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =5726
+                    Top =283
+                    Width =1247
+                    Height =257
+                    FontSize =10
+                    FontWeight =400
+                    ForeColor =0
+                    Name ="Label43"
+                    Caption ="Received"
+                    FontName ="Arial Narrow"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0x928beaf3aeb8034b8773dc4fa7d7819e
+                    End
+                End
+                Begin Label
+                    FontUnderline = NotDefault
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =7095
+                    Top =285
+                    Width =1365
+                    Height =285
+                    FontSize =10
+                    ForeColor =255
+                    Name ="Label44"
+                    Caption ="Deficit Fees"
+                    FontName ="Arial Narrow"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0x3c2cf0be8e1a2840aa39a82b8063d086
+                    End
+                End
+                Begin Rectangle
+                    Left =56
+                    Top =113
+                    Width =8788
+                    Height =907
+                    Name ="Box45"
+                    GUID = Begin
+                        0xa960cc7dac81d44881596c647e76ee1e
+                    End
+                End
+            End
+        End
+        Begin BreakFooter
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            ForceNewPage =2
+            Height =5070
+            BreakLevel =1
+            Name ="GroupFooter1"
+            GUID = Begin
+                0x45d251fda781f442ae4f3b54ed039fdf
+            End
+            Begin
+                Begin Label
+                    FontItalic = NotDefault
+                    TextAlign =0
+                    Top =855
+                    Width =8970
+                    Height =4215
+                    FontSize =12
+                    FontWeight =400
+                    ForeColor =0
+                    Name ="Label34"
+                    Caption ="Fees must be paid in the first week of each month. Your your child could be excl"
+                        "uded, if you fail to pay two consecutive months' fees.\015\012\015\012If  howeve"
+                        "r, your records differ from the deficit amount shown above,  please come and spe"
+                        "ak to your child's  teacher or the principal.\015\012\015\012Jazaak-Allah for yo"
+                        "u co-operation.\015\012\015\012\015\012"
+                    GUID = Begin
+                        0xeb5e7d631b68da4b892b8a75028a9697
+                    End
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    TextAlign =1
+                    TextFontFamily =18
+                    Width =8957
+                    Height =855
+                    FontSize =12
+                    Name ="Text49"
+                    ControlSource ="FeeTerm"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Times New Roman"
+                    GUID = Begin
+                        0x1f4304052553604789fb441b8845b695
+                    End
+                End
+            End
+        End
+        Begin PageFooter
+            Height =285
+            Name ="PageFooter"
+            GUID = Begin
+                0x6d7d3fd0916bcc44893bd16f9a480d8c
+            End
+            Begin
+                Begin TextBox
+                    Width =2832
+                    Height =285
+                    Name ="Text35"
+                    ControlSource ="OurRef"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xc1866fe414225448b7dd0ff357b8d08c
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    Left =6236
+                    Width =2712
+                    Height =285
+                    TabIndex =1
+                    Name ="Text36"
+                    ControlSource ="=Format(Now(),\"Long Date\")"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x8fb541cb6851da4b8fdebaf51fef57fb
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
+Private Sub Report_Close()
+    DoCmd.Minimize
+End Sub
+Private Sub Report_Open(Cancel As Integer)
+    DoCmd.Maximize
+End Sub

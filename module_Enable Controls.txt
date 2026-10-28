@@ -1,0 +1,52 @@
+Option Compare Database   'Use database order for string comparisons
+Option Explicit
+
+Function EnableControls(WhichSection As String, State As Integer) As Integer
+    
+    '  Enable or disable controls in specified section of form.
+
+    Dim MyForm As Form
+    Dim MyControl As control
+    Dim I As Integer, SelectedSection As Integer
+
+    '  Use active form. If no form is active, exit
+    '  function without displaying error message.
+    On Error Resume Next
+    Set MyForm = Screen.ActiveForm
+    If Err Then
+        EnableControls = False
+        On Error GoTo 0
+        Exit Function
+    End If
+
+    '  Define valid values for WhichSection.
+    Select Case UCase$(WhichSection)
+        Case "FORM HEADER"
+             SelectedSection = 1
+        Case "PAGE HEADER"
+             SelectedSection = 3
+        Case "DETAIL"
+             SelectedSection = 0
+        Case "PAGE FOOTER"
+             SelectedSection = 4
+        Case "FORM FOOTER"
+             SelectedSection = 2
+        Case Else
+             MsgBox "Invalid argument", , "EnableControls"
+             EnableControls = False
+             Exit Function
+    End Select
+
+    '  Set state for all controls in specified section.
+    For I = 0 To MyForm.Count - 1
+        Set MyControl = MyForm(I)
+        If MyControl.SECTION = SelectedSection Then
+            On Error Resume Next
+            MyControl.Enabled = State
+            On Error GoTo 0
+        End If
+    Next I
+
+    EnableControls = True
+
+End Function

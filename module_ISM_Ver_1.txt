@@ -1,0 +1,126 @@
+Option Compare Database
+
+
+Function FeeNoWeekDue(sdate As Date, bdate As Date)
+
+edate = CDate("1/" & Format(bdate, "mm/yyyy"))
+
+If sdate > bdate Then
+bdate = sdate
+End If
+
+nowd = 0
+
+Do While Month(bdate) = Month(edate)
+    If Weekday(bdate) = 1 Then
+        nowd = nowd + 1
+    End If
+    bdate = bdate + 1
+Loop
+
+FeeNoWeekDue = nowd
+
+End Function
+Function MonBegDate()
+
+On Error GoTo ErrorHandler
+
+    MonBegDate = CDate(InputBox("Please Enter a Date in DD/MM/YYYY Format", "Month Begin Date", CDate("1/" & Format(Now(), "mm/yyyy"))))
+    Exit Function
+
+ErrorHandler:
+    MonBegDate = CDate("1/" & Format(Now(), "mm/yyyy"))
+
+End Function
+Function SetReportDate()
+
+On Error GoTo ErrorHandler
+
+    SetReportDate = CDate(InputBox("Please Enter a Date in DD/MM/YYYY Format", "Month Begin Date", CDate("1/" & Format(Now(), "mm/yyyy"))))
+    DoCmd.SetWarnings False
+    Dim SQL As String
+        SQL = "UPDATE tblRepMon " & _
+        "SET tblRepMon.RepMonDate = '" & SetReportDate & "' " & _
+        "WHERE tblRepMon.RepMonID = 1"
+    DoCmd.RunSQL SQL
+    DoCmd.SetWarnings True
+    Exit Function
+
+ErrorHandler:
+    SetReportDate = CDate("1/" & Format(Now(), "mm/yyyy"))
+    DoCmd.SetWarnings False
+    Dim SQL1 As String
+    SQL1 = "UPDATE tblRepMon " & _
+        "SET tblRepMon.RepMonDate = '" & SetReportDate & "' " & _
+        "WHERE tblRepMon.RepMonID = 1"
+    DoCmd.RunSQL SQL1
+    DoCmd.SetWarnings True
+
+End Function
+Function SetMEIDate()
+SetMEIDate = CDate(InputBox("Please Enter a Date in DD/MM/YYYY Format", "Month Begin Date", CDate("1/" & Format(Now(), "mm/yyyy"))))
+End Function
+Function GetTodaysDate()
+GetTodaysDate = CDate(InputBox("Please Enter a Date in DD/MM/YYYY Format", "Enter Date", CDate(Format(Now(), "dd/mm/yyyy"))))
+End Function
+Sub test12()
+Rem DoCmd.OpenReport "rptPromotionM", acViewPreview
+On Error GoTo ErrorHandler
+Rem DoCmd.OpenQuery "qryFeeDueSub"
+MonBegDate1 = CDate(InputBox("Please Enter a Date in DD/MM/YYYY Format", "Month Begin Date", CDate("1/" & Format(Now(), "mm/yyyy"))))
+
+
+ErrorHandler:
+Rem If Err.Number = 3270 Then
+MsgBox "Wrong Date" & Err
+Rem End If
+
+End Sub
+Sub Test()
+
+sdate = #9/1/2007#
+bdate = #11/1/2008#
+edate = CDate("1/" & Format(bdate, "mm/yyyy"))
+
+If sdate > bdate Then
+bdate = sdate
+End If
+
+nowd = 0
+
+Do While Month(bdate) = Month(edate)
+    If Weekday(bdate) = 1 Then
+        nowd = nowd + 1
+    End If
+    bdate = bdate + 1
+Loop
+
+Msg = nowd
+MsgBox Msg
+
+End Sub
+
+
+Sub Test2()
+
+sdate = #5/24/2008#
+bdate = #5/1/2008#
+edate = CDate("1/" & Format(bdate, "mm/yyyy"))
+
+If sdate > bdate Then
+bdate = sdate
+End If
+
+nowd = 0
+
+Do While Month(bdate) < Month(edate) + 1
+    If Weekday(bdate) = 1 Then
+        nowd = nowd + 1
+    End If
+    bdate = bdate + 1
+Loop
+
+Msg = nowd
+MsgBox Msg
+
+End Sub

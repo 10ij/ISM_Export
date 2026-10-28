@@ -1,0 +1,635 @@
+[form_FindStudent.txt]
+procedures: AddToWhere, Button69_Click, Clear_Click, DisableControl, cmdAddNewStudents_Click, cmdEditStudentDetails_Click, DailyEntryReport_Click, EXIT_Click, FeesInvoice_Click, FeesStatement_Click, Form_Activate, Form_Close, Form_Open, Look_Class_AfterUpdate, Look_For_Address_AfterUpdate, Look_For_Firstname_AfterUpdate, Look_For_Parents_Name_AfterUpdate, Look_For_Student_No_AfterUpdate, Look_For_Surname_AfterUpdate, Show_StudentsB, Show_StudentsC, Show_StudentsA, OpenFeesByStudent_Click, PrintReceipts_Click, Show_Record_Click, StudentViewButtonsShow, StudentViewButtonsHide
+event_properties: OnActivate, OnClick, OnClose, OnOpen
+DoCmd_calls: Close, Maximize, OpenForm, OpenReport, Restore
+opened_objects: Add New Records, FindStudentSubAdd, FindStudentSubEdit, frmFeesByStudent, rptFeesDailyEntryRecord, rptFeesDailyEntryRecordReceipt, rptFeessInvoiceSel, rptFeessStatement
+RowSource: SELECT DISTINCTROW tblTeacher.TCCode, Trim([TCCLDesc]) & \" - \" & Trim([CLLocat
+
+[form_FindStudentSub.txt]
+procedures: Detail0_Click
+event_properties: OnClick
+DoCmd_calls: OpenForm
+opened_objects: frmFeesByStudent
+RecordSource: SELECT * FROM tblStudent WHERE False
+ControlSource: STFName
+ControlSource: STSName
+ControlSource: STStartDate
+ControlSource: STID
+ControlSource: STTCCode
+RowSource: SELECT DISTINCTROW tblTeacher.TCCode, Trim([TCCLDesc]) & \" - \" & Trim([CLLocat
+ControlSource: STLDate
+ControlSource: STAddress1
+ControlSource: STAddress2
+ControlSource: STAddress3
+ControlSource: STDOB
+ControlSource: STForm
+ControlSource: STPCode
+ControlSource: STLeft
+ControlSource: STParents
+ControlSource: STTelNo
+ControlSource: STEmgCont
+ControlSource: STEmgTelNo
+
+[form_FindStudentSubAdd.txt]
+procedures: Form_Open
+event_properties: OnOpen
+DoCmd_calls: Restore
+RecordSource: qryEditStudentsDetails
+ControlSource: STFName
+ControlSource: STSName
+ControlSource: STStartDate
+ControlSource: STID
+ControlSource: STTCCode
+RowSource: SELECT DISTINCTROW tblTeacher.TCCode, Trim([TCCLDesc]) & \" - \" & Trim([CLLocat
+ControlSource: STLDate
+ControlSource: STAddress1
+ControlSource: STAddress2
+ControlSource: STAddress3
+ControlSource: STDOB
+ControlSource: STForm
+ControlSource: STPCode
+ControlSource: STLeft
+ControlSource: STParents
+ControlSource: STTelNo
+ControlSource: STEmgCont
+ControlSource: STEmgTelNo
+
+[form_FindStudentSubEdit.txt]
+procedures: Form_Open
+event_properties: OnOpen
+DoCmd_calls: Restore
+RecordSource: qryEditStudentsDetails
+ControlSource: STFName
+ControlSource: STSName
+ControlSource: STStartDate
+ControlSource: STID
+ControlSource: STTCCode
+RowSource: SELECT DISTINCTROW tblTeacher.TCCode, Trim([TCCLDesc]) & \" - \" & Trim([CLLocat
+ControlSource: STLDate
+ControlSource: STAddress1
+ControlSource: STAddress2
+ControlSource: STAddress3
+ControlSource: STDOB
+ControlSource: STForm
+ControlSource: STPCode
+ControlSource: STLeft
+ControlSource: STParents
+ControlSource: STTelNo
+ControlSource: STEmgCont
+ControlSource: STEmgTelNo
+
+[form_frmClass.txt]
+RecordSource: tblClass
+ControlSource: CLLocCode
+ControlSource: CLLocation
+ControlSource: FeeTerm
+ControlSource: CLLSuper
+ControlSource: CLLDeputy
+ControlSource: CLLHead
+ControlSource: FERate
+
+[form_frmExpenseIncomeNotesUpload.txt]
+procedures: Form_Close
+event_properties: OnClose
+DoCmd_calls: DeleteObject, OpenQuery, SetWarnings
+opened_objects: qryMEIDataEntry3A, qryMEIDataEntry3B
+RecordSource: tmptblMEIDataEntry
+ControlSource: TC
+ControlSource: CLLocation
+ControlSource: TCName
+ControlSource: Date
+ControlSource: TCMEINotes
+ControlSource: TCMEIWgs1
+ControlSource: TCCLDesc
+
+[form_FrmFeeExemptionEntry.txt]
+procedures: FEAmtDue_AfterUpdate, Form_Close
+event_properties: OnClose
+DoCmd_calls: OpenQuery, SetWarnings
+opened_objects: qryUpdateFeesEXM
+RecordSource: tblFeesEXM
+ControlSource: FEAmtDue
+ControlSource: FEDesc
+ControlSource: FESTID
+RowSource: SELECT DISTINCTROW tblStudent.STID, Trim([TCCLDesc]) & \" - \" & Trim([CLLocatio
+
+[form_FrmFeePayEntry.txt]
+procedures: FEAmtDue_AfterUpdate, FEDueDate_AfterUpdate, FEFDCode_AfterUpdate, Form_Close
+event_properties: OnClose
+DoCmd_calls: OpenQuery, SetWarnings
+opened_objects: qryFeesRecEntryS2
+RecordSource: tmptblFeesRecEntry
+ControlSource: FEAmtDue
+ControlSource: FEDueDate
+ControlSource: FEReceNo
+ControlSource: FESTID
+RowSource: SELECT DISTINCTROW tblStudent.STID, Trim([stid]) & \" - \" & Trim([STFName]) & \"
+ControlSource: FEFDCode
+RowSource: SELECT DISTINCTROW tblFeesDesc.FDCode, tblFeesDesc.FDDeatails FROM tblFeesDesc;
+ControlSource: FEDateUpdated
+
+[form_frmFeesByStudent.txt]
+procedures: FEAmtDue_AfterUpdate, FEDueDate_AfterUpdate, FEFDCode_AfterUpdate, Form_Close, Form_Open
+event_properties: OnOpen
+DoCmd_calls: Maximize, Restore
+RecordSource: qryFeesByStudent
+ControlSource: =[Forms]![FindStudent]![FindStudentSub].[Form]![STID] & \" - \" & [Forms]![FindS
+ControlSource: =Sum([FEAmtDue])
+ControlSource: FEAmtDue
+ControlSource: FEDueDate
+ControlSource: FEReceNo
+ControlSource: FEFDCode
+RowSource: SELECT DISTINCTROW tblFeesDesc.FDCode, tblFeesDesc.FDDeatails FROM tblFeesDesc;
+ControlSource: FESTID
+ControlSource: FERefNo_Auto
+
+[form_frmFeesEXM.txt]
+procedures: Form_Close
+event_properties: OnClose
+DoCmd_calls: DeleteObject, OpenQuery, SetWarnings
+opened_objects: qryFeesMonthlyRecUpload_S3
+RecordSource: tblFeesEXM
+ControlSource: FESTID
+ControlSource: FEAmtDue
+
+[form_frmFeesMonthlyDueUpload_S2.txt]
+procedures: Form_Close
+event_properties: OnClose
+DoCmd_calls: DeleteObject, OpenQuery, SetWarnings
+opened_objects: qryFeesMonthlyDueUpload_S3
+RecordSource: qryFeesMonthlyDueUpload_S2
+ControlSource: STID
+ControlSource: CLLocation
+ControlSource: STName
+ControlSource: STStartDate
+ControlSource: FeeDueDate
+ControlSource: FeeRate
+ControlSource: TCCLDesc
+
+[form_frmFeesMonthlyRecUpload_S2.txt]
+procedures: Form_Close
+event_properties: OnClose
+DoCmd_calls: DeleteObject, OpenQuery, SetWarnings
+opened_objects: qryFeesMonthlyRecUpload_S3
+RecordSource: qryFeesMonthlyRecUpload_S2
+ControlSource: STID
+ControlSource: STName
+ControlSource: FeeRec_No
+ControlSource: AmtDue
+ControlSource: FeeRecDate
+ControlSource: FeeRec
+ControlSource: NewBalance
+ControlSource: TCCLDesc
+ControlSource: CLLocation
+
+[form_frmFeesRate.txt]
+RecordSource: tblFeesRate
+ControlSource: FERateDate
+ControlSource: FERate
+ControlSource: FERateCur
+
+[form_frmMaster.txt]
+RecordSource: tbl_Master
+ControlSource: OrgName
+ControlSource: OrgTelNo
+ControlSource: OrgAddress1
+ControlSource: OrgAddress2
+ControlSource: OrgAddress3
+ControlSource: OrgAddressPC
+ControlSource: Current
+
+[form_frmMEIData_EditAmt.txt]
+procedures: Form_Close
+event_properties: OnClose
+DoCmd_calls: OpenForm
+opened_objects: frmMEIData_EditNotes
+RecordSource: qryMEIData_EditAmt
+ControlSource: MEIDate
+ControlSource: MEIAmt
+ControlSource: MEILocCode
+RowSource: SELECT DISTINCTROW tblClass.CLLocCode, Trim([CLLocCode]) & \" - \" & Trim([CLLoc
+ControlSource: MEITCCode
+RowSource: SELECT DISTINCTROW tblTeacher.TCCode, IIf([TCTitle]=\"ZMEI\",Trim([TCCode]) & \"
+
+[form_frmMEIData_EditNotes.txt]
+RecordSource: qryMEIData_EditNotes
+ControlSource: MEIDate
+ControlSource: MEINote
+ControlSource: MEILocCode
+RowSource: SELECT DISTINCTROW tblClass.CLLocCode, Trim([CLLocCode]) & \" - \" & Trim([CLLoc
+ControlSource: MEITCCode
+RowSource: SELECT DISTINCTROW tblTeacher.TCCode, IIf([TCTitle]=\"ZMEI\",Trim([TCCode]) & \"
+
+[form_frmMenuMain.txt]
+procedures: AddNewStudent_Click, ClassTable_Click, Command114_Click, DailyEntryReport_Click, ExitProgram_Click, FeeEntryBatch_Click, FeeRecEntry_Click, FeesRateTable_Click, FeesRecord_Click, FeesRecordFormer_Click, FessForcast_Click, Form_Activate, Form_Close, Form_Open, InvoiceReminder_Click, MEI_EditAmount_Click, MEI_Entry_Click, RecEntryBatch_Click, RegisterEvening_Click, RegisterWeekend_Click, SigninEvening_Click, SigninWeekend_Click, ViewStudents_Click, LocationTable_Click, TeachersTable_Click
+event_properties: OnActivate, OnClick, OnClose, OnOpen
+DoCmd_calls: Maximize, OpenForm, OpenQuery, OpenReport, Quit, SetWarnings
+opened_objects: FindStudent, FrmFeeExemptionEntry, FrmFeePayEntry, _qryAddFeeDafaultRecords, frmClass, frmExpenseIncomeNotesUpload, frmFeesMonthlyDueUpload_S2, frmFeesMonthlyRecUpload_S2, frmMEIData_EditAmt, frmMaster, frmStudentEntry, frmTeachClass, frmTeacher, qryFeesMonthlyDueUpload_S1, qryFeesMonthlyRecUpload_S1A, qryFeesMonthlyRecUpload_S1B, qryFeesRecEntryS1, qryMEIDataEntry1, rptFeesDailyEntryRecord, rptFeesMonthlyAccount, rptFeesRecord, rptFeesRecordLeft, rptFeessInvoiceSel, rptRegisterWeekDays, rptRegisterWeekend, rptTeachersDailySiginEve, rptTeachersDailySiginWE
+ControlSource: =DLookUp(\"[OrgName]\",\"tbl_Master\",\"[Current] = 'Y'\")
+
+[form_frmStudentViewUpd.txt]
+RecordSource: qryStudentList
+RowSource: qryLookStudent
+ControlSource: STID
+ControlSource: STSName
+ControlSource: STFName
+ControlSource: STParents
+ControlSource: STAddress1
+ControlSource: STAddress2
+ControlSource: STAddress3
+ControlSource: STTelNo
+ControlSource: STLeft
+ControlSource: STLDate
+ControlSource: STTCCode
+RowSource: SELECT DISTINCTROW tblTeacher.TCCode, Trim([TCCLDesc]) & \" - \" & Trim([CLLocat
+ControlSource: STEmgTelNo
+ControlSource: STEmgCont
+ControlSource: STDOB
+ControlSource: STStartDate
+ControlSource: STPCode
+ControlSource: STForm
+
+[form_frmTeachClass.txt]
+RecordSource: SELECT tblTeachClass.TCCode, tblTeachClass.TCDCode, tblTeachClass.TCCLLocCode, t
+ControlSource: TCCode
+ControlSource: TCCLDesc
+ControlSource: TCDCode
+RowSource: SELECT DISTINCTROW tblTechDetails.TDCode, Trim([TDCode]) & \" - \" & Trim([TDTit
+ControlSource: TCCLLocCode
+RowSource: SELECT DISTINCTROW tblClass.CLLocCode, Trim([CLLocCode]) & \" - \" & Trim([CLLoc
+ControlSource: TCMEIWgs
+
+[form_frmTeacher.txt]
+RecordSource: SELECT tblTechDetails.TDCode, tblTechDetails.TDTitle, tblTechDetails.TDFName, tb
+ControlSource: TDCode
+ControlSource: TDTitle
+ControlSource: TDSName
+ControlSource: TDFName
+ControlSource: TDHomeTelNo
+ControlSource: TDWorkTelNo
+ControlSource: TDMobileNo
+ControlSource: TDADD
+
+[module_Enable Controls.txt]
+procedures: EnableControls
+
+[module_ISM_Ver_1.txt]
+procedures: FeeNoWeekDue, MonBegDate, SetReportDate, SetMEIDate, GetTodaysDate, test12, Test, Test2
+DoCmd_calls: OpenQuery, OpenReport, RunSQL, SetWarnings
+opened_objects: qryFeeDueSub, rptPromotionM
+
+[report_rptFeesDailyEntryRecord.txt]
+procedures: Report_Close, Report_Open
+event_properties: OnClose, OnOpen
+DoCmd_calls: Maximize, Minimize
+RecordSource: qryFeesDailyEntryRecord
+ControlSource: CLLocation
+ControlSource: TCCLDesc
+ControlSource: STID
+ControlSource: =\"STUDENT FEES DAILY ENTRY RECORD - \" & Format([DateUpdated],\"d mmmm yyyy\")
+ControlSource: =[CLLocation]
+ControlSource: STName
+ControlSource: STID
+ControlSource: FEDueDate
+ControlSource: FDDeatails
+ControlSource: FEDateUpdated
+ControlSource: FEAmtDue
+ControlSource: =Sum([FEAmtDue])
+ControlSource: =\"Total for Class: \" & [TCCLDesc]
+ControlSource: =Sum([FEAmtDue])
+
+[report_rptFeesDailyEntryRecordReceipt.txt]
+procedures: Report_Close, Report_Open
+event_properties: OnClose, OnOpen
+DoCmd_calls: Maximize, Minimize
+RecordSource: qryFeesDailyEntryRecord
+ControlSource: CLLocation
+ControlSource: TCCLDesc
+ControlSource: STID
+ControlSource: STName
+ControlSource: FEDueDate
+ControlSource: STID
+ControlSource: FEAmtDue
+ControlSource: STClass
+ControlSource: FERefNo_Auto
+
+[report_rptFeesMonthlyAccount.txt]
+procedures: Report_Close, Report_Open
+event_properties: OnClose, OnFormat, OnOpen
+DoCmd_calls: Maximize, Minimize
+RecordSource: qryMEIDataSub4
+ControlSource: CLLocation
+ControlSource: StudentType
+ControlSource: =\"MONTHLY ACCOUNT - \" & [CLLocation] & \" - \" & Format(DLookUp(\"[RepMonDate]
+ControlSource: =[StudentType] & \" (\" & [NoStud] & \")\"
+ControlSource: BalBF
+ControlSource: Exemp
+ControlSource: ReceivedCur
+ControlSource: WrittenOFFCur
+ControlSource: Defecit
+ControlSource: DueCur
+ControlSource: TotalDue
+ControlSource: =Sum([BalBF])
+ControlSource: =Sum([Exemp])
+ControlSource: =Sum([ReceivedCur])
+ControlSource: =Sum([WrittenOFFCur])
+ControlSource: =Sum([Defecit])
+ControlSource: =Sum([DueCur])
+ControlSource: =Sum([TotalDue])
+ControlSource: MEI_IncBB
+ControlSource: MEI_ExpST
+ControlSource: MEI_ExpBB
+ControlSource: =[TotalRecThisMonth]
+ControlSource: =[IncTotalRecThisMonth]+[IncBB]
+ControlSource: =[ExpTotalWages]+[ExpBB]+[ExpST]
+ControlSource: TotalWages
+ControlSource: =[TotalIncome]-[TotalExpense]
+ControlSource: CLLSuper
+ControlSource: CLLDeputy
+ControlSource: CLLHead
+
+[report_rptFeesMonthlyAccountSub.txt]
+RecordSource: qryMEIDataSub3
+ControlSource: CLLocation
+ControlSource: TCCLDesc
+ControlSource: TCCLDesc
+ControlSource: TCName
+ControlSource: MEIAmt
+ControlSource: =Sum([MEIAmt])
+
+[report_rptFeesRecord.txt]
+procedures: Report_Close, Report_Open
+event_properties: OnClose, OnFormat, OnOpen
+DoCmd_calls: Maximize, Minimize
+RecordSource: SELECT qryFeesRecord.*, qryFeesRecord.STLeft FROM qryFeesRecord WHERE (((qryFees
+ControlSource: TCCode
+ControlSource: STID
+ControlSource: =\"STUDENT FEES RECORD - \" & Format(DLookUp(\"[RepMonDate]\",\"tblRepMon\",\"[R
+ControlSource: =\"Teacher: \" & [TCName]
+ControlSource: =\"Class: \" & [TCCLDesc] & \" - \" & [CLLocation]
+ControlSource: STSName
+ControlSource: STFName
+ControlSource: STTelNo
+ControlSource: STID
+ControlSource: BalBF
+ControlSource: DueCur
+ControlSource: Exemp
+ControlSource: TotalDue
+ControlSource: ReceivedCur
+ControlSource: Defecit
+ControlSource: CurW
+ControlSource: =\"TOTAL STUDENTS: \" & Count([STID])
+ControlSource: =Sum([BalBF])
+ControlSource: =Sum([DueCur])
+ControlSource: =Sum([Exemp])
+ControlSource: =Sum([TotalDue])
+ControlSource: =Sum([ReceivedCur])
+ControlSource: =Sum([Defecit])
+ControlSource: =Sum([CurW])
+
+[report_rptFeesRecordLeft.txt]
+procedures: Report_Close, Report_Open
+event_properties: OnClose, OnFormat, OnOpen
+DoCmd_calls: Maximize, Minimize
+RecordSource: SELECT qryFeesRecord.BalBF, qryFeesRecord.DueCur, qryFeesRecord.Defecit, * FROM 
+ControlSource: CLLocCode
+ControlSource: STID
+ControlSource: =\"STUDENT FEES RECORD - \" & Format(DLookUp(\"[RepMonDate]\",\"tblRepMon\",\"[R
+ControlSource: =[CLLocation]
+ControlSource: STSName
+ControlSource: STFName
+ControlSource: STTelNo
+ControlSource: STID
+ControlSource: BalBF
+ControlSource: DueCur
+ControlSource: Exemp
+ControlSource: TotalDue
+ControlSource: ReceivedCur
+ControlSource: Defecit
+ControlSource: CurW
+ControlSource: =\"TOTAL STUDENTS: \" & Count([STID])
+ControlSource: =Sum([BalBF])
+ControlSource: =Sum([DueCur])
+ControlSource: =Sum([Exemp])
+ControlSource: =Sum([TotalDue])
+ControlSource: =Sum([ReceivedCur])
+ControlSource: =Sum([Defecit])
+ControlSource: =Sum([CurW])
+
+[report_rptFeesRecordSummary.txt]
+procedures: Report_Close, Report_Open
+event_properties: OnClose, OnFormat, OnOpen
+DoCmd_calls: Maximize, Minimize
+RecordSource: SELECT qryFeesRecord.BalBF, qryFeesRecord.DueCur, qryFeesRecord.Defecit, * FROM 
+ControlSource: CLLocCode
+ControlSource: TCCLDesc
+ControlSource: TCCode
+ControlSource: =\"STUDENT FEES SUMMARY BY CLASS - \" & Format(DLookUp(\"[RepMonDate]\",\"tblRep
+ControlSource: =[CLLocation]
+ControlSource: =Count([STID])
+ControlSource: =Sum([BalBF])
+ControlSource: =Sum([DueCur])
+ControlSource: =Sum([Exemp])
+ControlSource: =Sum([TotalDue])
+ControlSource: =Sum([ReceivedCur])
+ControlSource: =Sum([Defecit])
+ControlSource: =Sum([CurW])
+ControlSource: =[TCCLDesc] & \" - \" & [TCNAME]
+ControlSource: =Count([STID])
+ControlSource: =Sum([BalBF])
+ControlSource: =Sum([DueCur])
+ControlSource: =Sum([Exemp])
+ControlSource: =Sum([TotalDue])
+ControlSource: =Sum([ReceivedCur])
+ControlSource: =Sum([Defecit])
+ControlSource: =Sum([CurW])
+
+[report_rptFeesRecordSummaryLeft.txt]
+procedures: Report_Close, Report_Open
+event_properties: OnClose, OnFormat, OnOpen
+DoCmd_calls: Maximize, Minimize
+RecordSource: SELECT qryFeesRecord.BalBF, qryFeesRecord.DueCur, qryFeesRecord.Defecit, * FROM 
+ControlSource: CLLocCode
+ControlSource: TCCLDesc
+ControlSource: TCCode
+ControlSource: =\"STUDENT FEES SUMMARY BY CLASS - \" & Format(DLookUp(\"[RepMonDate]\",\"tblRep
+ControlSource: =[CLLocation]
+ControlSource: =Count([STID])
+ControlSource: =Sum([BalBF])
+ControlSource: =Sum([DueCur])
+ControlSource: =Sum([Exemp])
+ControlSource: =Sum([TotalDue])
+ControlSource: =Sum([ReceivedCur])
+ControlSource: =Sum([Defecit])
+ControlSource: =Sum([CurW])
+ControlSource: =[TCCLDesc] & \" - \" & [TCNAME]
+ControlSource: =Count([STID])
+ControlSource: =Sum([BalBF])
+ControlSource: =Sum([DueCur])
+ControlSource: =Sum([Exemp])
+ControlSource: =Sum([TotalDue])
+ControlSource: =Sum([ReceivedCur])
+ControlSource: =Sum([Defecit])
+ControlSource: =Sum([CurW])
+
+[report_rptFeessInvoiceSel.txt]
+procedures: Report_Close, Report_Open
+event_properties: OnClose, OnOpen
+DoCmd_calls: Maximize, Minimize
+RecordSource: qryFeesInvoiceSel
+ControlSource: TCCLDesc
+ControlSource: FESTID
+ControlSource: =\"Ref: \" & [FESTID] & \"/\" & [TCCLDesc] & \"/\" & [TCName]
+ControlSource: =\"Your child \" & [STName] & \"'s madrasah fees are now due for payment.\"
+ControlSource: =\"Date: \" & Format(Now(),\"Long Date\")
+ControlSource: =\"Parent(s) of \" & [STName]
+ControlSource: STAddress1
+ControlSource: STAddress2
+ControlSource: STAddress3
+ControlSource: Note
+ControlSource: AmtDue
+ControlSource: BalBF
+ControlSource: DueCur
+ControlSource: TotalDue
+ControlSource: Exemp
+ControlSource: ReceivedCur
+ControlSource: FeeTerm
+ControlSource: OurRef
+ControlSource: =Format(Now(),\"Long Date\")
+
+[report_rptFeessStatement.txt]
+procedures: Report_Close, Report_Open
+event_properties: OnClose, OnOpen
+DoCmd_calls: Maximize, Minimize
+RecordSource: qryFeesStatement
+ControlSource: FESTID
+ControlSource: FEDueDate
+ControlSource: FEDeatails
+ControlSource: =\"Ref: \" & [FESTID] & \"/\" & [TCCLDesc] & \"/\" & [TCName]
+ControlSource: =\"Statement for:  \" & [STName]
+ControlSource: =\"Date: \" & Format(Now(),\"Long Date\")
+ControlSource: =\"Parent(s) of \" & [STName]
+ControlSource: STAddress1
+ControlSource: STAddress2
+ControlSource: STAddress3
+ControlSource: FEAmtDue
+ControlSource: FEDueDate
+ControlSource: FEDeatails
+ControlSource: FEReceNo
+ControlSource: =Sum([FEAmtDue])
+ControlSource: OurRef
+ControlSource: =Format(Now(),\"Long Date\")
+
+[report_rptRegister.txt]
+procedures: Report_Close, Report_Open
+event_properties: OnClose, OnFormat, OnOpen
+DoCmd_calls: Maximize, Minimize
+RecordSource: qryRegister
+ControlSource: CLLocation
+ControlSource: TCCLDesc
+ControlSource: TCName
+ControlSource: STID
+ControlSource: =\"Daily Attendance Sheet: \" & Format([DATE],\"MMMM YYYY\")
+ControlSource: =\"Class: \" & [TCCLDesc] & \" - \" & [CLLocation]
+ControlSource: =\"Teacher: \" & [TCName]
+ControlSource: =DLookUp(\"[OrgName]\",\"tbl_Master\",\"[Current] = 'Y'\")
+ControlSource: STFName
+ControlSource: STSName
+ControlSource: STTelNo
+ControlSource: STID
+ControlSource: FEES
+ControlSource: =\"STUDENTS: \" & Count([STID])
+ControlSource: =\"Date Printed: \" & Format(Now(),\"Short Date\")
+
+[report_rptRegisterWeekDays.txt]
+procedures: Report_Close, Report_Open
+event_properties: OnClose, OnFormat, OnOpen
+DoCmd_calls: Maximize, Minimize
+RecordSource: qryRegisterWeekDay
+ControlSource: CLLocation
+ControlSource: TCCLDesc
+ControlSource: TCName
+ControlSource: STID
+ControlSource: =\"Daily Attendance Sheet: \" & Format([DATE],\"MMMM YYYY\")
+ControlSource: =\"Class: \" & [TCCLDesc] & \" - \" & [CLLocation]
+ControlSource: =\"Teacher: \" & [TCName]
+ControlSource: =IIf(Weekday([date])=2,Format([date],\"D\"),IIf(Weekday([date])=1,Format([date]+
+ControlSource: =IIf([WD2a]=\"\",IIf(Weekday([date])=3,Format([date],\"D\"),\"\"),[WD2a]+1)
+ControlSource: =IIf([WD3a]=\"\",IIf(Weekday([date])=4,Format([date],\"D\"),\"\"),[WD3a]+1)
+ControlSource: =IIf([WD4a]=\"\",IIf(Weekday([date])=5,Format([date],\"D\"),\"\"),[WD4a]+1)
+ControlSource: =IIf([WD5a]=\"\",IIf(Weekday([date])=6,Format([date],\"D\"),\"\"),[WD5a]+1)
+ControlSource: =[WD6a]+3
+ControlSource: =[WD2b]+1
+ControlSource: =[WD3b]+1
+ControlSource: =[WD4b]+1
+ControlSource: =[WD5b]+1
+ControlSource: =[WD6b]+3
+ControlSource: =[WD2c]+1
+ControlSource: =[WD3c]+1
+ControlSource: =[WD4c]+1
+ControlSource: =[WD5c]+1
+ControlSource: =[WD6c]+3
+ControlSource: =[WD2d]+1
+ControlSource: =[WD3d]+1
+ControlSource: =[WD4d]+1
+ControlSource: =[WD5d]+1
+ControlSource: =IIf([WD6d]+3<=[LDay],[WD6d]+3,\"\")
+ControlSource: =IIf([WD2e]=\"\",\"\",IIf([WD2e]+1<=[LDay],[WD2e]+1,\"\"))
+
+[report_rptRegisterWeekend.txt]
+procedures: Report_Close, Report_Open
+event_properties: OnClose, OnFormat, OnOpen
+DoCmd_calls: Maximize, Minimize
+RecordSource: qryRegisterWeekEnd
+ControlSource: CLLocation
+ControlSource: TCCLDesc
+ControlSource: TCName
+ControlSource: STID
+ControlSource: =\"Daily Attendance Sheet: \" & Format([DATE],\"MMMM YYYY\")
+ControlSource: =\"Class: \" & [TCCLDesc] & \" - \" & [CLLocation]
+ControlSource: =\"Teacher: \" & [TCName]
+ControlSource: Sat1
+ControlSource: Sun1
+ControlSource: Sat2
+ControlSource: Sun2
+ControlSource: Sat3
+ControlSource: Sun3
+ControlSource: Sat4
+ControlSource: Sun4
+ControlSource: =IIf(Month([date])=Month([Sat5]),[Sat5])
+ControlSource: =IIf(Month([date])=Month([Sun5]),[Sun5])
+ControlSource: STFName
+ControlSource: STSName
+ControlSource: STTelNo
+ControlSource: STID
+ControlSource: FEES
+ControlSource: =\"STUDENTS: \" & Count([STID])
+ControlSource: =\"Date Printed: \" & Format(Now(),\"Short Date\")
+
+[report_rptTeachersDailySiginEve.txt]
+procedures: Report_Close, Report_Open
+event_properties: OnClose, OnFormat, OnOpen
+DoCmd_calls: Maximize, Minimize
+RecordSource: SELECT tblTeacher.TCCode, tblTeacher.TDCode, tblTeacher.TCTitle, tblTeacher.TCFN
+ControlSource: TCCLDesc
+ControlSource: =\"DAILY SIGN-IN SHEET FOR TEACHERS - \" & Format(DLookUp(\"[RepMonDate]\",\"tbl
+ControlSource: =\"Teacher: \" & Trim([TCTitle]) & \" \" & Trim([TCFName]) & \" \" & Trim([TCSNa
+
+[report_rptTeachersDailySiginEveSub.txt]
+RecordSource: SELECT qryCalendar1a.DOY, qryCalendar1a.Date, qryCalendar1a.DayW FROM qryCalenda
+ControlSource: DOY
+ControlSource: =[Date] & \" \" & [DayW]
+
+[report_rptTeachersDailySiginWE.txt]
+procedures: Report_Close, Report_Open
+event_properties: OnClose, OnFormat, OnOpen
+DoCmd_calls: Maximize, Minimize
+RecordSource: SELECT tblTeacher.TCCode, tblTeacher.TDCode, tblTeacher.TCTitle, tblTeacher.TCFN
+ControlSource: TCCLDesc
+ControlSource: =\"DAILY SIGN-IN SHEET FOR TEACHERS - \" & Format(DLookUp(\"[RepMonDate]\",\"tbl
+ControlSource: =\"Teacher: \" & Trim([TCTitle]) & \" \" & Trim([TCFName]) & \" \" & Trim([TCSNa
+
+[report_rptTeachersDailySiginWESub.txt]
+RecordSource: SELECT qryCalendar1a.DOY, qryCalendar1a.Date, qryCalendar1a.DayW FROM qryCalenda
+ControlSource: DOY
+ControlSource: =[Date] & \" \" & [DayW]

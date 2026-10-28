@@ -1,0 +1,278 @@
+Version =20
+VersionRequired =20
+Checksum =-496644115
+Begin Form
+    Modal = NotDefault
+    AutoCenter = NotDefault
+    DefaultView =0
+    ViewsAllowed =1
+    RecordLocks =2
+    Width =4705
+    ItemSuffix =32
+    Left =4875
+    Top =855
+    Right =9870
+    Bottom =6840
+    RecSrcDt = Begin
+        0x47c59c963284e140
+    End
+    RecordSource ="tblClass"
+    Caption ="Class Locations"
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            TextAlign =3
+            FontWeight =700
+            BackColor =12632256
+        End
+        Begin Rectangle
+            SpecialEffect =2
+        End
+        Begin OptionButton
+            AddColon = NotDefault
+            SpecialEffect =2
+            LabelAlign =3
+            Width =187
+            Height =187
+            LabelX =-154
+        End
+        Begin CheckBox
+            AddColon = NotDefault
+            SpecialEffect =2
+            LabelAlign =3
+            Width =187
+            Height =187
+            LabelX =-154
+        End
+        Begin TextBox
+            SpecialEffect =2
+            LabelAlign =3
+            Height =255
+            LabelX =-154
+        End
+        Begin ListBox
+            SpecialEffect =2
+            LabelAlign =3
+            LabelX =-154
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            LabelAlign =3
+            Height =255
+            LabelX =-154
+        End
+        Begin FormHeader
+            Height =661
+            BackColor =12632256
+            Name ="FormHeader1"
+            Begin
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =93
+                    TextAlign =1
+                    Left =465
+                    Top =165
+                    Width =3000
+                    Height =405
+                    FontSize =14
+                    ForeColor =8355711
+                    Name ="Text12"
+                    Caption ="Class Location Table"
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =215
+                    TextAlign =1
+                    Left =435
+                    Top =120
+                    Width =3000
+                    Height =405
+                    FontSize =14
+                    ForeColor =16777215
+                    Name ="Text13"
+                    Caption ="Class Location Table"
+                End
+            End
+        End
+        Begin Section
+            Height =5244
+            BackColor =12632256
+            Name ="Detail0"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =1749
+                    Top =188
+                    Width =585
+                    Name ="CLLocCode"
+                    ControlSource ="CLLocCode"
+                    InputMask =">CCC"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =225
+                            Top =195
+                            Width =1380
+                            Height =240
+                            Name ="Text19"
+                            Caption ="Location Code"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =1749
+                    Top =668
+                    Width =2745
+                    ColumnWidth =4140
+                    TabIndex =1
+                    Name ="CLLocation"
+                    ControlSource ="CLLocation"
+                    InputMask =">CCCCCCCCCCCCCCCCCCCCCCCCC"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =453
+                            Top =668
+                            Width =1152
+                            Height =240
+                            Name ="Text21"
+                            Caption ="Location"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =1749
+                    Top =1133
+                    Width =2745
+                    Height =2265
+                    TabIndex =2
+                    Name ="Text22"
+                    ControlSource ="FeeTerm"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =435
+                            Top =1140
+                            Width =1170
+                            Height =240
+                            Name ="Label23"
+                            Caption ="Invoice Info."
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =1749
+                    Top =3637
+                    Width =2745
+                    TabIndex =3
+                    Name ="Text24"
+                    ControlSource ="CLLSuper"
+                    GUID = Begin
+                        0xdb3b1517acfda546a9e9169c553445d1
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =453
+                            Top =3637
+                            Width =1152
+                            Height =240
+                            Name ="Label25"
+                            Caption ="Super"
+                            GUID = Begin
+                                0xe4fc28564f2c734cae0121f6ea00dfcf
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =1749
+                    Top =4012
+                    Width =2745
+                    TabIndex =4
+                    Name ="Text26"
+                    ControlSource ="CLLDeputy"
+                    GUID = Begin
+                        0xa96bd6d1b0dea84486bec14810c3a7ae
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =453
+                            Top =4012
+                            Width =1152
+                            Height =240
+                            Name ="Label27"
+                            Caption ="Deputy"
+                            GUID = Begin
+                                0x2a8bb1e77210bf4faa6cd237cea146d5
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =1749
+                    Top =4387
+                    Width =2745
+                    TabIndex =5
+                    Name ="Text28"
+                    ControlSource ="CLLHead"
+                    GUID = Begin
+                        0x7a1455c35644ef43843d8a76d3ceb2a8
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =453
+                            Top =4387
+                            Width =1152
+                            Height =240
+                            Name ="Label29"
+                            Caption ="Head"
+                            GUID = Begin
+                                0xffcab081ebd615449f94484bc7bd7d6a
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =1749
+                    Top =4771
+                    Width =2745
+                    TabIndex =6
+                    Name ="FERate"
+                    ControlSource ="FERate"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    GUID = Begin
+                        0x944edb5fd77bd34a816e77d52212118e
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =453
+                            Top =4771
+                            Width =1152
+                            Height =240
+                            Name ="Label31"
+                            Caption ="Fee Rate"
+                            GUID = Begin
+                                0xd81903c6a10d3945879b99bb8b90ea91
+                            End
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =12632256
+            Name ="FormFooter2"
+        End
+    End
+End

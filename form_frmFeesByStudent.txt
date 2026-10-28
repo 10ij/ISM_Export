@@ -1,0 +1,451 @@
+Version =20
+VersionRequired =20
+Checksum =2115419934
+Begin Form
+    AutoResize = NotDefault
+    PopUp = NotDefault
+    Modal = NotDefault
+    AutoCenter = NotDefault
+    ViewsAllowed =1
+    BorderStyle =3
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =9928
+    DatasheetFontHeight =10
+    ItemSuffix =29
+    Left =2340
+    Top =2055
+    Right =12675
+    Bottom =5985
+    DatasheetGridlinesColor =12632256
+    OrderBy ="tblFees.FESTID"
+    RecSrcDt = Begin
+        0xc2b74daff9dde440
+    End
+    RecordSource ="qryFeesByStudent"
+    Caption ="Fee and Payments By Student"
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0xa0050000a0050000a0050000a005000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x010405019c002c0a032f0000010009009a0b34086400010001002c0102000100 ,
+        0x2c01010000004134000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000c2e917700000000000000000000020000000000000000000000f604 ,
+        0xfa020000f604fa02000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000100000100000000000100000000010006000000 ,
+        0x0700070000000000000000000200000002010001000116000000000000010000 ,
+        0x02000000070000000000000000190000e40c000000000000b80b000070170000 ,
+        0x00000000dc05000058020000000000000000000000000000feff000000000000 ,
+        0x0000000000000000000000000000000000000000370c0000da0c000010270000 ,
+        0x102700001027000010270000a00a0000c2060000b80600002c04000040010000 ,
+        0xd200000018000000000010271027102700001027000000000000000000000000 ,
+        0x0100000000000200000000000000000100000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000100000000000000000100010005010000000000000000010000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000000000000000000000000000000000000ffffffff ,
+        0x6400000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000000000000cccccc00000000000000000000000000 ,
+        0x0000000000000000000000000000000041007200690061006c00000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000640000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000cccccc00000000000000000000000000000000000000000000000000 ,
+        0x0000000041007200690061006c00000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000640000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000000000000000000000000000cccccc0000000000 ,
+        0x0000000000000000000000000000000000000000000000004100720069006100 ,
+        0x6c00000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000090009006400 ,
+        0x0000000000000000fa02f604030100000000000000001027e404000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x4c0045004d0041002d004d0061006b0074006100620000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000570037003100300031000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000300030001000000000000000200010001000100 ,
+        0x0000000000010100000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000024000000f5ffffff000000000000000000000000 ,
+        0x00000000000000010000000041007200690061006c0000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000000000000ffffff00010000000000000001000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000010108000001 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000001010002000000020000000100 ,
+        0x0000102700000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000002000000000000000454e474c4953480000000000000000000f000000 ,
+        0xbc0c000027000000a8010000270000005052495601ff4443502d38313130444e ,
+        0x0000000000000000000000000000003f00000000000000000000000021000000 ,
+        0x0000f4010000000000000000020100007b170000891000007b17000089100000 ,
+        0x7b170000891000007b1700008910000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000
+    End
+    PrtDevNames = Begin
+        0x080023003e000100000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000005553 ,
+        0x4230303100
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+        End
+        Begin TextBox
+            SpecialEffect =2
+            OldBorderStyle =0
+            Width =1701
+            LabelX =-1701
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            Width =1701
+            LabelX =-1701
+        End
+        Begin FormHeader
+            Height =1303
+            BackColor =-2147483633
+            Name ="FormHeader"
+            GUID = Begin
+                0x6cec888a1bfd8a4ebc43bbf138282165
+            End
+            Begin
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =1
+                    Top =118
+                    Width =4365
+                    Height =405
+                    FontSize =14
+                    FontWeight =700
+                    BackColor =12632256
+                    ForeColor =8355711
+                    Name ="Label10"
+                    Caption ="Fee and Payment For Student:"
+                    GUID = Begin
+                        0xf1403dbed45f3343a9f30e5e14ff81d0
+                    End
+                End
+                Begin Label
+                    Visible = NotDefault
+                    OverlapFlags =93
+                    Left =8901
+                    Top =907
+                    Width =540
+                    Height =240
+                    Name ="Label18"
+                    Caption ="FEEID"
+                    GUID = Begin
+                        0x9c2e7019412a3b428a0a30cb0ba6eb29
+                    End
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =113
+                    Top =907
+                    Width =1020
+                    Height =240
+                    Name ="Label19"
+                    Caption ="Amount Type"
+                    GUID = Begin
+                        0xa8199e03e5f5a0468dac5a5aea836467
+                    End
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =2040
+                    Top =907
+                    Width =615
+                    Height =240
+                    Name ="Label20"
+                    Caption ="Amount"
+                    GUID = Begin
+                        0x28ae73ffa7768b46bcbc8a3024187c5f
+                    End
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =3344
+                    Top =907
+                    Width =1110
+                    Height =240
+                    Name ="Label21"
+                    Caption ="Note"
+                    GUID = Begin
+                        0x4637fa6125e10c4798e96a68b0bb93b4
+                    End
+                End
+                Begin Label
+                    OverlapFlags =215
+                    Left =8617
+                    Top =907
+                    Width =870
+                    Height =240
+                    Name ="Label22"
+                    Caption ="Date"
+                    GUID = Begin
+                        0xf15663875a621148bcf574200d40f374
+                    End
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =223
+                    BackStyle =0
+                    Left =4308
+                    Top =113
+                    Width =3570
+                    Height =405
+                    FontSize =14
+                    BackColor =12632256
+                    Name ="Text23"
+                    ControlSource ="=[Forms]![FindStudent]![FindStudentSub].[Form]![STID] & \" - \" & [Forms]![FindS"
+                        "tudent]![FindStudentSub].[Form]![STFName] & \" \" & [Forms]![FindStudent]![FindS"
+                        "tudentSub].[Form]![STSName]"
+                    GUID = Begin
+                        0xf341c0dbbdc92b4b9fdfd9a2489a8ec1
+                    End
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =7313
+                    Top =907
+                    Width =1110
+                    Height =240
+                    Name ="Label26"
+                    Caption ="Rec No"
+                    GUID = Begin
+                        0x4d768d0bbf3e7b4aaad29de21235e8b3
+                    End
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =93
+                    TextAlign =3
+                    BackStyle =0
+                    Left =8849
+                    Top =158
+                    Width =1071
+                    Height =360
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="Text24"
+                    ControlSource ="=Sum([FEAmtDue])"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    ValidationRule =">=1 Or <=-1"
+                    GUID = Begin
+                        0x8aab7dc28b05ba46879c8a66cd98e1ca
+                    End
+                End
+                Begin Label
+                    OverlapFlags =247
+                    TextAlign =1
+                    Left =7823
+                    Top =170
+                    Width =1125
+                    Height =360
+                    FontSize =12
+                    FontWeight =700
+                    BackColor =12632256
+                    ForeColor =8355711
+                    Name ="Label28"
+                    Caption ="Balance:"
+                    GUID = Begin
+                        0xd77af8b19d694f4c873ce94734367682
+                    End
+                End
+            End
+        End
+        Begin Section
+            Height =396
+            BackColor =-2147483633
+            Name ="Detail"
+            GUID = Begin
+                0x0720f0e4bf33d645832d595832533aec
+            End
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =2040
+                    Top =56
+                    Width =1071
+                    TabIndex =1
+                    Name ="FEAmtDue"
+                    ControlSource ="FEAmtDue"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    ValidationRule =">=1 Or <=-1"
+                    AfterUpdate ="[Event Procedure]"
+                    GUID = Begin
+                        0x35a0b8e57e42244d86f9407767ccedc4
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    TextAlign =3
+                    Left =8617
+                    Top =56
+                    Width =1311
+                    ColumnWidth =1995
+                    TabIndex =3
+                    Name ="FEDueDate"
+                    ControlSource ="FEDueDate"
+                    Format ="Short Date"
+                    ValidationRule ="<=Now()"
+                    ValidationText ="The date can't be in the future"
+                    AfterUpdate ="[Event Procedure]"
+                    DefaultValue ="=Format(Now(),\"Short Date\")"
+                    GUID = Begin
+                        0x22deab353cfb3240850aca3b8360b430
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =3344
+                    Top =56
+                    Width =3750
+                    TabIndex =2
+                    Name ="FEReceNo"
+                    ControlSource ="FEReceNo"
+                    GUID = Begin
+                        0xe49b21c1ac6fad4d8a3fd35b33a6c316
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    ColumnCount =2
+                    Left =113
+                    Top =56
+                    Width =1359
+                    ColumnWidth =2100
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
+                    GUID = Begin
+                        0x776ffcfc4aedff448ecee46a311ec964
+                    End
+                    Name ="FEFDCode"
+                    ControlSource ="FEFDCode"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT DISTINCTROW tblFeesDesc.FDCode, tblFeesDesc.FDDeatails FROM tblFeesDesc;"
+                    ColumnWidths ="0;720"
+                    AfterUpdate ="[Event Procedure]"
+                    DefaultValue ="\"R\""
+                    BaseInfo ="\"SELECT DISTINCTROW tblFeesDesc.FDCode, tblFeesDesc.FDDeatails FROM tblFeesDesc"
+                        ";\";\"tblFeesDesc\";\"\";\"FDCode\";\"FDDeatails\";\"FECode\""
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =247
+                    TextAlign =1
+                    Left =8901
+                    Top =56
+                    Width =1020
+                    TabIndex =4
+                    Name ="FESTID"
+                    ControlSource ="FESTID"
+                    DefaultValue ="=[Forms]![FindStudent]![FindStudentSub].[Form]![STID]"
+                    GUID = Begin
+                        0x3c130ec833ea9a42b361368cd3e27f31
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =7313
+                    Top =56
+                    Width =1080
+                    TabIndex =5
+                    Name ="Text27"
+                    ControlSource ="FERefNo_Auto"
+                    GUID = Begin
+                        0x5dcb73ded350fe4898079af7c0eeea51
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="FormFooter"
+            GUID = Begin
+                0x97719a66e90595498bf44d8ca2177215
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
+Private Sub FEAmtDue_AfterUpdate()
+If Me!FEFDCode = "E" And Sgn(Me!FEAmtDue) = 1 Or Me!FEFDCode = "R" And Sgn(Me!FEAmtDue) = 1 Or Me!FEFDCode = "W" And Sgn(Me!FEAmtDue) = 1 Then
+    Me!FEAmtDue = CCur(Me!FEAmtDue / -1)
+ElseIf Me!FEFDCode = "D" And Sgn(Me!FEAmtDue) = -1 Then
+    Me!FEAmtDue = CCur(Me!FEAmtDue / -1)
+End If
+End Sub
+Private Sub FEDueDate_AfterUpdate()
+    Me!FEDueDate = Format(Me!FEDueDate, "d mmmm yyyy")
+End Sub
+
+Private Sub FEFDCode_AfterUpdate()
+    Call FEAmtDue_AfterUpdate
+End Sub
+
+Private Sub Form_Close()
+    DoCmd.Maximize
+End Sub
+
+Private Sub Form_Open(Cancel As Integer)
+DoCmd.Restore
+End Sub

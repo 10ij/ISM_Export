@@ -1,0 +1,371 @@
+Version =20
+VersionRequired =20
+Checksum =-348226337
+Begin Form
+    AutoCenter = NotDefault
+    AllowDeletions = NotDefault
+    AllowAdditions = NotDefault
+    AllowDesignChanges = NotDefault
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =9692
+    DatasheetFontHeight =10
+    ItemSuffix =9
+    Left =2100
+    Top =315
+    Right =13935
+    Bottom =7920
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x65d88ae280e1e440
+    End
+    RecordSource ="qryMEIData_EditAmt"
+    Caption ="qryMEIData_EditAmt"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0xa0050000a0050000a0050000a005000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x010400069c00580303ff0000010001009a0b3408640001000f00580202000100 ,
+        0x5802020000004134000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000010000000000000001000000 ,
+        0x0200000001000000ffffffff0000000000000000000000000000000044494e55 ,
+        0x220010014c030c00cad2f6720000000000000000000000000000000000000000 ,
+        0x0000000000000000090000000000000000000100000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000001000000000000000000000010010000534d544a ,
+        0x00000000100000014d006900630072006f0073006f0066007400200058005000 ,
+        0x5300200044006f00630075006d0065006e007400200057007200690074006500 ,
+        0x72000000496e70757442696e00464f524d534f5552434500524553444c4c0055 ,
+        0x6e69726573444c4c00496e7465726c656176696e67004f464600496d61676554 ,
+        0x797065004a5045474d6564004f7269656e746174696f6e00504f525452414954 ,
+        0x00436f6c6c617465004f4646005265736f6c7574696f6e004f7074696f6e3100 ,
+        0x506170657253697a65004c455454455200436f6c6f724d6f6465003234627070 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000c0000004d58445701010000
+    End
+    PrtDevNames = Begin
+        0x0800260044000100000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000585053506f72743a00
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            BackColor =-2147483633
+            ForeColor =-2147483630
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Line
+            Width =1701
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            Width =1701
+            Height =1701
+        End
+        Begin BoundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+            AsianLineBreak =255
+        End
+        Begin ListBox
+            SpecialEffect =2
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin Subform
+            SpecialEffect =2
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin Tab
+            BackStyle =0
+            Width =5103
+            Height =3402
+        End
+        Begin FormHeader
+            Height =1247
+            BackColor =-2147483633
+            Name ="FormHeader"
+            GUID = Begin
+                0x43fe5a84125935408119a34b8443ec9f
+            End
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =56
+                    Top =908
+                    Width =1035
+                    Height =240
+                    Name ="MEIDate_Label"
+                    Caption ="Date"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0xa7f48b4b4a2a084caade5fab765f18d2
+                    End
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =1246
+                    Top =907
+                    Width =945
+                    Height =240
+                    Name ="MEITCCode_Label"
+                    Caption ="Location"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0xb5ef3b6299d72146ac5ca5caeec57794
+                    End
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =7936
+                    Top =908
+                    Width =1755
+                    Height =240
+                    Name ="MEIAmt_Label"
+                    Caption ="Amount"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0x67bc5dc4914453459c8caef8cf69e138
+                    End
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =3734
+                    Top =911
+                    Width =2475
+                    Height =240
+                    Name ="Label8"
+                    Caption ="Wage or Expense/Income Details"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0x2ed572582cd3d3438253d06b957fd707
+                    End
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =1530
+                    Top =170
+                    Width =6870
+                    Height =405
+                    FontSize =14
+                    FontWeight =700
+                    BackColor =12632256
+                    ForeColor =8355711
+                    Name ="Label10"
+                    Caption ="Monthtly Account Wage or Expense/Income Edit"
+                    GUID = Begin
+                        0xcc3b5efd46e24b4e8b06c20d21ff1fae
+                    End
+                End
+            End
+        End
+        Begin Section
+            Height =312
+            BackColor =-2147483633
+            Name ="Detail"
+            GUID = Begin
+                0x4d1e34c7686d434dbe63dba5bb7b3437
+            End
+            Begin
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =57
+                    Top =57
+                    Width =1035
+                    Height =255
+                    ColumnWidth =1035
+                    Name ="MEIDate"
+                    ControlSource ="MEIDate"
+                    GUID = Begin
+                        0x4015ff5b44081c429a7e0c541c1dc997
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =7937
+                    Top =57
+                    Width =1755
+                    Height =255
+                    ColumnWidth =2310
+                    TabIndex =1
+                    Name ="MEIAmt"
+                    ControlSource ="MEIAmt"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    GUID = Begin
+                        0xdcbd7b181f9601419013f8d605ee81b4
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    ColumnCount =2
+                    Left =1247
+                    Top =56
+                    Width =2424
+                    TabIndex =2
+                    BackColor =16777215
+                    ForeColor =0
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"0\""
+                    GUID = Begin
+                        0x42938d187613664f8db4663c46856188
+                    End
+                    Name ="Combo9"
+                    ControlSource ="MEILocCode"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT DISTINCTROW tblClass.CLLocCode, Trim([CLLocCode]) & \" - \" & Trim([CLLoc"
+                        "ation]) AS CLLocationD FROM tblClass;"
+                    ColumnWidths ="0;720"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    ColumnCount =2
+                    Left =3741
+                    Top =56
+                    Width =4089
+                    TabIndex =3
+                    BackColor =16777215
+                    ForeColor =0
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"0\""
+                    GUID = Begin
+                        0x7c5557294341d64080e91796eff06c5a
+                    End
+                    Name ="TCCLLocCode:"
+                    ControlSource ="MEITCCode"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT DISTINCTROW tblTeacher.TCCode, IIf([TCTitle]=\"ZMEI\",Trim([TCCode]) & \""
+                        " - \" & Trim([TCSName]),Trim([TCCode]) & \" - \" & Trim([TCTitle]) & \" \" & Tri"
+                        "m([TCFName]) & \" \" & Trim([TCSName])) AS TCDetails, tblTeacher.TCTitle FROM tb"
+                        "lTeacher ORDER BY IIf([TCTitle]=\"ZMEI\",Trim([TCCode]) & \" - \" & Trim([TCSNam"
+                        "e]),Trim([TCCode]) & \" - \" & Trim([TCTitle]) & \" \" & Trim([TCFName]) & \" \""
+                        " & Trim([TCSName]));"
+                    ColumnWidths ="0;720"
+                    EventProcPrefix ="TCCLLocCode_"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="FormFooter"
+            GUID = Begin
+                0x428ca3d8b580a54c94b8151fed36fab0
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+
+Private Sub Form_Close()
+    DoCmd.OpenForm "frmMEIData_EditNotes", acNormal
+End Sub

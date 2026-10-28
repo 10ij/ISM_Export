@@ -1,0 +1,550 @@
+Version =20
+VersionRequired =20
+Checksum =458638301
+Begin Report
+    LayoutForPrint = NotDefault
+    DefaultView =0
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =9054
+    DatasheetFontHeight =10
+    ItemSuffix =69
+    Left =2130
+    Right =13980
+    Bottom =8295
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x2b7ae12bd6e1e440
+    End
+    RecordSource ="qryFeesDailyEntryRecord"
+    Caption ="FeesInvoice"
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0x89050000d002000089050000d0020000000000005e2300001b01000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x010400069c00580303ff0000010009009a0b3408640001000f00580202000100 ,
+        0x5802020000004134000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000010000000000000001000000 ,
+        0x0200000001000000ffffffff0000000000000000000000000000000044494e55 ,
+        0x220010014c030c00cad2f6720000000000000000000000000000000000000000 ,
+        0x0000000000000000090000000000000000000100000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000001000000000000000000000010010000534d544a ,
+        0x00000000100000014d006900630072006f0073006f0066007400200058005000 ,
+        0x5300200044006f00630075006d0065006e007400200057007200690074006500 ,
+        0x72000000496e70757442696e00464f524d534f5552434500524553444c4c0055 ,
+        0x6e69726573444c4c00496e7465726c656176696e67004f464600496d61676554 ,
+        0x797065004a5045474d6564004f7269656e746174696f6e00504f525452414954 ,
+        0x00436f6c6c617465004f4646005265736f6c7574696f6e004f7074696f6e3100 ,
+        0x506170657253697a65004c455454455200436f6c6f724d6f6465003234627070 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000c0000004d58445701010000
+    End
+    PrtDevNames = Begin
+        0x0800260044000100000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000585053506f72743a00
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            FontItalic = NotDefault
+            BackStyle =0
+            TextAlign =1
+            TextFontFamily =18
+            FontSize =11
+            FontWeight =700
+            ForeColor =8388608
+            FontName ="Times New Roman"
+        End
+        Begin Rectangle
+            BackStyle =0
+            BorderWidth =1
+            Width =850
+            Height =850
+            BorderColor =8388608
+        End
+        Begin Line
+            Width =1701
+            BorderColor =8388608
+        End
+        Begin Image
+            OldBorderStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CheckBox
+            LabelX =230
+            LabelY =-30
+        End
+        Begin BoundObjectFrame
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            OldBorderStyle =0
+            BackStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Arial"
+        End
+        Begin ListBox
+            OldBorderStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontName ="Arial"
+        End
+        Begin ComboBox
+            OldBorderStyle =0
+            BackStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Arial"
+        End
+        Begin Subform
+            OldBorderStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            Width =4536
+            Height =2835
+        End
+        Begin BreakLevel
+            GroupFooter = NotDefault
+            ControlSource ="CLLocation"
+        End
+        Begin BreakLevel
+            GroupFooter = NotDefault
+            ControlSource ="TCCLDesc"
+        End
+        Begin BreakLevel
+            ControlSource ="STID"
+        End
+        Begin PageHeader
+            Height =2394
+            Name ="PageHeader"
+            GUID = Begin
+                0x4ce85bc77f22b048a8c9659b140be231
+            End
+            Begin
+                Begin Image
+                    SizeMode =1
+                    PictureType =1
+                    Width =9008
+                    Height =1205
+                    Name ="Image54"
+                    Picture ="C:\\ISM_2016\\LOGO\\LOGO_LH_P.jpg"
+                    GUID = Begin
+                        0x10c03410663f1347955e05a82054a70f
+                    End
+                End
+                Begin Label
+                    FontItalic = NotDefault
+                    BackStyle =1
+                    TextAlign =0
+                    Left =675
+                    Top =2100
+                    Width =2160
+                    Height =285
+                    FontSize =10
+                    ForeColor =0
+                    Name ="Label59"
+                    Caption ="Student Name"
+                    GUID = Begin
+                        0xcd1bde3ed934b24baab4bce86f8593ce
+                    End
+                End
+                Begin TextBox
+                    TextAlign =2
+                    TextFontFamily =18
+                    BackStyle =1
+                    Left =28
+                    Top =1299
+                    Width =8985
+                    Height =360
+                    FontSize =14
+                    FontWeight =700
+                    Name ="Field14"
+                    ControlSource ="=\"STUDENT FEES DAILY ENTRY RECORD - \" & Format([DateUpdated],\"d mmmm yyyy\")"
+                    FontName ="Times New Roman"
+                    GUID = Begin
+                        0x65b770339471bb4fac98eb15cc91a2f5
+                    End
+                End
+                Begin Label
+                    FontItalic = NotDefault
+                    BackStyle =1
+                    Left =3347
+                    Top =2109
+                    Width =975
+                    Height =285
+                    FontSize =10
+                    ForeColor =0
+                    Name ="Label98"
+                    Caption ="Date"
+                    GUID = Begin
+                        0xb15836cc428fbd46804b02adefef0257
+                    End
+                End
+                Begin Label
+                    FontItalic = NotDefault
+                    BackStyle =1
+                    TextAlign =3
+                    Left =4382
+                    Top =2109
+                    Width =1215
+                    Height =285
+                    FontSize =10
+                    ForeColor =0
+                    Name ="Label100"
+                    Caption ="Fee Details"
+                    GUID = Begin
+                        0x6ab1c991de16c547a9d99f1131e7b757
+                    End
+                End
+                Begin Label
+                    FontItalic = NotDefault
+                    BackStyle =1
+                    TextAlign =3
+                    Left =6973
+                    Top =2100
+                    Width =1980
+                    Height =285
+                    FontSize =10
+                    ForeColor =6723891
+                    Name ="Label102"
+                    Caption ="Entry Date and Time"
+                    GUID = Begin
+                        0x10aa16afa1b74d4b8f0d310eeb53c315
+                    End
+                End
+                Begin Label
+                    FontItalic = NotDefault
+                    BackStyle =1
+                    TextAlign =2
+                    Top =2097
+                    Width =595
+                    Height =285
+                    FontSize =10
+                    ForeColor =0
+                    Name ="Label124"
+                    Caption ="STID"
+                    GUID = Begin
+                        0x222bdf290ba2ac4fbe8c2ed3ac9440c4
+                    End
+                End
+                Begin Label
+                    FontItalic = NotDefault
+                    BackStyle =1
+                    TextAlign =3
+                    Left =5663
+                    Top =2109
+                    Width =1215
+                    Height =285
+                    FontSize =10
+                    ForeColor =0
+                    Name ="Label127"
+                    Caption ="Fee Amount"
+                    GUID = Begin
+                        0x13c92140b8460f43876050c6010a935a
+                    End
+                End
+                Begin TextBox
+                    TextFontFamily =18
+                    BackStyle =1
+                    Top =1677
+                    Width =4506
+                    Height =300
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="Text138"
+                    ControlSource ="=[CLLocation]"
+                    FontName ="Times New Roman"
+                    GUID = Begin
+                        0xadee34763a7c2f4f959656b283292e80
+                    End
+                End
+                Begin Line
+                    Left =56
+                    Top =1984
+                    Width =8948
+                    Name ="Line67"
+                    GUID = Begin
+                        0x6478274111995340a052d65b59f93b3f
+                    End
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =283
+            Name ="Detail"
+            GUID = Begin
+                0x2937b572538f5d4689a013132d91666a
+            End
+            Begin
+                Begin TextBox
+                    TextFontFamily =18
+                    BackStyle =1
+                    Left =651
+                    Width =2184
+                    Height =210
+                    Name ="Text60"
+                    ControlSource ="STName"
+                    FontName ="Times New Roman"
+                    GUID = Begin
+                        0x731ffbea165c044ea0225e92d44791a1
+                    End
+                End
+                Begin TextBox
+                    TextAlign =2
+                    TextFontFamily =18
+                    BackStyle =1
+                    Width =594
+                    Height =210
+                    TabIndex =1
+                    Name ="Field90"
+                    ControlSource ="STID"
+                    FontName ="Times New Roman"
+                    GUID = Begin
+                        0x0588faae82fbdc45a6ff03e9cd050334
+                    End
+                End
+                Begin TextBox
+                    TextAlign =1
+                    TextFontFamily =18
+                    BackStyle =1
+                    Left =3395
+                    Width =909
+                    Height =210
+                    TabIndex =2
+                    Name ="Text61"
+                    ControlSource ="FEDueDate"
+                    FontName ="Times New Roman"
+                    GUID = Begin
+                        0xb1257413154f9f4b8db5dfa5e2b3ffcf
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =18
+                    BackStyle =1
+                    Left =4415
+                    Width =1164
+                    Height =210
+                    TabIndex =3
+                    Name ="Text62"
+                    ControlSource ="FDDeatails"
+                    FontName ="Times New Roman"
+                    GUID = Begin
+                        0xc8d3faac90fe6342b2f0cf9a06f65ed9
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =18
+                    BackStyle =1
+                    Left =7143
+                    Width =1794
+                    Height =210
+                    TabIndex =4
+                    ForeColor =6723891
+                    Name ="Text103"
+                    ControlSource ="FEDateUpdated"
+                    FontName ="Times New Roman"
+                    GUID = Begin
+                        0x81901da87141884280a355f82b165fb1
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =18
+                    BackStyle =1
+                    Left =5696
+                    Width =1164
+                    Height =210
+                    TabIndex =5
+                    Name ="Text63"
+                    ControlSource ="FEAmtDue"
+                    FontName ="Times New Roman"
+                    GUID = Begin
+                        0x5611a04a57f54f46a0d938272c4ea98e
+                    End
+                End
+            End
+        End
+        Begin BreakFooter
+            KeepTogether = NotDefault
+            Height =566
+            BreakLevel =1
+            Name ="GroupFooter1"
+            GUID = Begin
+                0x301262068e02b741ba78ca8d20cee92f
+            End
+            Begin
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =18
+                    BackStyle =1
+                    Left =5696
+                    Top =141
+                    Width =1164
+                    Height =300
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Text129"
+                    ControlSource ="=Sum([FEAmtDue])"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Times New Roman"
+                    GUID = Begin
+                        0x6cfe06b8f8252e4e8eceeccc6859c24a
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =18
+                    BackStyle =1
+                    Left =1020
+                    Top =141
+                    Width =4536
+                    Height =300
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="Field89"
+                    ControlSource ="=\"Total for Class: \" & [TCCLDesc]"
+                    FontName ="Times New Roman"
+                    GUID = Begin
+                        0xb3a41106979e61418aac570c58d4ac1b
+                    End
+                End
+                Begin Line
+                    Top =510
+                    Width =8948
+                    Name ="Line66"
+                    GUID = Begin
+                        0x327d0382cb43b648aaaabfee9574d4ee
+                    End
+                End
+                Begin Line
+                    Width =8948
+                    Name ="Line68"
+                    GUID = Begin
+                        0x66c34b9e3b12fb4583f702cd62910b50
+                    End
+                End
+            End
+        End
+        Begin BreakFooter
+            KeepTogether = NotDefault
+            Height =510
+            Name ="GroupFooter0"
+            GUID = Begin
+                0x7ccb4569c298294ca4774a6c6469255f
+            End
+            Begin
+                Begin Label
+                    FontItalic = NotDefault
+                    BackStyle =1
+                    TextAlign =0
+                    Left =32
+                    Top =88
+                    Width =1230
+                    Height =285
+                    FontSize =10
+                    ForeColor =0
+                    Name ="Label135"
+                    Caption ="Grand Total"
+                    GUID = Begin
+                        0x582faff40238364aa7768f0f65fa6129
+                    End
+                End
+                Begin Line
+                    LineSlant = NotDefault
+                    Top =-45
+                    Width =9054
+                    Height =45
+                    BorderColor =0
+                    Name ="Line136"
+                    GUID = Begin
+                        0xa8ab012a4b27bb48be6fb3f25faf7811
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =18
+                    BackStyle =1
+                    Left =5668
+                    Top =94
+                    Width =1164
+                    Height =300
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Text137"
+                    ControlSource ="=Sum([FEAmtDue])"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Times New Roman"
+                    GUID = Begin
+                        0x2f8f3011ba222b44859a1f9507315d47
+                    End
+                End
+                Begin Line
+                    Top =453
+                    Width =8948
+                    Name ="Line65"
+                    GUID = Begin
+                        0x71acb2dc3bc1284d95b07797cfff8ce6
+                    End
+                End
+            End
+        End
+        Begin PageFooter
+            Height =0
+            Name ="PageFooter"
+            GUID = Begin
+                0xc1f24c922e3d8f46b11055b273bb5019
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
+Private Sub Report_Close()
+    DoCmd.Minimize
+End Sub
+Private Sub Report_Open(Cancel As Integer)
+    DoCmd.Maximize
+End Sub

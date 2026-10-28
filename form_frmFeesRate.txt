@@ -1,0 +1,312 @@
+Version =20
+VersionRequired =20
+Checksum =2147462458
+Begin Form
+    AutoCenter = NotDefault
+    AllowDesignChanges = NotDefault
+    TabularFamily =0
+    PictureAlignment =5
+    PictureSizeMode =1
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =4473
+    DatasheetFontHeight =10
+    ItemSuffix =6
+    Left =705
+    Top =645
+    Right =5460
+    Bottom =4590
+    DatasheetGridlinesColor =12632256
+    PaintPalette = Begin
+        0x00030001ffffff00ffffcc00ffff9900ffff6600ffff3300ffff0000ffccff00 ,
+        0xffcccc00ffcc9900ffcc6600ffcc3300ffcc0000ff99ff00ff99cc00ff999900 ,
+        0xff996600ff993300ff990000ff66ff00ff66cc00ff669900ff666600ff663300 ,
+        0xff660000ff33ff00ff33cc00ff339900ff336600ff333300ff330000ff00ff00 ,
+        0xff00cc00ff009900ff006600ff003300ff000000ccffff00ccffcc00ccff9900 ,
+        0xccff6600ccff3300ccff0000ccccff00cccccc00cccc9900cccc6600cccc3300 ,
+        0xcccc0000cc99ff00cc99cc00cc999900cc996600cc993300cc990000cc66ff00 ,
+        0xcc66cc00cc669900cc666600cc663300cc660000cc33ff00cc33cc00cc339900 ,
+        0xcc336600cc333300cc330000cc00ff00cc00cc00cc009900cc006600cc003300 ,
+        0xcc000000bfbfbf0099ffff0099ffcc0099ff990099ff660099ff330099ff0000 ,
+        0x99ccff0099cccc0099cc990099cc660099cc330099cc00009999ff009999cc00 ,
+        0x999999009999660099993300999900009966ff009966cc009966990099666600 ,
+        0x99663300996600009933ff009933cc0099339900993366009933330099330000 ,
+        0x9900ff009900cc009900990099006600990033009900000066ffff0066ffcc00 ,
+        0x66ff990066ff660066ff330066ff000066ccff0066cccc0066cc990066cc6600 ,
+        0x66cc330066cc00006699ff006699cc0066999900669966006699330066990000 ,
+        0x6666ff006666cc00666699006666660066663300666600006633ff006633cc00 ,
+        0x663399006633660066333300663300006600ff006600cc006600990066006600 ,
+        0x660033006600000033ffff0033ffcc0033ff990033ff660033ff330033ff0000 ,
+        0x33ccff0033cccc0033cc990033cc660033cc330033cc00003399ff003399cc00 ,
+        0x339999003399660033993300339900003366ff003366cc003366990033666600 ,
+        0x33663300336600003333ff003333cc0033339900333366003333330033330000 ,
+        0x3300ff003300cc003300990033006600330033003300000000ffff0000ffcc00 ,
+        0x00ff990000ff660000ff330000ff000000ccff0000cccc0000cc990000cc6600 ,
+        0x00cc330000cc00000099ff000099cc0000999900009966000099330000990000 ,
+        0x0066ff000066cc00006699000066660000663300006600000033ff000033cc00 ,
+        0x003399000033660000333300003300000000ff000000cc000000990000006600 ,
+        0x0000330000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000
+    End
+    RecSrcDt = Begin
+        0xe90d818f175be340
+    End
+    RecordSource ="tblFeesRate"
+    Caption ="tblFeesRate"
+    DatasheetFontName ="Arial"
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =12
+            BackColor =13209
+            ForeColor =8388608
+            FontName ="Haettenschweiler"
+        End
+        Begin Rectangle
+            BackStyle =0
+            Width =850
+            Height =850
+            BorderColor =8421376
+        End
+        Begin Line
+            Width =1701
+            BorderColor =8388608
+        End
+        Begin Image
+            SpecialEffect =4
+            BackStyle =0
+            BorderWidth =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+            BorderColor =8421440
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =12
+            FontWeight =400
+            ForeColor =8388608
+            FontName ="Haettenschweiler"
+        End
+        Begin OptionButton
+            SpecialEffect =4
+            BorderWidth =3
+            LabelX =230
+            LabelY =-30
+            BorderColor =8421376
+        End
+        Begin CheckBox
+            SpecialEffect =4
+            BorderWidth =3
+            LabelX =230
+            LabelY =-30
+            BorderColor =8421376
+        End
+        Begin OptionGroup
+            SpecialEffect =4
+            BackStyle =1
+            BorderWidth =3
+            Width =1701
+            Height =1701
+            BackColor =12632256
+            BorderColor =8421376
+        End
+        Begin BoundObjectFrame
+            SpecialEffect =4
+            BorderWidth =3
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+            BorderColor =8421440
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =4
+            BorderWidth =3
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BackColor =12632256
+            BorderColor =8421376
+            ForeColor =8388608
+            FontName ="Haettenschweiler"
+            AsianLineBreak =255
+        End
+        Begin ListBox
+            SpecialEffect =4
+            BorderWidth =3
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            BackColor =12632256
+            ForeColor =8388608
+            BorderColor =8421376
+            FontName ="Haettenschweiler"
+        End
+        Begin ComboBox
+            SpecialEffect =4
+            BorderWidth =3
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BackColor =12632256
+            BorderColor =8421376
+            ForeColor =8388608
+            FontName ="Haettenschweiler"
+        End
+        Begin Subform
+            SpecialEffect =4
+            BorderWidth =3
+            Width =1701
+            Height =1701
+            BorderColor =8421376
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =4
+            BackStyle =0
+            OldBorderStyle =1
+            BorderWidth =3
+            Width =4536
+            Height =2835
+            BorderColor =8421376
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =12
+            FontWeight =400
+            ForeColor =8388608
+            FontName ="Haettenschweiler"
+        End
+        Begin Tab
+            BackStyle =0
+            Width =5103
+            Height =3402
+            FontSize =12
+            FontName ="Haettenschweiler"
+        End
+        Begin FormHeader
+            Height =414
+            BackColor =-2147483633
+            Name ="FormHeader"
+            GUID = Begin
+                0x84520c9976e43246a2f3d6b0198229b6
+            End
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =57
+                    Top =57
+                    Width =1065
+                    Height =300
+                    Name ="FERateDate_Label"
+                    Caption ="FERateDate"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0xc5bcfaee67666848913b2a7e6289e6ea
+                    End
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =1179
+                    Top =57
+                    Width =2340
+                    Height =300
+                    Name ="FERate_Label"
+                    Caption ="FERate"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0xa8c7874d173edb4a939cf320a66f8a6e
+                    End
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =3576
+                    Top =57
+                    Width =840
+                    Height =300
+                    Name ="FERateCur_Label"
+                    Caption ="FERateCur"
+                    Tag ="DetachedLabel"
+                    GUID = Begin
+                        0x7abbb9b55dfccc4ca920e10fb156ad69
+                    End
+                End
+            End
+        End
+        Begin Section
+            Height =459
+            BackColor =-2147483633
+            Name ="Detail"
+            GUID = Begin
+                0xd9839fadcb83584595756f39da90d2b5
+            End
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =57
+                    Top =57
+                    Width =1065
+                    Height =345
+                    ColumnWidth =1065
+                    Name ="FERateDate"
+                    ControlSource ="FERateDate"
+                    GUID = Begin
+                        0x9bc530276ac69a4fa8abb01ad3a147f8
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =1179
+                    Top =57
+                    Width =2340
+                    Height =345
+                    ColumnWidth =2340
+                    TabIndex =1
+                    Name ="FERate"
+                    ControlSource ="FERate"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    GUID = Begin
+                        0x87725a99642f0e44b1d8bf6c87e32f96
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =3576
+                    Top =57
+                    Width =840
+                    Height =345
+                    ColumnWidth =345
+                    TabIndex =2
+                    Name ="FERateCur"
+                    ControlSource ="FERateCur"
+                    GUID = Begin
+                        0x2ed020c637fdb44197e4564515ac1a04
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="FormFooter"
+            GUID = Begin
+                0x16ce3cce03b0b649a0ce5af95a6838f5
+            End
+        End
+    End
+End

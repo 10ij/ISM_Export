@@ -1,0 +1,217 @@
+Version =20
+VersionRequired =20
+Checksum =1859698194
+Begin Report
+    LayoutForPrint = NotDefault
+    RecordLocks =1
+    DateGrouping =1
+    GridX =20
+    GridY =24
+    Width =9948
+    ItemSuffix =162
+    Top =15
+    Right =14745
+    Bottom =6180
+    RecSrcDt = Begin
+        0x30e8be4980e1e440
+    End
+    RecordSource ="SELECT tblTeacher.TCCode, tblTeacher.TDCode, tblTeacher.TCTitle, tblTeacher.TCFN"
+        "ame, tblTeacher.TCSName, tblTeacher.TCCLDesc, tblTeacher.TCCLLocCode, tblTeacher"
+        ".CLLocation, tblTeacher.TCHomeTelNo, tblTeacher.TCMobileNo, tblTeacher.TCWorkTel"
+        "No, tblTeacher.TCADD FROM tblTeacher WHERE (((tblTeacher.TCTitle)<>\"ZMEI\") AND"
+        " ((tblTeacher.TCCLLocCode)=2));"
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    PrtMip = Begin
+        0xa7040000d0020000d0020000d002000000000000dc2600007907000001000000 ,
+        0x010000006801000000000000a10700000100000000000000
+    End
+    PrtDevMode = Begin
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x010400069c00580303ff0000010009009a0b3408640001000f00580202000100 ,
+        0x5802020000004134000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000010000000000000001000000 ,
+        0x0200000001000000ffffffff0000000000000000000000000000000044494e55 ,
+        0x220010014c030c00cad2f6720000000000000000000000000000000000000000 ,
+        0x0000000000000000090000000000000000000100000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000001000000000000000000000010010000534d544a ,
+        0x00000000100000014d006900630072006f0073006f0066007400200058005000 ,
+        0x5300200044006f00630075006d0065006e007400200057007200690074006500 ,
+        0x72000000496e70757442696e00464f524d534f5552434500524553444c4c0055 ,
+        0x6e69726573444c4c00496e7465726c656176696e67004f464600496d61676554 ,
+        0x797065004a5045474d6564004f7269656e746174696f6e00504f525452414954 ,
+        0x00436f6c6c617465004f4646005265736f6c7574696f6e004f7074696f6e3100 ,
+        0x506170657253697a65004c455454455200436f6c6f724d6f6465003234627070 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000c0000004d58445701010000
+    End
+    PrtDevNames = Begin
+        0x0800260044000100000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000585053506f72743a00
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            TextFontFamily =18
+            FontSize =10
+            FontWeight =700
+            FontName ="Times New Roman"
+        End
+        Begin Rectangle
+            Width =850
+            Height =850
+        End
+        Begin Line
+            Width =1701
+        End
+        Begin Image
+            OldBorderStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin BoundObjectFrame
+            AutoLabel = NotDefault
+            OldBorderStyle =0
+        End
+        Begin TextBox
+            AutoLabel = NotDefault
+            OldBorderStyle =0
+            TextFontFamily =18
+            Height =300
+            FontSize =10
+            FontName ="Times New Roman"
+        End
+        Begin Subform
+            Width =1701
+            Height =1701
+        End
+        Begin BreakLevel
+            GroupFooter = NotDefault
+            ControlSource ="TCCLDesc"
+        End
+        Begin PageHeader
+            Height =2527
+            Name ="PageHeader0"
+            GUID = Begin
+                0xf2542ff919f75948a9a9e1418713fd25
+            End
+            Begin
+                Begin TextBox
+                    TextAlign =2
+                    Left =56
+                    Top =1322
+                    Width =9555
+                    Height =360
+                    FontSize =14
+                    FontWeight =700
+                    Name ="Field14"
+                    ControlSource ="=\"DAILY SIGN-IN SHEET FOR TEACHERS - \" & Format(DLookUp(\"[RepMonDate]\",\"tbl"
+                        "RepMon\",\"[RepMonID] = 1\"),\"MMMM YYYY\")"
+                    GUID = Begin
+                        0x42ec4d74f599e142a407907e82fc5c10
+                    End
+                End
+                Begin TextBox
+                    TextAlign =1
+                    Top =1889
+                    Width =6474
+                    Height =375
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="Text152"
+                    ControlSource ="=\"Teacher: \" & Trim([TCTitle]) & \" \" & Trim([TCFName]) & \" \" & Trim([TCSNa"
+                        "me]) & \" - \" & [CLLocation] & \" - \" & [TCCLDesc]"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    GUID = Begin
+                        0x126ab38680cb4042967158d6ed2f5487
+                    End
+                End
+                Begin Image
+                    SizeMode =1
+                    PictureType =1
+                    Left =5
+                    Top =23
+                    Width =9943
+                    Height =1135
+                    Name ="Image161"
+                    Picture ="C:\\ISM_2016\\LOGO\\LOGO_LH_P.jpg"
+                    GUID = Begin
+                        0xfac8d49349c4264c9404b7d750a34d09
+                    End
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            Height =1913
+            Name ="Detail1"
+            GUID = Begin
+                0xe6ee2527a1e63a4aa2a9d24fbc8a0695
+            End
+            Begin
+                Begin Subform
+                    OldBorderStyle =0
+                    Top =23
+                    Width =9913
+                    Height =922
+                    Name ="rptTeachersDailySiginSub"
+                    SourceObject ="Report.rptTeachersDailySiginWESub"
+                    GUID = Begin
+                        0x1ceb84b125366c41acfe42e649186619
+                    End
+                End
+            End
+        End
+        Begin BreakFooter
+            KeepTogether = NotDefault
+            ForceNewPage =2
+            Height =0
+            Name ="GroupFooter0"
+            GUID = Begin
+                0x3b1059ec84f5e14a9e41ca5c7727dfa0
+            End
+        End
+        Begin PageFooter
+            Height =0
+            OnFormat ="[Event Procedure]"
+            Name ="PageFooter2"
+            GUID = Begin
+                0x785b7200563ed846ac392cba40d1db80
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
+Private Sub Report_Close()
+    DoCmd.Minimize
+End Sub
+Private Sub Report_Open(Cancel As Integer)
+    Call SetReportDate
+    DoCmd.Maximize
+End Sub

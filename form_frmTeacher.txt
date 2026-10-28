@@ -1,0 +1,303 @@
+Version =20
+VersionRequired =20
+Checksum =2034384251
+Begin Form
+    Modal = NotDefault
+    AutoCenter = NotDefault
+    OrderByOn = NotDefault
+    DefaultView =2
+    ViewsAllowed =2
+    RecordLocks =2
+    Width =6406
+    ItemSuffix =31
+    Left =3195
+    Top =615
+    Right =11790
+    Bottom =6135
+    RecSrcDt = Begin
+        0x3bb125ffb6dde440
+    End
+    RecordSource ="SELECT tblTechDetails.TDCode, tblTechDetails.TDTitle, tblTechDetails.TDFName, tb"
+        "lTechDetails.TDSName, tblTechDetails.TDHomeTelNo, tblTechDetails.TDMobileNo, tbl"
+        "TechDetails.TDWorkTelNo, tblTechDetails.TDADD FROM tblTechDetails WHERE (((tblTe"
+        "chDetails.TDCode) Not Between 11 And 14));"
+    Caption ="Teachers Table"
+    PrtMip = Begin
+        0x8905000089050000890500008905000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x4850204465736b4a6574203832304320536572696573205072696e7465720000 ,
+        0x000436039400020103ff800702000900000000006400010001002c0102000100 ,
+        0x2c01010000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000001000000 ,
+        0x03000000010000000100000000000000000000004850204465736b4a65742038 ,
+        0x32304320536572696573205072696e7465720000000000000000000000000000 ,
+        0x00000000000000000000000000000000000000004c5054310000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000000000000000000000000000000000000000b30d ,
+        0xb009000004000200010000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000002c012c010000
+    End
+    PrtDevNames = Begin
+        0x080011003000010057494e53504f4f4c004850204465736b4a65742038323043 ,
+        0x20536572696573205072696e746572004c5054313a0000000000000000000000 ,
+        0x0000000000000000
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            TextAlign =3
+            FontWeight =700
+            BackColor =12632256
+        End
+        Begin Rectangle
+            SpecialEffect =2
+        End
+        Begin OptionButton
+            AddColon = NotDefault
+            SpecialEffect =2
+            LabelAlign =3
+            Width =187
+            Height =187
+            LabelX =-154
+        End
+        Begin CheckBox
+            AddColon = NotDefault
+            SpecialEffect =2
+            LabelAlign =3
+            Width =187
+            Height =187
+            LabelX =-154
+        End
+        Begin TextBox
+            SpecialEffect =2
+            LabelAlign =3
+            Height =255
+            LabelX =-154
+        End
+        Begin ListBox
+            SpecialEffect =2
+            LabelAlign =3
+            LabelX =-154
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            LabelAlign =3
+            Height =255
+            LabelX =-154
+        End
+        Begin FormHeader
+            Height =661
+            BackColor =12632256
+            Name ="FormHeader1"
+            Begin
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =93
+                    TextAlign =1
+                    Left =465
+                    Top =165
+                    Width =2295
+                    Height =405
+                    FontSize =14
+                    ForeColor =8355711
+                    Name ="Text12"
+                    Caption ="Teachers Table"
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =215
+                    TextAlign =1
+                    Left =435
+                    Top =120
+                    Width =2295
+                    Height =405
+                    FontSize =14
+                    ForeColor =16777215
+                    Name ="Text13"
+                    Caption ="Teachers Table"
+                End
+            End
+        End
+        Begin Section
+            Height =5055
+            BackColor =12632256
+            Name ="Detail0"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =1867
+                    Top =141
+                    Width =435
+                    ColumnWidth =1575
+                    Name ="TCID"
+                    ControlSource ="TDCode"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =283
+                            Top =141
+                            Width =1440
+                            Height =240
+                            Name ="Text15"
+                            Caption ="  ID"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =1872
+                    Top =600
+                    Width =2280
+                    ColumnWidth =555
+                    TabIndex =1
+                    Name ="TCTitle"
+                    ControlSource ="TDTitle"
+                    InputMask =">CCC"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =288
+                            Top =600
+                            Width =1440
+                            Height =240
+                            Name ="Text17"
+                            Caption ="Title"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =1924
+                    Top =1559
+                    Width =1905
+                    ColumnWidth =1890
+                    TabIndex =3
+                    Name ="TCSName"
+                    ControlSource ="TDSName"
+                    InputMask =">CCCCCCCCCCCCCCCCCCCCCCCCC"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =340
+                            Top =1559
+                            Width =1440
+                            Height =240
+                            Name ="Text19"
+                            Caption ="Surname"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =1867
+                    Top =1086
+                    Width =1905
+                    ColumnWidth =2010
+                    TabIndex =2
+                    Name ="TCFName"
+                    ControlSource ="TDFName"
+                    InputMask =">CCCCCCCCCCCCCCCCCCCCCCCCC"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =283
+                            Top =1086
+                            Width =1440
+                            Height =240
+                            Name ="Text21"
+                            Caption ="First Name"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =1870
+                    Top =2031
+                    ColumnWidth =1335
+                    TabIndex =4
+                    Name ="TCHomeTelNo"
+                    ControlSource ="TDHomeTelNo"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =340
+                            Top =2031
+                            Width =1380
+                            Height =240
+                            Name ="Label27"
+                            Caption ="Home Tel No:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =1905
+                    Top =2834
+                    TabIndex =5
+                    Name ="TCMobileNo"
+                    ControlSource ="TDWorkTelNo"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =566
+                            Top =2834
+                            Width =1185
+                            Height =240
+                            Name ="Label28"
+                            Caption ="Mobile No:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =1900
+                    Top =2456
+                    TabIndex =6
+                    Name ="TCWorkTelNo"
+                    ControlSource ="TDMobileNo"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =396
+                            Top =2456
+                            Width =1350
+                            Height =240
+                            Name ="Label29"
+                            Caption ="Work Tel No:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =1897
+                    Top =3259
+                    Width =3945
+                    Height =1515
+                    TabIndex =7
+                    Name ="TCADD"
+                    ControlSource ="TDADD"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =963
+                            Top =3259
+                            Width =780
+                            Height =240
+                            Name ="Label30"
+                            Caption ="TCADD:"
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =12632256
+            Name ="FormFooter2"
+        End
+    End
+End

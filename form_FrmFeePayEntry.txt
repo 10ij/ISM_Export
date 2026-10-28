@@ -1,0 +1,348 @@
+Version =20
+VersionRequired =20
+Checksum =53054757
+Begin Form
+    Modal = NotDefault
+    AutoCenter = NotDefault
+    DataEntry = NotDefault
+    DefaultView =2
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =5800
+    DatasheetFontHeight =10
+    ItemSuffix =16
+    Left =540
+    Top =360
+    Right =14205
+    Bottom =4290
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x8a842b5759dbe440
+    End
+    RecordSource ="tmptblFeesRecEntry"
+    Caption ="Fee and Payment Entry"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0xa0050000a0050000a0050000a005000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x010400049c009000032f000001000900000000006400010001002c0102000100 ,
+        0x2c01010000004c65747465720000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000000000000000000000000000000000007769646d ,
+        0x00000000010000000000000000000000fe0000000100000000000000c8000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000
+    End
+    PrtDevNames = Begin
+        0x080036005d000100000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000000000000000000000000000000000000004d6963 ,
+        0x726f736f667420446f63756d656e7420496d6167696e67205772697465722050 ,
+        0x6f72743a00
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+        End
+        Begin TextBox
+            SpecialEffect =2
+            OldBorderStyle =0
+            Width =1701
+            LabelX =-1701
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            Width =1701
+            LabelX =-1701
+        End
+        Begin FormHeader
+            Height =801
+            BackColor =-2147483633
+            Name ="FormHeader"
+            GUID = Begin
+                0x3c137328864e0948acae43ee7f14bf13
+            End
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =566
+                    Top =170
+                    Width =3930
+                    Height =405
+                    FontSize =14
+                    FontWeight =700
+                    BackColor =12632256
+                    ForeColor =8355711
+                    Name ="Label10"
+                    Caption ="Fee and Payment Entry"
+                    GUID = Begin
+                        0x8fdfbb06afa4fb4a8449f2c336ac9b77
+                    End
+                End
+            End
+        End
+        Begin Section
+            Height =3061
+            BackColor =-2147483633
+            Name ="Detail"
+            GUID = Begin
+                0x2c779358994c2841904d69c185fc5247
+            End
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =2040
+                    Top =1020
+                    Width =2556
+                    TabIndex =2
+                    Name ="FEAmtDue"
+                    ControlSource ="FEAmtDue"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    ValidationRule =">=1 Or <=-1"
+                    AfterUpdate ="[Event Procedure]"
+                    GUID = Begin
+                        0x9051c8163ca0a54daa9138270ef224d8
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =113
+                            Top =1020
+                            Width =1740
+                            Height =240
+                            Name ="Label3"
+                            Caption ="Amount"
+                            GUID = Begin
+                                0xbd82016936774749948094a4e664c3d8
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =2040
+                    Top =1757
+                    Width =2556
+                    ColumnWidth =1995
+                    TabIndex =4
+                    Name ="FEDueDate"
+                    ControlSource ="FEDueDate"
+                    Format ="Short Date"
+                    ValidationRule ="<=Now()"
+                    ValidationText ="The date can't be in the future"
+                    AfterUpdate ="[Event Procedure]"
+                    DefaultValue ="=Format(Now(),\"Short Date\")"
+                    GUID = Begin
+                        0x12ded3b2aedb2340a3fe8f0f253a4569
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =113
+                            Top =1757
+                            Width =1740
+                            Height =240
+                            Name ="Label5"
+                            Caption ="Date"
+                            GUID = Begin
+                                0xcf8dbef348f6154cb1cd4dbf488abe7e
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =2040
+                    Top =1361
+                    Width =2535
+                    TabIndex =3
+                    Name ="FEReceNo"
+                    ControlSource ="FEReceNo"
+                    GUID = Begin
+                        0xb56ac8acc1bdbc4aa7f6b7d62b902f45
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =113
+                            Top =1361
+                            Width =1740
+                            Height =240
+                            Name ="Label9"
+                            Caption ="Rec or Ref No"
+                            GUID = Begin
+                                0x8d45aac21de19841b8b299b00134c289
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    ColumnCount =2
+                    Left =2037
+                    Top =283
+                    Width =2559
+                    ColumnWidth =3405
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"0\""
+                    GUID = Begin
+                        0x8a41f681b3921b459b382e0f0e92f0de
+                    End
+                    Name ="TCCLLocCode:"
+                    ControlSource ="FESTID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT DISTINCTROW tblStudent.STID, Trim([stid]) & \" - \" & Trim([STFName]) & \""
+                        " \" & Trim([STSName]) AS STName FROM tblStudent;"
+                    ColumnWidths ="0;720"
+                    EventProcPrefix ="TCCLLocCode_"
+                    BaseInfo ="\"SELECT DISTINCTROW tblStudent.STID, Trim([stid]) & \"\" - \"\" & Trim([STFName"
+                        "]) & \"\" \"\" & Trim([STSName]) AS STName FROM tblStudent;\";\"tblStudent\";\"\""
+                        ";\"STID\";\"Trim([stid]) & \"\" - \"\" & Trim([STFName]) & \"\" \"\" & Trim([STS"
+                        "Name])\";\"PrimaryKey\""
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =123
+                            Top =283
+                            Width =1770
+                            Height =240
+                            Name ="Text25"
+                            Caption ="Select Student"
+                            GUID = Begin
+                                0x8a8db04c97df9e41a0a7f88f36d3a453
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    ColumnCount =2
+                    Left =2027
+                    Top =623
+                    Width =2559
+                    ColumnWidth =2100
+                    TabIndex =1
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"100\""
+                    GUID = Begin
+                        0x1cc0f3a5f16f0d4aa063ac747cf0edba
+                    End
+                    Name ="FEFDCode"
+                    ControlSource ="FEFDCode"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT DISTINCTROW tblFeesDesc.FDCode, tblFeesDesc.FDDeatails FROM tblFeesDesc;"
+                    ColumnWidths ="0;720"
+                    AfterUpdate ="[Event Procedure]"
+                    DefaultValue ="\"R\""
+                    BaseInfo ="\"SELECT DISTINCTROW tblFeesDesc.FDCode, tblFeesDesc.FDDeatails FROM tblFeesDesc"
+                        ";\";\"tblFeesDesc\";\"\";\"FDCode\";\"FDDeatails\";\"FECode\""
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =113
+                            Top =623
+                            Width =1770
+                            Height =240
+                            BackColor =0
+                            Name ="Label13"
+                            Caption ="Amount Type"
+                            GUID = Begin
+                                0xb4f6d55bf31c194b911b77736537c58f
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    Enabled = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =2040
+                    Top =2154
+                    Width =2556
+                    TabIndex =5
+                    Name ="Text14"
+                    ControlSource ="FEDateUpdated"
+                    Format ="Short Date"
+                    ValidationRule ="Now()"
+                    ValidationText ="The date can't be in the future"
+                    DefaultValue ="=Format(Now(),\"Short Date\")"
+                    GUID = Begin
+                        0xf5138388b114f845b6b16567c64cd405
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =113
+                            Top =2154
+                            Width =1740
+                            Height =240
+                            Name ="Label15"
+                            Caption ="Date"
+                            GUID = Begin
+                                0x303b3e962b2eb14187a0b514e1293ed4
+                            End
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="FormFooter"
+            GUID = Begin
+                0x882859e4bd81814bbd0e577a09fe77bc
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
+Private Sub FEAmtDue_AfterUpdate()
+If Me!FEFDCode = "E" And Sgn(Me!FEAmtDue) = 1 Or Me!FEFDCode = "R" And Sgn(Me!FEAmtDue) = 1 Or Me!FEFDCode = "W" And Sgn(Me!FEAmtDue) = 1 Then
+    Me!FEAmtDue = CCur(Me!FEAmtDue / -1)
+ElseIf Me!FEFDCode = "D" And Sgn(Me!FEAmtDue) = -1 Then
+    Me!FEAmtDue = CCur(Me!FEAmtDue / -1)
+End If
+End Sub
+Private Sub FEDueDate_AfterUpdate()
+    Me!FEDueDate = Format(Me!FEDueDate, "d mmmm yyyy")
+End Sub
+
+Private Sub FEFDCode_AfterUpdate()
+    Call FEAmtDue_AfterUpdate
+End Sub
+
+Private Sub Form_Close()
+        DoCmd.SetWarnings False
+        DoCmd.OpenQuery "qryFeesRecEntryS2"
+        DoCmd.SetWarnings True
+End Sub

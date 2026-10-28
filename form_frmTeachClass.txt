@@ -1,0 +1,334 @@
+Version =20
+VersionRequired =20
+Checksum =1294127552
+Begin Form
+    AutoCenter = NotDefault
+    OrderByOn = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =2
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =6122
+    DatasheetFontHeight =10
+    ItemSuffix =11
+    Left =1440
+    Top =15
+    Right =13290
+    Bottom =6180
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xe52480f3b6dde440
+    End
+    RecordSource ="SELECT tblTeachClass.TCCode, tblTeachClass.TCDCode, tblTeachClass.TCCLLocCode, t"
+        "blTeachClass.TCCLDesc, tblTeachClass.TCMEIWgs, tblTeachClass.TCMEINotes FROM tbl"
+        "TeachClass WHERE (((tblTeachClass.TCDCode) Not Between 11 And 14)) ORDER BY tblT"
+        "eachClass.TCCLLocCode, tblTeachClass.TCCLDesc;"
+    Caption ="tblTeachClass"
+    DatasheetFontName ="Arial"
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            BackColor =-2147483633
+            ForeColor =-2147483630
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Line
+            Width =1701
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            Width =1701
+            Height =1701
+        End
+        Begin BoundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+            AsianLineBreak =255
+        End
+        Begin ListBox
+            SpecialEffect =2
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin Subform
+            SpecialEffect =2
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin Tab
+            BackStyle =0
+            Width =5103
+            Height =3402
+        End
+        Begin FormHeader
+            Height =0
+            BackColor =-2147483633
+            Name ="FormHeader"
+            GUID = Begin
+                0x9998c3c43f6039418283bddfbf52e877
+            End
+        End
+        Begin Section
+            Height =2267
+            BackColor =-2147483633
+            Name ="Detail"
+            GUID = Begin
+                0x03ecbedec128bb439df0fc64e8a7ebd0
+            End
+            Begin
+                Begin TextBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =1676
+                    Top =396
+                    Height =255
+                    ColumnWidth =2250
+                    ColumnOrder =0
+                    Name ="TCCode"
+                    ControlSource ="TCCode"
+                    GUID = Begin
+                        0x6995f3dd1d4d054a8d7cfff0045876d8
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =1
+                            Top =390
+                            Width =1770
+                            Height =255
+                            Name ="TCCode_Label"
+                            Caption ="Class Code (Auto)"
+                            GUID = Begin
+                                0xef187c4c3454fe4983e30b426bb619dd
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1736
+                    Top =1020
+                    Width =900
+                    Height =255
+                    ColumnWidth =1245
+                    ColumnOrder =2
+                    TabIndex =2
+                    Name ="TCCLDesc"
+                    ControlSource ="TCCLDesc"
+                    GUID = Begin
+                        0x78d5412d8fc5ca44b7cf46e517d22358
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =56
+                            Top =1020
+                            Width =1620
+                            Height =255
+                            Name ="TCCLDesc_Label"
+                            Caption ="Class Name"
+                            GUID = Begin
+                                0xdc353de06591a24c8b008862bcaf99da
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =215
+                    ColumnCount =2
+                    Left =1644
+                    Top =1360
+                    Width =4089
+                    ColumnWidth =2985
+                    ColumnOrder =3
+                    TabIndex =3
+                    BackColor =16777215
+                    ForeColor =0
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"0\""
+                    GUID = Begin
+                        0x86d317fa70c611418ec122250499a193
+                    End
+                    Name ="TCCLLocCode:"
+                    ControlSource ="TCDCode"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT DISTINCTROW tblTechDetails.TDCode, Trim([TDCode]) & \" - \" & Trim([TDTit"
+                        "le]) & \" \" & Trim([TDFName]) & \" \" & Trim([TDSName]) AS TCDetails, tblTechDe"
+                        "tails.TDTitle FROM tblTechDetails WHERE (((tblTechDetails.TDTitle)<>\"ZMEI\")) O"
+                        "RDER BY Trim([TDCode]) & \" - \" & Trim([TDTitle]) & \" \" & Trim([TDFName]) & \""
+                        " \" & Trim([TDSName]);"
+                    ColumnWidths ="0;720"
+                    EventProcPrefix ="TCCLLocCode_"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Top =1360
+                            Width =1770
+                            Height =240
+                            BackColor =16777215
+                            ForeColor =0
+                            Name ="Text25"
+                            Caption ="Select Teacher"
+                            GUID = Begin
+                                0x76484b882d9c0243a4dc114616c0cd6a
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =215
+                    TextAlign =1
+                    ColumnCount =2
+                    Left =1644
+                    Top =680
+                    Width =4089
+                    ColumnWidth =2235
+                    ColumnOrder =1
+                    TabIndex =1
+                    BackColor =16777215
+                    ForeColor =0
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"0\""
+                    GUID = Begin
+                        0xbc9c3f058555054eb29aed01ec7b79d0
+                    End
+                    Name ="Combo9"
+                    ControlSource ="TCCLLocCode"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT DISTINCTROW tblClass.CLLocCode, Trim([CLLocCode]) & \" - \" & Trim([CLLoc"
+                        "ation]) AS CLLocationD FROM tblClass;"
+                    ColumnWidths ="0;720"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =1
+                            Top =680
+                            Width =1770
+                            Height =240
+                            BackColor =16777215
+                            ForeColor =0
+                            Name ="Label10"
+                            Caption ="Select Location"
+                            GUID = Begin
+                                0x07fc692c0ec00543aa0a888c8b1b3b72
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    FELineBreak = NotDefault
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =1702
+                    Top =1814
+                    Width =2781
+                    TabIndex =4
+                    BackColor =16777215
+                    ForeColor =0
+                    Name ="FEAmtDue"
+                    ControlSource ="TCMEIWgs"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    ValidationRule =">=1 Or <=-1"
+                    GUID = Begin
+                        0x13f0663ff3f8e74fa3586601bfee76c6
+                    End
+                    AsianLineBreak =0
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Top =1814
+                            Width =1650
+                            Height =240
+                            BackColor =16777215
+                            ForeColor =0
+                            Name ="Label3"
+                            Caption ="Wages"
+                            GUID = Begin
+                                0x35b5183cdffa76449444eb94324523fe
+                            End
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="FormFooter"
+            GUID = Begin
+                0x02cf3fc8f6a8794da0c64de032a2ec2a
+            End
+        End
+    End
+End

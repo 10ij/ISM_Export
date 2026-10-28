@@ -1,0 +1,50 @@
+{
+  "source_files": [
+    {
+      "path": "C:\\Users\\Ismail\\Desktop\\projects\\nea\\main\\Reference\\APP_FORMS\\DUG-QR-Codes.pdf",
+      "size": 615198,
+      "sha256": "530b81c481cba2458c3fa057eee86c17df6333ae8f873d53c100dc826b6e7c9f"
+    },
+    {
+      "path": "C:\\Users\\Ismail\\Desktop\\projects\\nea\\main\\Reference\\DATA\\ISM_DATA.mdb",
+      "size": 692224,
+      "sha256": "4ae16e1f3e55c8580920884c67620a0cd6f3cf426c46d0166842e060a89e7565"
+    },
+    {
+      "path": "C:\\Users\\Ismail\\Desktop\\projects\\nea\\main\\Reference\\ISM_2016.mdb",
+      "size": 4980736,
+      "sha256": "4de85ca9adc0c8c9d3b20a606cd41be1551d0df98137259dbefaa0389f5b0804"
+    },
+    {
+      "path": "C:\\Users\\Ismail\\Desktop\\projects\\nea\\main\\Reference\\LOGO\\LOGO.jpg",
+      "size": 95639,
+      "sha256": "b06de12923ed3cb236c284d74cd64c3fa6bf64a46d95f4d65900533b58c7b4d2"
+    },
+    {
+      "path": "C:\\Users\\Ismail\\Desktop\\projects\\nea\\main\\Reference\\LOGO\\LOGO_LH_L.jpg",
+      "size": 152136,
+      "sha256": "584dd75248a9ab97d479ace1977540912bb8f3a56fc6d3855033a1f70c282402"
+    },
+    {
+      "path": "C:\\Users\\Ismail\\Desktop\\projects\\nea\\main\\Reference\\LOGO\\LOGO_LH_P.jpg",
+      "size": 121694,
+      "sha256": "cbc875c320e473f2815ff4c192d259afa9768943c0d4d27e7878fc80b7f1b594"
+    },
+    {
+      "path": "C:\\Users\\Ismail\\Desktop\\projects\\nea\\main\\Reference\\Notes.txt",
+      "size": 127,
+      "sha256": "8e52e918b5d8212db24ef5981ffbe73313e625b705e254546e4db59b13deb28c"
+    }
+  ],
+  "front_end": {
+    "forms": 20,
+    "reports": 17,
+    "modules": 2,
+    "queries": 49,
+    "macros": 0
+  },
+  "exports": {
+    "directory": "C:\\Users\\Ismail\\.copilot\\session-state\\c779c2a0-b720-41f1-8587-c9a07577bdf4\\files\\access-export",
+    "files": 61
+  }
+}

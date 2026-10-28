@@ -1,0 +1,600 @@
+Version =20
+VersionRequired =20
+Checksum =-801587362
+Begin Form
+    Modal = NotDefault
+    AutoCenter = NotDefault
+    AllowAdditions = NotDefault
+    DefaultView =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =9070
+    DatasheetFontHeight =10
+    ItemSuffix =31
+    Left =-195
+    Top =1800
+    Right =9165
+    Bottom =8595
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x79c4fba43786e140
+    End
+    RecordSource ="qryStudentList"
+    Caption ="tblStudent"
+    DatasheetFontName ="Arial"
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Line
+            Width =1701
+        End
+        Begin TextBox
+            SpecialEffect =2
+            OldBorderStyle =0
+            Width =1701
+            LabelX =-1701
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            Width =1701
+            LabelX =-1701
+        End
+        Begin Section
+            Height =6803
+            BackColor =-2147483633
+            Name ="Detail"
+            GUID = Begin
+                0x6ad8633276174342b9e619ed65e3523e
+            End
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =1360
+                    Top =1077
+                    Width =3555
+                    Height =405
+                    FontSize =14
+                    FontWeight =700
+                    BackColor =12632256
+                    ForeColor =255
+                    Name ="Label24"
+                    Caption ="Change Student Details"
+                    GUID = Begin
+                        0xdd0cea6bced7a64e8c6ba6040fbf9e9c
+                    End
+                End
+                Begin Rectangle
+                    SpecialEffect =2
+                    BackStyle =1
+                    OverlapFlags =93
+                    Left =623
+                    Top =226
+                    Width =4749
+                    Height =576
+                    BackColor =12632256
+                    Name ="Box31"
+                    GUID = Begin
+                        0x4a2936cc6a690c40bc1cd77f6b7c4dde
+                    End
+                End
+                Begin ComboBox
+                    ColumnHeads = NotDefault
+                    LimitToList = NotDefault
+                    OverlapFlags =215
+                    ColumnCount =2
+                    Left =2294
+                    Top =419
+                    Width =2919
+                    BoundColumn =1
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"0\""
+                    GUID = Begin
+                        0xc6821ece1d4eda41b187b315bab43aa2
+                    End
+                    Name ="SelectStudent"
+                    RowSourceType ="Table/Query"
+                    RowSource ="qryLookStudent"
+                    ColumnWidths ="2835;0"
+                    AfterUpdate ="Function.FindStudent"
+                    BaseInfo ="\"qryLookStudent\";\"tblStudent\";\"\";\"STID\";\"[STID] & \"\" - \"\" & Trim([S"
+                        "TFName]) & \"\" \"\" & Trim([STSName])\";\"PrimaryKey\""
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextAlign =3
+                            Left =732
+                            Top =411
+                            Width =1410
+                            Height =240
+                            FontWeight =700
+                            Name ="Text129"
+                            Caption ="Select Student:"
+                            GUID = Begin
+                                0x6a5238e5dedd2649a0ac03dbaa24f31d
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    Left =5981
+                    Top =1190
+                    Width =2552
+                    TabIndex =1
+                    Name ="STID"
+                    ControlSource ="STID"
+                    GUID = Begin
+                        0x278061781ae1cf4584a00ba465ac6cf6
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =5045
+                            Top =1190
+                            Width =879
+                            Height =240
+                            Name ="Label1"
+                            Caption ="Student ID"
+                            GUID = Begin
+                                0x85f69ddb5ca26c4ca37f00067ac97bb1
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    Left =1786
+                    Top =2834
+                    Width =2552
+                    TabIndex =5
+                    Name ="STSName"
+                    ControlSource ="STSName"
+                    GUID = Begin
+                        0x0632cea9909ea1409a9b2afa6bcea613
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =595
+                            Top =2834
+                            Width =1134
+                            Height =240
+                            Name ="Label3"
+                            Caption ="Surname:"
+                            GUID = Begin
+                                0xb820e7452867b94e87ff19fd020a8ead
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    Left =1786
+                    Top =3119
+                    Width =2552
+                    TabIndex =6
+                    Name ="STFName"
+                    ControlSource ="STFName"
+                    GUID = Begin
+                        0xd5a1a5ded98d444095b5c78dd144ef5f
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =595
+                            Top =3118
+                            Width =1134
+                            Height =240
+                            Name ="Label5"
+                            Caption ="First Name:"
+                            GUID = Begin
+                                0xafffa4b365ebbc4eaf7fc3bc4f7d739f
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    Left =1786
+                    Top =4908
+                    Width =2552
+                    TabIndex =12
+                    Name ="STParents"
+                    ControlSource ="STParents"
+                    GUID = Begin
+                        0x51c715abb6f03340a5481b7929b842e2
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =595
+                            Top =4819
+                            Width =1134
+                            Height =405
+                            Name ="Label9"
+                            Caption ="Parents\015\012Name:"
+                            GUID = Begin
+                                0xa7da68056699df41817ee32bd2bed2b5
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    Left =1785
+                    Top =3708
+                    Width =2552
+                    TabIndex =8
+                    Name ="STAddress1"
+                    ControlSource ="STAddress1"
+                    GUID = Begin
+                        0xb6e191f355a0ea4699d8cf0eae556198
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =595
+                            Top =3708
+                            Width =1134
+                            Height =240
+                            Name ="Label11"
+                            Caption ="Address:"
+                            GUID = Begin
+                                0xa200e1a9f2be51449856db24d7d31762
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    Left =1785
+                    Top =3983
+                    Width =2552
+                    TabIndex =9
+                    Name ="STAddress2"
+                    ControlSource ="STAddress2"
+                    GUID = Begin
+                        0x0832729647c30f40b402bc0a807d5ed2
+                    End
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    Left =1785
+                    Top =4267
+                    Width =2552
+                    TabIndex =10
+                    Name ="STAddress3"
+                    ControlSource ="STAddress3"
+                    GUID = Begin
+                        0x839f98702fd5bf4b8bf548ac3d51e784
+                    End
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    Left =6009
+                    Top =4889
+                    Width =2552
+                    TabIndex =13
+                    Name ="STTelNo"
+                    ControlSource ="STTelNo"
+                    GUID = Begin
+                        0x790a4955f9672d4fa90d36928faf3aca
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =4818
+                            Top =4889
+                            Width =1134
+                            Height =240
+                            Name ="Label17"
+                            Caption ="TelNo"
+                            GUID = Begin
+                                0x11fbf53c24d72a4389ad3a8dab8a7a39
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    Left =1757
+                    Top =6236
+                    Width =795
+                    TabIndex =16
+                    Name ="STLeft"
+                    ControlSource ="STLeft"
+                    GUID = Begin
+                        0x0f420364ad62b84bbff8f2c00f051154
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =170
+                            Top =6236
+                            Width =1441
+                            Height =240
+                            Name ="Label21"
+                            Caption ="Left (Y/N)"
+                            GUID = Begin
+                                0x4d08129975cf594c90512ecd5b70df82
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =5982
+                    Top =6212
+                    Width =2552
+                    TabIndex =17
+                    Name ="STLDate"
+                    ControlSource ="STLDate"
+                    Format ="Short Date"
+                    GUID = Begin
+                        0x616da16225c1a84491e15127f0b987c5
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =4791
+                            Top =6212
+                            Width =1134
+                            Height =240
+                            Name ="Label23"
+                            Caption ="Date Left"
+                            GUID = Begin
+                                0xcb64dc28661e524bb73d7730f18f37c0
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    ColumnCount =2
+                    Left =1757
+                    Top =1700
+                    Width =6782
+                    TabIndex =2
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"0\""
+                    GUID = Begin
+                        0x7792a3de1384824bab016fef1eb41921
+                    End
+                    Name ="STTCCode:"
+                    ControlSource ="STTCCode"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT DISTINCTROW tblTeacher.TCCode, Trim([TCCLDesc]) & \" - \" & Trim([CLLocat"
+                        "ion]) & \" - \" & Trim([TCFName]) & \" \" & Trim([TCSName]) AS Expr1, tblTeacher"
+                        ".TCCLDesc FROM tblTeacher ORDER BY tblTeacher.TCCLDesc;"
+                    ColumnWidths ="0;720"
+                    EventProcPrefix ="STTCCode_"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =566
+                            Top =1700
+                            Width =1134
+                            Height =240
+                            Name ="Text25"
+                            Caption ="Teacher:"
+                            GUID = Begin
+                                0x4783e42b0df216409c371afcc5fe474d
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    Left =6009
+                    Top =5432
+                    Width =2552
+                    TabIndex =15
+                    Name ="STEmgTelNo"
+                    ControlSource ="STEmgTelNo"
+                    GUID = Begin
+                        0xe71e1ebe222e2149afbfe19241afa2e1
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =4818
+                            Top =5432
+                            Width =1134
+                            Height =240
+                            Name ="Label31"
+                            Caption ="TelNo"
+                            GUID = Begin
+                                0x50cd07466404504b9e91f82dafbb553f
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    Left =1785
+                    Top =5476
+                    Width =2552
+                    TabIndex =14
+                    Name ="STEmgCont"
+                    ControlSource ="STEmgCont"
+                    GUID = Begin
+                        0xb73eab7a83774d4d9010bc3e409ae87c
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =594
+                            Top =5385
+                            Width =1134
+                            Height =405
+                            Name ="Label33"
+                            Caption ="Emergency\015\012Contact:"
+                            GUID = Begin
+                                0x5a5533ff56299546b00224bc6ac574bf
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =5982
+                    Top =3141
+                    Width =2552
+                    TabIndex =7
+                    Name ="Date of Birth:"
+                    ControlSource ="STDOB"
+                    Format ="Short Date"
+                    EventProcPrefix ="Date_of_Birth_"
+                    GUID = Begin
+                        0xff29a475371e1e40bb8a1fe11e311e21
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =4791
+                            Top =3163
+                            Width =1134
+                            Height =240
+                            Name ="Label35"
+                            Caption ="Date of Birth:"
+                            GUID = Begin
+                                0x36ee27303311d245b2ab13df0848a8d3
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =1786
+                    Top =2267
+                    Width =2552
+                    TabIndex =3
+                    Name ="Start Date:"
+                    ControlSource ="STStartDate"
+                    Format ="Short Date"
+                    EventProcPrefix ="Start_Date_"
+                    GUID = Begin
+                        0xbf83244443bd684a88c7805e6aeebb37
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =595
+                            Top =2267
+                            Width =1134
+                            Height =240
+                            Name ="Label37"
+                            Caption ="Start Date:"
+                            GUID = Begin
+                                0x85a535eef94d2348b100f83ced499137
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    Left =5981
+                    Top =4266
+                    Width =2552
+                    TabIndex =11
+                    Name ="Post Code"
+                    ControlSource ="STPCode"
+                    EventProcPrefix ="Post_Code"
+                    GUID = Begin
+                        0xa8f6b76091ce8e4b8c9efd7b8a96151d
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =4790
+                            Top =4266
+                            Width =1134
+                            Height =240
+                            Name ="Label28"
+                            Caption ="Post Code:"
+                            GUID = Begin
+                                0x3bf48f469a81da4ca0d67d87c69737a0
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    FontUnderline = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    Left =5982
+                    Top =2291
+                    Width =2552
+                    TabIndex =4
+                    ForeColor =1279872587
+                    Name ="Text29"
+                    ControlSource ="STForm"
+                    GUID = Begin
+                        0x66318fac28fbcb48887accf80a737b2b
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =4791
+                            Top =2291
+                            Width =1134
+                            Height =240
+                            Name ="Label30"
+                            Caption ="Form Link:"
+                            GUID = Begin
+                                0x372c19414bbcbd498c6f1c435090e334
+                            End
+                        End
+                    End
+                End
+            End
+        End
+    End
+End

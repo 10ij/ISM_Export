@@ -1,0 +1,641 @@
+Version =20
+VersionRequired =20
+Checksum =935963728
+Begin Report
+    LayoutForPrint = NotDefault
+    RecordLocks =1
+    DateGrouping =1
+    GridX =20
+    GridY =24
+    Width =15151
+    ItemSuffix =144
+    Left =315
+    Top =855
+    Right =14745
+    Bottom =6630
+    RecSrcDt = Begin
+        0xf5b1957258e1e440
+    End
+    RecordSource ="SELECT qryFeesRecord.BalBF, qryFeesRecord.DueCur, qryFeesRecord.Defecit, * FROM "
+        "qryFeesRecord WHERE (((qryFeesRecord.DueCur)>0) AND ((qryFeesRecord.STLeft)=\"Y\""
+        ")) OR (((qryFeesRecord.BalBF)>0) AND ((qryFeesRecord.STLeft)=\"Y\"));"
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    PrtMip = Begin
+        0xd0020000d0020000d0020000d0020000000000002f3b00000000000001000000 ,
+        0x010000006801000000000000a10700000100000000000000
+    End
+    PrtDevMode = Begin
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x010400069c00580303ff8007020009009a0b34086400010001002c0102000100 ,
+        0x2c01010000004134000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000010000000000000001000000 ,
+        0x0200000001000000ffffffff0000000000000000000000000000000044494e55 ,
+        0x220010014c030c00cad2f6720000000000000000000000000000000000000000 ,
+        0x0000000000000000090000000000000000000100000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000001000000000000000000000010010000534d544a ,
+        0x00000000100000014d006900630072006f0073006f0066007400200058005000 ,
+        0x5300200044006f00630075006d0065006e007400200057007200690074006500 ,
+        0x72000000496e70757442696e00464f524d534f5552434500524553444c4c0055 ,
+        0x6e69726573444c4c00496e7465726c656176696e67004f464600496d61676554 ,
+        0x797065004a5045474d6564004f7269656e746174696f6e00504f525452414954 ,
+        0x00436f6c6c617465004f4646005265736f6c7574696f6e004f7074696f6e3100 ,
+        0x506170657253697a65004c455454455200436f6c6f724d6f6465003234627070 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000c0000004d58445701010000
+    End
+    PrtDevNames = Begin
+        0x0800260044000100000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000585053506f72743a00
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            TextFontFamily =18
+            FontSize =10
+            FontWeight =700
+            FontName ="Times New Roman"
+        End
+        Begin Rectangle
+            Width =850
+            Height =850
+        End
+        Begin Line
+            Width =1701
+        End
+        Begin Image
+            OldBorderStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin BoundObjectFrame
+            AutoLabel = NotDefault
+            OldBorderStyle =0
+        End
+        Begin TextBox
+            AutoLabel = NotDefault
+            OldBorderStyle =0
+            TextFontFamily =18
+            Height =300
+            FontSize =10
+            FontName ="Times New Roman"
+        End
+        Begin BreakLevel
+            GroupFooter = NotDefault
+            ControlSource ="CLLocCode"
+        End
+        Begin BreakLevel
+            ControlSource ="TCCLDesc"
+        End
+        Begin BreakLevel
+            GroupFooter = NotDefault
+            ControlSource ="TCCode"
+        End
+        Begin PageHeader
+            Height =2456
+            Name ="PageHeader0"
+            GUID = Begin
+                0x6d3669b27b80e64c96d38d832df0569e
+            End
+            Begin
+                Begin Line
+                    Left =28
+                    Top =1978
+                    Width =15114
+                    Height =15
+                    Name ="Line48"
+                    GUID = Begin
+                        0xd6491d3b3312e249bb2ffce46e837a82
+                    End
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =13695
+                    Top =2100
+                    Width =1455
+                    Height =285
+                    Name ="Text83"
+                    Caption ="No Students"
+                    GUID = Begin
+                        0xfff9d0624d5ebc4bab6c23da76ecbb57
+                    End
+                End
+                Begin TextBox
+                    TextAlign =2
+                    Left =28
+                    Top =1299
+                    Width =15090
+                    Height =360
+                    FontSize =14
+                    FontWeight =700
+                    Name ="Field14"
+                    ControlSource ="=\"STUDENT FEES SUMMARY BY CLASS - \" & Format(DLookUp(\"[RepMonDate]\",\"tblRep"
+                        "Mon\",\"[RepMonID] = 1\"),\"mmmm yyyy\")"
+                    GUID = Begin
+                        0x5d3702e2a5e56b419e8807a3501d49fc
+                    End
+                End
+                Begin Label
+                    TextAlign =3
+                    Left =3495
+                    Top =2109
+                    Width =1230
+                    Height =285
+                    Name ="Label98"
+                    Caption ="Prev. Balance"
+                    GUID = Begin
+                        0x4a2adde4ee3a64459cd58a7527e06c35
+                    End
+                End
+                Begin TextBox
+                    Left =28
+                    Top =1648
+                    Width =4506
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="Field89"
+                    ControlSource ="=[CLLocation]"
+                    GUID = Begin
+                        0x5b5b30be46202645b21585732f2e6eac
+                    End
+                End
+                Begin Label
+                    TextAlign =3
+                    Left =4785
+                    Top =2109
+                    Width =1215
+                    Height =285
+                    Name ="Label100"
+                    Caption ="Due Cur. Mt."
+                    GUID = Begin
+                        0xebd19e876cef084198b03f93d5db3f04
+                    End
+                End
+                Begin Label
+                    TextAlign =3
+                    Left =7370
+                    Top =2103
+                    Width =1185
+                    Height =285
+                    ForeColor =6723891
+                    Name ="Label102"
+                    Caption ="Exemption"
+                    GUID = Begin
+                        0xc9c604f858f90f4aaa0ba4558e006823
+                    End
+                End
+                Begin Label
+                    TextAlign =3
+                    Left =8645
+                    Top =2103
+                    Width =1185
+                    Height =285
+                    Name ="Label104"
+                    Caption ="Total Due"
+                    GUID = Begin
+                        0xa939f7aba937394db88438525efca9fe
+                    End
+                End
+                Begin Label
+                    TextAlign =3
+                    Left =9920
+                    Top =2103
+                    Width =1185
+                    Height =285
+                    Name ="Label106"
+                    Caption ="Received"
+                    GUID = Begin
+                        0xb80efd25d6719647a26d48d6924660ef
+                    End
+                End
+                Begin Label
+                    TextAlign =3
+                    Left =11195
+                    Top =2103
+                    Width =1185
+                    Height =285
+                    BorderColor =255
+                    ForeColor =255
+                    Name ="Label108"
+                    Caption ="Balance"
+                    GUID = Begin
+                        0xc37126fdd9edde418184da75828565b0
+                    End
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =-15
+                    Top =2100
+                    Width =615
+                    Height =285
+                    Name ="Label124"
+                    Caption ="Class"
+                    GUID = Begin
+                        0x7e750a9e79c23a44934b85e6278dc521
+                    End
+                End
+                Begin Label
+                    TextAlign =3
+                    Left =6066
+                    Top =2109
+                    Width =1215
+                    Height =285
+                    Name ="Label127"
+                    Caption ="Written Off"
+                    GUID = Begin
+                        0x3d63651b1be17d4e87efce9a56b2f820
+                    End
+                End
+                Begin Image
+                    SizeMode =1
+                    PictureType =1
+                    Width =15133
+                    Height =1135
+                    Name ="Image167"
+                    Picture ="C:\\ISM_2016\\LOGO\\LOGO_LH_L.jpg"
+                    GUID = Begin
+                        0x0440bc2c38d8234fac44c5b23b240582
+                    End
+                End
+                Begin Label
+                    BackStyle =0
+                    OldBorderStyle =1
+                    TextAlign =2
+                    Left =11990
+                    Top =1299
+                    Width =3105
+                    Height =390
+                    FontSize =14
+                    ForeColor =8388608
+                    Name ="Label55"
+                    Caption ="FORMER STUDENTS"
+                    GUID = Begin
+                        0x7f375de200e3f541aa5d7d4576f075dc
+                    End
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =0
+            Name ="Detail1"
+            GUID = Begin
+                0x4b67031bc3cdae43934206f38d26e303
+            End
+        End
+        Begin BreakFooter
+            KeepTogether = NotDefault
+            Height =377
+            BreakLevel =2
+            Name ="GroupFooter1"
+            GUID = Begin
+                0x90d17eaadcc7cf4887fa2df8ce450030
+            End
+            Begin
+                Begin TextBox
+                    TextAlign =3
+                    Left =12410
+                    Top =6
+                    Width =2640
+                    FontWeight =700
+                    Name ="Text133"
+                    ControlSource ="=Count([STID])"
+                    GUID = Begin
+                        0x4532ea93f02fd04e9b9dc8e600b74e02
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    Left =3483
+                    Top =6
+                    Width =1164
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="Text134"
+                    ControlSource ="=Sum([BalBF])"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    GUID = Begin
+                        0x8a26a4afae98194b970db8bd6b26948a
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    Left =4758
+                    Top =6
+                    Width =1164
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="Text135"
+                    ControlSource ="=Sum([DueCur])"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    GUID = Begin
+                        0x97dec39d6d935d4082e9cf87ebb76013
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    Left =7310
+                    Top =6
+                    Width =1164
+                    FontWeight =700
+                    TabIndex =3
+                    ForeColor =6723891
+                    Name ="Text136"
+                    ControlSource ="=Sum([Exemp])"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    GUID = Begin
+                        0x247c9e1e50f89e4c99f25ffc9001331f
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    Left =8585
+                    Top =6
+                    Width =1164
+                    FontWeight =700
+                    TabIndex =4
+                    Name ="Text137"
+                    ControlSource ="=Sum([TotalDue])"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    GUID = Begin
+                        0xe8ea353e6b01264fb52d7bace4d40e62
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    Left =9860
+                    Top =6
+                    Width =1164
+                    FontWeight =700
+                    TabIndex =5
+                    Name ="Text138"
+                    ControlSource ="=Sum([ReceivedCur])"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    GUID = Begin
+                        0x6d1d01cdbebd3a4a9a2c86192772e323
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    Left =11135
+                    Top =6
+                    Width =1164
+                    FontWeight =700
+                    TabIndex =6
+                    BorderColor =255
+                    ForeColor =255
+                    Name ="Text139"
+                    ControlSource ="=Sum([Defecit])"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    GUID = Begin
+                        0xe398240525c91147a50a0731053064c3
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    Left =6039
+                    Top =6
+                    Width =1164
+                    FontWeight =700
+                    TabIndex =7
+                    Name ="Text141"
+                    ControlSource ="=Sum([CurW])"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    GUID = Begin
+                        0xf94e18f84897d84bb11d27ebdf85d5fe
+                    End
+                End
+                Begin Line
+                    LineSlant = NotDefault
+                    Left =28
+                    Top =330
+                    Width =15115
+                    Height =24
+                    Name ="Line169"
+                    GUID = Begin
+                        0xf43e69c4dd03e54b8af024aa67536106
+                    End
+                End
+                Begin TextBox
+                    TextAlign =1
+                    Left =28
+                    Top =23
+                    Width =3264
+                    FontWeight =700
+                    TabIndex =8
+                    Name ="Text142"
+                    ControlSource ="=[TCCLDesc] & \" - \" & [TCNAME]"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    GUID = Begin
+                        0x41bedf0e0771c3419615ffa026659c78
+                    End
+                End
+            End
+        End
+        Begin BreakFooter
+            KeepTogether = NotDefault
+            ForceNewPage =2
+            Height =646
+            Name ="GroupFooter0"
+            GUID = Begin
+                0x850268c7f3551a4898e3b266a40f9b71
+            End
+            Begin
+                Begin TextBox
+                    TextAlign =3
+                    Left =12470
+                    Top =141
+                    Width =2640
+                    FontWeight =700
+                    Name ="Field16"
+                    ControlSource ="=Count([STID])"
+                    GUID = Begin
+                        0x7cd3106b1a032c4ab89f1c4b84b3ed00
+                    End
+                End
+                Begin Line
+                    Left =28
+                    Top =496
+                    Width =15114
+                    Height =15
+                    Name ="Line86"
+                    GUID = Begin
+                        0x8679edb45a3af94bb1cc7c7cb23b6cdd
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    Left =3543
+                    Top =141
+                    Width =1164
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="Text116"
+                    ControlSource ="=Sum([BalBF])"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    GUID = Begin
+                        0x81577411fc80a743b4d596855e5026e7
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    Left =4818
+                    Top =141
+                    Width =1164
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="Text117"
+                    ControlSource ="=Sum([DueCur])"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    GUID = Begin
+                        0x16253f506e077647b0ea3a58c38b149d
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    Left =7370
+                    Top =141
+                    Width =1164
+                    FontWeight =700
+                    TabIndex =3
+                    ForeColor =6723891
+                    Name ="Text118"
+                    ControlSource ="=Sum([Exemp])"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    GUID = Begin
+                        0xe9bebb4ba4c26042a91a0d71cad80ad5
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    Left =8645
+                    Top =141
+                    Width =1164
+                    FontWeight =700
+                    TabIndex =4
+                    Name ="Text119"
+                    ControlSource ="=Sum([TotalDue])"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    GUID = Begin
+                        0xc396161055cb5e40a2ca3e97c9694149
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    Left =9920
+                    Top =141
+                    Width =1164
+                    FontWeight =700
+                    TabIndex =5
+                    Name ="Text120"
+                    ControlSource ="=Sum([ReceivedCur])"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    GUID = Begin
+                        0xa857880c822edd4e9298055149015d93
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    Left =11195
+                    Top =141
+                    Width =1164
+                    FontWeight =700
+                    TabIndex =6
+                    BorderColor =255
+                    ForeColor =255
+                    Name ="Text121"
+                    ControlSource ="=Sum([Defecit])"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    GUID = Begin
+                        0xccdf80251315754bbdaea916fe81af61
+                    End
+                End
+                Begin Label
+                    Left =60
+                    Top =135
+                    Width =1230
+                    Height =285
+                    Name ="Label122"
+                    Caption ="Grand Total"
+                    GUID = Begin
+                        0xac5f60e4ba709d43892502cc5c45fa5f
+                    End
+                End
+                Begin Line
+                    Left =28
+                    Top =47
+                    Width =15114
+                    Height =15
+                    Name ="Line123"
+                    GUID = Begin
+                        0x7fb64ee6ce00fa419ba4487c8deb0485
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    Left =6099
+                    Top =141
+                    Width =1164
+                    FontWeight =700
+                    TabIndex =7
+                    Name ="Text129"
+                    ControlSource ="=Sum([CurW])"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    GUID = Begin
+                        0x59607374b981d94dac261e176adb86fe
+                    End
+                End
+                Begin Line
+                    Left =28
+                    Top =631
+                    Width =15114
+                    Height =15
+                    Name ="Line143"
+                    GUID = Begin
+                        0x00d8ae70305b17409c505ccf540c172a
+                    End
+                End
+            End
+        End
+        Begin PageFooter
+            Height =0
+            OnFormat ="[Event Procedure]"
+            Name ="PageFooter2"
+            GUID = Begin
+                0x6fe648b3dc3f7843abd198173eeef52d
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
+Private Sub Report_Close()
+    DoCmd.Minimize
+End Sub
+Private Sub Report_Open(Cancel As Integer)
+    Call SetReportDate
+    DoCmd.Maximize
+End Sub

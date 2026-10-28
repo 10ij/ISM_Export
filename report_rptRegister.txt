@@ -1,0 +1,705 @@
+Version =20
+VersionRequired =20
+Checksum =1980706102
+Begin Report
+    LayoutForPrint = NotDefault
+    RecordLocks =1
+    DateGrouping =1
+    GridX =20
+    GridY =24
+    Width =15165
+    ItemSuffix =102
+    Left =1200
+    Top =165
+    Right =8880
+    Bottom =4170
+    RecSrcDt = Begin
+        0x968e9b963284e140
+    End
+    RecordSource ="qryRegister"
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    PrtMip = Begin
+        0xd0020000d0020000d0020000d0020000000000003d3b00000301000001000000 ,
+        0x010000006801000000000000a10700000100000000000000
+    End
+    PrtDevMode = Begin
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x010400049c00900003ff800702000900000000006400010001002c0102000100 ,
+        0x2c01010000004c65747465720000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000000000000000000000000000000000007769646d ,
+        0x00000000010000000000000000000000fe0000000100000000000000c8000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000
+    End
+    PrtDevNames = Begin
+        0x080036005d000100000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000000000000000000000000000000000000004d6963 ,
+        0x726f736f667420446f63756d656e7420496d6167696e67205772697465722050 ,
+        0x6f72743a00
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            TextFontFamily =18
+            FontSize =10
+            FontWeight =700
+            FontName ="Times New Roman"
+        End
+        Begin BoundObjectFrame
+            AutoLabel = NotDefault
+            OldBorderStyle =0
+        End
+        Begin TextBox
+            AutoLabel = NotDefault
+            OldBorderStyle =0
+            TextFontFamily =18
+            Height =300
+            FontSize =10
+            FontName ="Times New Roman"
+        End
+        Begin BreakLevel
+            ControlSource ="CLLocation"
+        End
+        Begin BreakLevel
+            ControlSource ="TCCLDesc"
+        End
+        Begin BreakLevel
+            GroupFooter = NotDefault
+            ControlSource ="TCName"
+        End
+        Begin BreakLevel
+            ControlSource ="STID"
+        End
+        Begin PageHeader
+            Height =1449
+            Name ="PageHeader0"
+            Begin
+                Begin Label
+                    Left =679
+                    Top =1157
+                    Width =1005
+                    Height =285
+                    Name ="Text5"
+                    Caption ="First Name"
+                End
+                Begin Label
+                    Left =2112
+                    Top =1157
+                    Width =1320
+                    Height =285
+                    Name ="Text7"
+                    Caption ="Surname"
+                End
+                Begin Label
+                    TextAlign =2
+                    Top =1157
+                    Width =600
+                    Height =285
+                    Name ="Text9"
+                    Caption ="STID"
+                End
+                Begin Line
+                    Left =28
+                    Top =1039
+                    Width =15114
+                    Height =15
+                    Name ="Line48"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =4492
+                    Top =1157
+                    Width =288
+                    Height =285
+                    Name ="Text49"
+                    Caption ="M"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =4780
+                    Top =1157
+                    Width =288
+                    Height =285
+                    Name ="Text50"
+                    Caption ="T"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =5068
+                    Top =1157
+                    Width =288
+                    Height =285
+                    Name ="Text51"
+                    Caption ="W"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =5356
+                    Top =1157
+                    Width =288
+                    Height =285
+                    Name ="Text54"
+                    Caption ="T"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =5644
+                    Top =1157
+                    Width =288
+                    Height =285
+                    Name ="Text60"
+                    Caption ="F"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =6004
+                    Top =1157
+                    Width =288
+                    Height =285
+                    Name ="Text61"
+                    Caption ="M"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =6292
+                    Top =1157
+                    Width =288
+                    Height =285
+                    Name ="Text62"
+                    Caption ="T"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =6580
+                    Top =1157
+                    Width =288
+                    Height =285
+                    Name ="Text63"
+                    Caption ="W"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =6868
+                    Top =1157
+                    Width =288
+                    Height =285
+                    Name ="Text64"
+                    Caption ="T"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =7156
+                    Top =1157
+                    Width =288
+                    Height =285
+                    Name ="Text65"
+                    Caption ="F"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =7516
+                    Top =1157
+                    Width =288
+                    Height =285
+                    Name ="Text66"
+                    Caption ="M"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =7804
+                    Top =1157
+                    Width =288
+                    Height =285
+                    Name ="Text67"
+                    Caption ="T"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =8092
+                    Top =1157
+                    Width =288
+                    Height =285
+                    Name ="Text68"
+                    Caption ="W"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =8380
+                    Top =1157
+                    Width =288
+                    Height =285
+                    Name ="Text69"
+                    Caption ="T"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =8668
+                    Top =1157
+                    Width =288
+                    Height =285
+                    Name ="Text70"
+                    Caption ="F"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =9028
+                    Top =1157
+                    Width =288
+                    Height =285
+                    Name ="Text71"
+                    Caption ="M"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =9316
+                    Top =1157
+                    Width =288
+                    Height =285
+                    Name ="Text72"
+                    Caption ="T"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =9604
+                    Top =1157
+                    Width =288
+                    Height =285
+                    Name ="Text73"
+                    Caption ="W"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =9892
+                    Top =1157
+                    Width =288
+                    Height =285
+                    Name ="Text74"
+                    Caption ="T"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =10180
+                    Top =1157
+                    Width =288
+                    Height =285
+                    Name ="Text75"
+                    Caption ="F"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =10540
+                    Top =1157
+                    Width =288
+                    Height =285
+                    Name ="Text76"
+                    Caption ="M"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =10828
+                    Top =1157
+                    Width =288
+                    Height =285
+                    Name ="Text77"
+                    Caption ="T"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =11116
+                    Top =1157
+                    Width =288
+                    Height =285
+                    Name ="Text78"
+                    Caption ="W"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =11404
+                    Top =1157
+                    Width =288
+                    Height =285
+                    Name ="Text79"
+                    Caption ="T"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =11692
+                    Top =1157
+                    Width =288
+                    Height =285
+                    Name ="Text80"
+                    Caption ="F"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =13708
+                    Top =1157
+                    Width =1440
+                    Height =285
+                    Name ="Text83"
+                    Caption ="Tel No"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =12165
+                    Top =1140
+                    Width =585
+                    Height =285
+                    Name ="Text84"
+                    Caption ="PRES"
+                End
+                Begin TextBox
+                    TextAlign =2
+                    Left =28
+                    Top =360
+                    Width =15120
+                    Height =360
+                    FontSize =14
+                    FontWeight =700
+                    Name ="Field14"
+                    ControlSource ="=\"Daily Attendance Sheet: \" & Format([DATE],\"MMMM YYYY\")"
+                End
+                Begin Label
+                    Left =3543
+                    Top =1164
+                    Width =855
+                    Height =285
+                    Name ="Label98"
+                    Caption ="Fees Due"
+                End
+                Begin TextBox
+                    TextAlign =3
+                    Left =10768
+                    Top =708
+                    Width =4341
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="TCCode1"
+                    ControlSource ="=\"Class: \" & [TCCLDesc] & \" - \" & [CLLocation]"
+                End
+                Begin TextBox
+                    Left =28
+                    Top =709
+                    Width =4506
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="Field89"
+                    ControlSource ="=\"Teacher: \" & [TCName]"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =12900
+                    Top =1140
+                    Width =480
+                    Height =285
+                    Name ="Label100"
+                    Caption ="ABS"
+                End
+                Begin TextBox
+                    TextAlign =2
+                    Width =15120
+                    Height =360
+                    FontSize =14
+                    FontWeight =700
+                    TabIndex =3
+                    Name ="Text101"
+                    ControlSource ="=DLookUp(\"[OrgName]\",\"tbl_Master\",\"[Current] = 'Y'\")"
+                    GUID = Begin
+                        0x58b4a29131afca429c4656cd23ac831b
+                    End
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =259
+            Name ="Detail1"
+            Begin
+                Begin TextBox
+                    Left =680
+                    Width =1404
+                    Height =210
+                    FontSize =8
+                    Name ="STSName"
+                    ControlSource ="STFName"
+                End
+                Begin TextBox
+                    Left =2112
+                    Width =1359
+                    Height =210
+                    FontSize =8
+                    TabIndex =1
+                    Name ="STFName"
+                    ControlSource ="STSName"
+                End
+                Begin Rectangle
+                    Left =4464
+                    Width =288
+                    Height =210
+                    Name ="Box21"
+                End
+                Begin Rectangle
+                    Left =4752
+                    Width =288
+                    Height =210
+                    Name ="Box23"
+                End
+                Begin Rectangle
+                    Left =5040
+                    Width =288
+                    Height =210
+                    Name ="Box24"
+                End
+                Begin Rectangle
+                    Left =5328
+                    Width =288
+                    Height =210
+                    Name ="Box25"
+                End
+                Begin Rectangle
+                    Left =5616
+                    Width =288
+                    Height =210
+                    Name ="Box26"
+                End
+                Begin Rectangle
+                    Left =5976
+                    Width =288
+                    Height =210
+                    Name ="Box27"
+                End
+                Begin Rectangle
+                    Left =6264
+                    Width =288
+                    Height =210
+                    Name ="Box28"
+                End
+                Begin Rectangle
+                    Left =6552
+                    Width =288
+                    Height =210
+                    Name ="Box29"
+                End
+                Begin Rectangle
+                    Left =6840
+                    Width =288
+                    Height =210
+                    Name ="Box30"
+                End
+                Begin Rectangle
+                    Left =7128
+                    Width =288
+                    Height =210
+                    Name ="Box31"
+                End
+                Begin Rectangle
+                    Left =7488
+                    Width =288
+                    Height =210
+                    Name ="Box32"
+                End
+                Begin Rectangle
+                    Left =7776
+                    Width =288
+                    Height =210
+                    Name ="Box33"
+                End
+                Begin Rectangle
+                    Left =8064
+                    Width =288
+                    Height =210
+                    Name ="Box34"
+                End
+                Begin Rectangle
+                    Left =8352
+                    Width =288
+                    Height =210
+                    Name ="Box35"
+                End
+                Begin Rectangle
+                    Left =8640
+                    Width =288
+                    Height =210
+                    Name ="Box36"
+                End
+                Begin Rectangle
+                    Left =9000
+                    Width =288
+                    Height =210
+                    Name ="Box37"
+                End
+                Begin Rectangle
+                    Left =9288
+                    Width =288
+                    Height =210
+                    Name ="Box38"
+                End
+                Begin Rectangle
+                    Left =9576
+                    Width =288
+                    Height =210
+                    Name ="Box39"
+                End
+                Begin Rectangle
+                    Left =9864
+                    Width =288
+                    Height =210
+                    Name ="Box40"
+                End
+                Begin Rectangle
+                    Left =10152
+                    Width =288
+                    Height =210
+                    Name ="Box41"
+                End
+                Begin Rectangle
+                    Left =10512
+                    Width =288
+                    Height =210
+                    Name ="Box42"
+                End
+                Begin Rectangle
+                    Left =10800
+                    Width =288
+                    Height =210
+                    Name ="Box43"
+                End
+                Begin Rectangle
+                    Left =11088
+                    Width =288
+                    Height =210
+                    Name ="Box44"
+                End
+                Begin Rectangle
+                    Left =11376
+                    Width =288
+                    Height =210
+                    Name ="Box45"
+                End
+                Begin Rectangle
+                    Left =12162
+                    Width =591
+                    Height =210
+                    Name ="Box46"
+                End
+                Begin Rectangle
+                    Left =12819
+                    Width =651
+                    Height =210
+                    Name ="Box47"
+                End
+                Begin TextBox
+                    OldBorderStyle =1
+                    TextAlign =2
+                    Left =13680
+                    Height =210
+                    FontSize =8
+                    TabIndex =2
+                    Name ="STTelNo"
+                    ControlSource ="STTelNo"
+                End
+                Begin Rectangle
+                    Left =11664
+                    Width =288
+                    Height =210
+                    Name ="Box81"
+                End
+                Begin TextBox
+                    TextAlign =2
+                    Width =594
+                    Height =210
+                    FontSize =8
+                    TabIndex =3
+                    Name ="Field90"
+                    ControlSource ="STID"
+                End
+                Begin TextBox
+                    TextAlign =3
+                    Left =3543
+                    Width =834
+                    Height =210
+                    FontSize =8
+                    TabIndex =4
+                    Name ="Text99"
+                    ControlSource ="FEES"
+                End
+            End
+        End
+        Begin BreakFooter
+            KeepTogether = NotDefault
+            ForceNewPage =2
+            Height =472
+            BreakLevel =2
+            Name ="GroupFooter0"
+            Begin
+                Begin TextBox
+                    TextAlign =3
+                    Left =11423
+                    Top =94
+                    Width =3600
+                    FontWeight =700
+                    Name ="Field16"
+                    ControlSource ="=\"STUDENTS: \" & Count([STID])"
+                End
+                Begin Line
+                    Top =47
+                    Width =15114
+                    Height =15
+                    Name ="Line86"
+                End
+            End
+        End
+        Begin PageFooter
+            Height =734
+            OnFormat ="[Event Procedure]"
+            Name ="PageFooter2"
+            Begin
+                Begin Label
+                    TextAlign =3
+                    Left =3458
+                    Top =449
+                    Width =3180
+                    Height =285
+                    Name ="Text87"
+                    Caption ="TEACHERS SIGNATURE"
+                End
+                Begin Line
+                    BorderLineStyle =3
+                    Left =6633
+                    Top =709
+                    Width =3441
+                    Name ="Line88"
+                End
+                Begin TextBox
+                    TextAlign =1
+                    Top =425
+                    Width =2400
+                    FontSize =8
+                    FontWeight =700
+                    Name ="Text91"
+                    ControlSource ="=\"Date Printed: \" & Format(Now(),\"Short Date\")"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
+Private Sub Report_Close()
+    DoCmd.Minimize
+End Sub
+Private Sub Report_Open(Cancel As Integer)
+    Call SetReportDate
+    DoCmd.Maximize
+End Sub

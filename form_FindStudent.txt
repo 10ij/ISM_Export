@@ -1,0 +1,893 @@
+Version =20
+VersionRequired =20
+Checksum =-1131957602
+Begin Form
+    AutoResize = NotDefault
+    Modal = NotDefault
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    OrderByOn = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    ViewsAllowed =1
+    BorderStyle =3
+    Width =13379
+    ItemSuffix =92
+    Left =1650
+    Top =75
+    Right =12690
+    Bottom =7605
+    RecSrcDt = Begin
+        0x5b23bddab3cae140
+    End
+    Caption ="View and Edit Students"
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    PrtMip = Begin
+        0xd0020000d0020000d0020000d002000000000000d4240000a512000001000000 ,
+        0x010000006801000000000000a10700000100000000000000
+    End
+    PrtDevMode = Begin
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x010400069c00580303770000010009009a0b34086400010001002c0101000100 ,
+        0x2c01020000004134000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000010000000000000001000000 ,
+        0x0200000001000000ffffffff0000000000000000000000000000000044494e55 ,
+        0x220010014c030c00cad2f6720000000000000000000000000000000000000000 ,
+        0x0000000000000000090000000000000000000100000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000001000000000000000000000010010000534d544a ,
+        0x00000000100000014d006900630072006f0073006f0066007400200058005000 ,
+        0x5300200044006f00630075006d0065006e007400200057007200690074006500 ,
+        0x72000000496e70757442696e00464f524d534f5552434500524553444c4c0055 ,
+        0x6e69726573444c4c00496e7465726c656176696e67004f464600496d61676554 ,
+        0x797065004a5045474d6564004f7269656e746174696f6e00504f525452414954 ,
+        0x00436f6c6c617465004f4646005265736f6c7574696f6e004f7074696f6e3100 ,
+        0x506170657253697a65004c455454455200436f6c6f724d6f6465003234627070 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000c0000004d58445701010000
+    End
+    PrtDevNames = Begin
+        0x0800260044000100000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000585053506f72743a00
+    End
+    OnActivate ="[Event Procedure]"
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextAlign =3
+            FontWeight =700
+        End
+        Begin Rectangle
+            SpecialEffect =2
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            TextFontFamily =2
+        End
+        Begin OptionButton
+            AddColon = NotDefault
+            SpecialEffect =2
+            LabelAlign =3
+            Width =202
+            Height =202
+            LabelX =-168
+        End
+        Begin CheckBox
+            AddColon = NotDefault
+            SpecialEffect =2
+            LabelAlign =3
+            Width =202
+            Height =202
+            LabelX =-168
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            Width =1701
+            Height =1701
+        End
+        Begin TextBox
+            OldBorderStyle =0
+            LabelAlign =3
+            LabelX =-168
+            BackColor =12632256
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin Chart
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin FormHeader
+            Height =2503
+            Name ="FormHeader0"
+            Begin
+                Begin TextBox
+                    SpecialEffect =2
+                    OldBorderStyle =1
+                    OverlapFlags =93
+                    Left =1642
+                    Top =1889
+                    Width =2340
+                    TabIndex =1
+                    BackColor =16777164
+                    BorderColor =8421376
+                    ForeColor =8388608
+                    Name ="Look For Firstname"
+                    StatusBarText ="Type one or more letters of Firstname."
+                    AfterUpdate ="[Event Procedure]"
+                    EventProcPrefix ="Look_For_Firstname"
+                    Begin
+                        Begin Label
+                            OldBorderStyle =1
+                            OverlapFlags =93
+                            TextFontFamily =18
+                            Left =226
+                            Top =1890
+                            Width =1304
+                            Height =285
+                            FontSize =12
+                            BorderColor =16777215
+                            Name ="Text47"
+                            Caption ="Firstname:"
+                            FontName ="Garamond"
+                        End
+                    End
+                End
+                Begin TextBox
+                    SpecialEffect =2
+                    OldBorderStyle =1
+                    OverlapFlags =93
+                    Left =5669
+                    Top =1888
+                    Width =2490
+                    TabIndex =2
+                    BackColor =16777164
+                    BorderColor =8421376
+                    ForeColor =8388608
+                    Name ="Look For Surname"
+                    StatusBarText ="Type one or more letters of Surname."
+                    AfterUpdate ="[Event Procedure]"
+                    EventProcPrefix ="Look_For_Surname"
+                    Begin
+                        Begin Label
+                            OldBorderStyle =1
+                            OverlapFlags =93
+                            TextFontFamily =18
+                            Left =4253
+                            Top =1882
+                            Width =1304
+                            Height =240
+                            FontSize =12
+                            BorderColor =16777215
+                            Name ="Text49"
+                            Caption ="Surname:"
+                            FontName ="Garamond"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    Default = NotDefault
+                    OverlapFlags =85
+                    TextFontFamily =18
+                    Left =8960
+                    Top =843
+                    Width =1700
+                    Height =510
+                    FontSize =12
+                    FontWeight =400
+                    TabIndex =3
+                    HelpContextId =300
+                    Name ="Show Record"
+                    Caption ="Show Record"
+                    StatusBarText ="Show Enquiries that meet criteria."
+                    OnClick ="[Event Procedure]"
+                    FontName ="Garamond"
+                    EventProcPrefix ="Show_Record"
+                End
+                Begin TextBox
+                    SpecialEffect =2
+                    OldBorderStyle =1
+                    OverlapFlags =93
+                    Left =1757
+                    Top =992
+                    Width =1658
+                    BackColor =16777164
+                    BorderColor =8421376
+                    ForeColor =8388608
+                    Name ="Look For Student No"
+                    StatusBarText ="Enter Enquiry Number."
+                    AfterUpdate ="[Event Procedure]"
+                    EventProcPrefix ="Look_For_Student_No"
+                    Begin
+                        Begin Label
+                            OldBorderStyle =1
+                            OverlapFlags =93
+                            TextFontFamily =18
+                            Left =170
+                            Top =992
+                            Width =1531
+                            Height =240
+                            FontSize =12
+                            BackColor =0
+                            BorderColor =16777215
+                            Name ="Text60"
+                            Caption ="Student No:"
+                            FontName ="Garamond"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =18
+                    Left =8960
+                    Top =1882
+                    Width =1700
+                    Height =467
+                    FontSize =12
+                    FontWeight =400
+                    TabIndex =4
+                    Name ="Clear"
+                    Caption ="Clear"
+                    StatusBarText ="Clear search fields."
+                    OnClick ="[Event Procedure]"
+                    FontName ="Garamond"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =18
+                    Left =9864
+                    Top =188
+                    Width =789
+                    Height =465
+                    FontSize =12
+                    FontWeight =400
+                    TabIndex =5
+                    Name ="Exit"
+                    Caption ="X"
+                    StatusBarText ="Double Click Here to Exit."
+                    OnClick ="[Event Procedure]"
+                    FontName ="Garamond"
+                End
+                Begin Label
+                    SpecialEffect =2
+                    BackStyle =1
+                    BorderWidth =6
+                    OverlapFlags =85
+                    TextAlign =2
+                    TextFontFamily =18
+                    Left =283
+                    Top =225
+                    Width =9090
+                    Height =375
+                    FontSize =14
+                    FontWeight =900
+                    BackColor =8453888
+                    Name ="Text73"
+                    Caption ="ENTER ONE OR MORE VALUES TO SEARCH ON"
+                    FontName ="Times New Roman"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OldBorderStyle =0
+                    OverlapFlags =93
+                    TextAlign =1
+                    ColumnCount =2
+                    ListWidth =2835
+                    Left =5611
+                    Top =992
+                    Width =2553
+                    TabIndex =6
+                    BackColor =16777164
+                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"0\""
+                    GUID = Begin
+                        0xe62fbc564457234d891f0acf9b8224c7
+                    End
+                    Name ="Look Class"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT DISTINCTROW tblTeacher.TCCode, Trim([TCCLDesc]) & \" - \" & Trim([CLLocat"
+                        "ion]) AS Expr1, tblTeacher.TCCLLocCode, tblTeacher.TCCLDesc, tblTeacher.TCTitle "
+                        "FROM tblTeacher WHERE (((tblTeacher.TCTitle)<>\"ZMEI\")) ORDER BY tblTeacher.TCC"
+                        "LLocCode, tblTeacher.TCCLDesc;"
+                    ColumnWidths ="0;567"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                    EventProcPrefix ="Look_Class"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextFontFamily =18
+                            Left =4705
+                            Top =992
+                            Width =849
+                            Height =270
+                            FontSize =12
+                            BackColor =13415348
+                            BorderColor =16777215
+                            Name ="Text58"
+                            Caption ="Classs:"
+                            FontName ="Garamond"
+                            GUID = Begin
+                                0x2a02cf49d87eb24d8eb32c0a526e6819
+                            End
+                        End
+                    End
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =3968
+                    Top =1417
+                    Width =480
+                    Height =240
+                    Name ="Label80"
+                    Caption ="OR"
+                    GUID = Begin
+                        0xfbcfc17391a3cc429b205c215116b2d7
+                    End
+                End
+                Begin Rectangle
+                    SpecialEffect =3
+                    BackStyle =0
+                    BorderWidth =3
+                    OverlapFlags =247
+                    Left =227
+                    Top =1700
+                    Width =8279
+                    Height =604
+                    Name ="Box77"
+                    GUID = Begin
+                        0x51ae6cdcee95f04fa18b4620141a9a8b
+                    End
+                End
+                Begin Rectangle
+                    SpecialEffect =3
+                    BackStyle =0
+                    BorderWidth =3
+                    OverlapFlags =247
+                    Left =227
+                    Top =850
+                    Width =3524
+                    Height =484
+                    Name ="Box82"
+                    GUID = Begin
+                        0xa98573cb0588574897a96672f6d98f78
+                    End
+                End
+                Begin Rectangle
+                    SpecialEffect =3
+                    BackStyle =0
+                    BorderWidth =3
+                    OverlapFlags =247
+                    Left =4478
+                    Top =848
+                    Width =4034
+                    Height =529
+                    Name ="Box83"
+                    GUID = Begin
+                        0x9159e76f79335348a01f34fc3d795013
+                    End
+                End
+            End
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =5905
+            Name ="Detail1"
+            Begin
+                Begin Subform
+                    OverlapFlags =85
+                    Width =10425
+                    Height =5658
+                    Name ="FindStudentSub"
+                    SourceObject ="Form.FindStudentSub"
+                    StatusBarText ="Students"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =10941
+                    Top =2031
+                    Width =2100
+                    Height =495
+                    FontSize =8
+                    TabIndex =1
+                    Name ="OpenFeesByStudent"
+                    Caption ="View and Edit Fees"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                    GUID = Begin
+                        0xc0bdf197b7ec0745a019c39eab3c2dbc
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =10941
+                    Top =1133
+                    Width =2100
+                    Height =495
+                    FontSize =8
+                    TabIndex =2
+                    Name ="cmdEditStudentDetails"
+                    Caption ="Edit Student Details"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                    GUID = Begin
+                        0x0d8d69b1e0bf4448a4f2f4325814a3ed
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =10941
+                    Top =566
+                    Width =2100
+                    Height =495
+                    FontSize =8
+                    TabIndex =3
+                    Name ="cmdAddNewStudents"
+                    Caption ="Add New Student"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                    GUID = Begin
+                        0x35560db8bc47414b90961d75137cb1a7
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =10941
+                    Top =2787
+                    Width =2100
+                    Height =495
+                    FontSize =8
+                    TabIndex =4
+                    Name ="FeesStatement"
+                    Caption ="Fees Statement"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                    GUID = Begin
+                        0xba746f0a767dcc49bcc0cbea52b12898
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =10941
+                    Top =3402
+                    Width =2100
+                    Height =495
+                    FontSize =8
+                    TabIndex =5
+                    Name ="FeesInvoice"
+                    Caption ="Fees Invoice"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                    GUID = Begin
+                        0x34a862b2ff76f8428a94664b29777276
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =10941
+                    Top =4679
+                    Width =2100
+                    Height =495
+                    FontSize =8
+                    TabIndex =6
+                    Name ="PrintReceipts"
+                    Caption ="Daily Entry Receipts"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                    GUID = Begin
+                        0x9452d6fccd64204dbc931eb57475c640
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =10941
+                    Top =4062
+                    Width =2100
+                    Height =495
+                    FontSize =8
+                    TabIndex =7
+                    Name ="DailyEntryReport"
+                    Caption ="Daily Entry Report"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                    GUID = Begin
+                        0x506e3aa8ae7c564590c1ddc5da170ae2
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =12632256
+            Name ="FormFooter2"
+            OnClick ="[Event Procedure]"
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database  '  Use database order for string comparisons.
+Option Explicit
+
+
+
+Private Sub AddToWhere(FieldValue As Variant, FieldName As String, MyCriteria As String, ArgCount As Integer)
+    
+    '  Create criteria for WHERE clause.
+    If FieldValue <> "" Then
+        '  Add "and" if other criterion exists.
+        If ArgCount > 0 Then
+            MyCriteria = MyCriteria & " and "
+        End If
+
+        '  Append criterion to existing criteria.
+        '  Enclose FieldValue and asterisk in quotation marks.
+        MyCriteria = (MyCriteria & FieldName & " Like " & Chr(39) & FieldValue & Chr(42) & Chr(39))
+        
+        '  Increase argument count.
+        ArgCount = ArgCount + 1
+    End If
+
+End Sub
+
+
+
+Private Sub Button69_Click()
+
+'DoCmd OpenForm "Add New Records", , , , A_ADD
+    Me![FindStudentSub].Form.DefaultEditing = 1
+
+End Sub
+
+Private Sub Clear_Click()
+    
+    '  Clear controls in form header and remove records from subform.
+    '
+    Dim MySQL As String
+    Dim Tmp As Variant
+    
+    StudentViewButtonsHide
+    
+    'SetSub form to No Data entry
+    Me![FindStudentSub].Form.DefaultEditing = 4
+    
+    MySQL = "SELECT * FROM tblStudent WHERE False"
+
+    '  Clear search text boxes.
+    Me![Look For Student No] = Null
+    Me![Look Class] = Null
+    Rem Me![Look For Address] = Null
+    Me![Look For Firstname] = Null
+    Me![Look For Surname] = Null
+    Rem Me![Look For Parents Name] = Null
+    
+    '  Reset subform's RecordSource property to remove records.
+    Me![FindStudentSub].Form.RecordSource = MySQL
+
+    '  Move insertion point to Look For Company text box.
+    Me![Look For Student No].SetFocus
+
+End Sub
+
+Private Sub DisableControl()
+
+    '  If enabled, disable control in detail section after changing search criterion.
+    Dim Tmp As Variant
+
+    If Me![FindStudentSub].Enabled Then
+        Tmp = EnableControls("Detail", False)
+    End If
+
+End Sub
+
+Private Sub cmdAddNewStudents_Click()
+    DoCmd.OpenForm "FindStudentSubAdd"
+End Sub
+
+Private Sub cmdEditStudentDetails_Click()
+    DoCmd.OpenForm "FindStudentSubEdit"
+End Sub
+
+Private Sub DailyEntryReport_Click()
+    On Error GoTo Exit1
+    DoCmd.OpenReport "rptFeesDailyEntryRecord", acViewPreview
+Exit1:
+    End
+End Sub
+
+Private Sub EXIT_Click()
+    DoCmd.Close A_FORM, "FindStudent"
+End Sub
+
+Private Sub FeesInvoice_Click()
+On Error GoTo Exit1
+    Dim strSQL As String
+            strSQL = "SELECT * FROM qryFeesInvoice WHERE qryFeesInvoice.FESTID=" & [Forms]![FindStudent]![FindStudentSub].[Form]![STID] & ";"
+            CurrentDb.QueryDefs("qryFeesInvoiceSel").SQL = strSQL
+            DoCmd.OpenReport "rptFeessInvoiceSel", acViewPreview
+Exit1:
+    End
+End Sub
+
+Private Sub FeesStatement_Click()
+    On Error GoTo Exit1
+    DoCmd.OpenReport "rptFeessStatement", acViewPreview
+Exit1:
+    End
+End Sub
+
+Private Sub Form_Activate()
+    DoCmd.Maximize
+End Sub
+
+Private Sub Form_Close()
+    ' Restore to normal view on Close
+Rem    DoCmd.Restore
+End Sub
+
+
+
+Private Sub Form_Open(Cancel As Integer)
+    Me![FindStudentSub].Form.DefaultEditing = 3
+    'Maximise View
+   DoCmd.Maximize
+
+    '  Move insertion point to Look For Enquiry No text box when form is opened.
+    Me![Look For Student No].SetFocus
+    StudentViewButtonsHide
+
+End Sub
+
+Private Sub Look_Class_AfterUpdate()
+    '  Disable control in detail section after changing search criterion.
+    DisableControl
+End Sub
+
+Private Sub Look_For_Address_AfterUpdate()
+    
+    '  Disable control in detail section after changing search criterion.
+    DisableControl
+
+End Sub
+
+
+Private Sub Look_For_Firstname_AfterUpdate()
+    '  Disable control in detail section after changing search criterion.
+    DisableControl
+End Sub
+
+Private Sub Look_For_Parents_Name_AfterUpdate()
+    '  Disable control in detail section after changing search criterion.
+    DisableControl
+End Sub
+
+Private Sub Look_For_Student_No_AfterUpdate()
+    '  Disable control in detail section after changing search criterion.
+    DisableControl
+End Sub
+
+Private Sub Look_For_Surname_AfterUpdate()
+
+    '  Disable control in detail section after changing search criterion.
+    DisableControl
+
+End Sub
+
+Private Sub Show_StudentsB()
+    
+    '  Create a WHERE clause using search criteria entered by user and
+    '  set RecordSource property of FindStudentSub.
+    
+    Dim MySQL As String, MyCriteria As String, MyRecordSource As String, wildCardStar As String
+    Dim ArgCount As Integer
+    Dim Tmp As Variant
+    
+    ' Set Sub Form to No Data Entry
+    Me![FindStudentSub].Form.DefaultEditing = 3
+
+    '  Initialize argument count.
+    ArgCount = 0
+
+    '  Initialize SELECT statement.
+    MySQL = "SELECT * FROM tblStudent WHERE "
+    MyCriteria = ""
+    wildCardStar = "*"
+
+    '  Use values entered in text boxes in form header to create criteria for WHERE clause.
+    Rem AddToWhere [Look For Student No], "[STID]", MyCriteria, ArgCount
+    Rem AddToWhere [Look For Date of Birth], "[STDOB]", MyCriteria, ArgCount
+    Rem AddToWhere wildCardStar & [Look For Parents Name] & wildCardStar, "[STParents]", MyCriteria, ArgCount
+    Rem AddToWhere wildCardStar & [Look For Address] & wildCardStar, "[STAddress1]", MyCriteria, ArgCount
+    AddToWhere [Look For Firstname], "[STFName]", MyCriteria, ArgCount
+    AddToWhere [Look For Surname], "[STSName]", MyCriteria, ArgCount
+Rem    AddToWhere wildCardStar & [Look For Surname] & wildCardStar, "[STSName]", MyCriteria, ArgCount
+    AddToWhere wildCardStar & "*" & wildCardStar, "[STID]", MyCriteria, ArgCount
+
+    '  If no criterion specifed, return all records.
+    If MyCriteria = "" Then
+        MyCriteria = "False"
+    End If
+
+    '  Create SELECT statement.
+    MyRecordSource = MySQL & MyCriteria & " ORDER BY STFNAME, STSNAME"
+
+    '  Set RecordSource property of FindStudentSub.
+    Me![FindStudentSub].Form.RecordSource = MyRecordSource
+    
+    '  If no records match criteria, display message.
+    '  Move focus to Clear button.
+    If Me![FindStudentSub].Form.RecordsetClone.RecordCount = 0 Then
+        MsgBox "No records match the criteria you entered.", 48, "No Records Found"
+        Me!Clear.SetFocus
+    Else
+        '  Enable control in detail section.
+        Tmp = EnableControls("Detail", True)
+        '  Move insertion point to FindStudentSub.
+        Me![FindStudentSub].SetFocus
+    End If
+
+End Sub
+
+Private Sub Show_StudentsC()
+    
+    '  Create a WHERE clause using search criteria entered by user and
+    '  set RecordSource property of FindStudentSub.
+    '  Create a WHERE clause using search criteria entered by user and
+    '  set RecordSource property of FindStudentSub.
+    
+    Dim MySQLC As String, MyCriteriaC As String, MyRecordSourceC As String
+    Dim TmpC As Variant
+    
+    ' Set Sub Form to No Data Entry
+    Me![FindStudentSub].Form.DefaultEditing = 3
+
+    '  Initialize SELECT statement.
+    MySQLC = "SELECT * FROM tblStudent WHERE "
+    
+    MyCriteriaC = "[STTCCode] = [Look Class]"
+  
+    MyRecordSourceC = MySQLC & MyCriteriaC & " ORDER BY STFNAME, STSNAME"
+
+    '  Set RecordSource property of FindStudentSub.
+    Me![FindStudentSub].Form.RecordSource = MyRecordSourceC
+    
+    '  If no records match criteria, display message.
+    '  Move focus to Clear button.
+    If Me![FindStudentSub].Form.RecordsetClone.RecordCount = 0 Then
+        MsgBox "No records match the criteria you entered.", 48, "No Records Found"
+        Me!Clear.SetFocus
+    Else
+        '  Enable control in detail section.
+        TmpC = EnableControls("Detail", True)
+        '  Move insertion point to FindStudentSub.
+        Me![FindStudentSub].SetFocus
+    End If
+
+End Sub
+Private Sub Show_StudentsA()
+    
+    '  Create a WHERE clause using search criteria entered by user and
+    '  set RecordSource property of FindStudentSub.
+    
+    Dim MySQLA As String, MyCriteriaA As String, MyRecordSourceA As String
+    Dim TmpA As Variant
+    
+    ' Set Sub Form to No Data Entry
+    Me![FindStudentSub].Form.DefaultEditing = 3
+
+    '  Initialize SELECT statement.
+    MySQLA = "SELECT * FROM tblStudent WHERE "
+    
+    MyCriteriaA = "[STID] = " & CLng([Look For Student No])
+  
+    MyRecordSourceA = MySQLA & MyCriteriaA
+
+    '  Set RecordSource property of FindStudentSub.
+    Me![FindStudentSub].Form.RecordSource = MyRecordSourceA
+    
+    '  If no records match criteria, display message.
+    '  Move focus to Clear button.
+    If Me![FindStudentSub].Form.RecordsetClone.RecordCount = 0 Then
+        MsgBox "No records match the criteria you entered.", 48, "No Records Found"
+        Me!Clear.SetFocus
+    Else
+        '  Enable control in detail section.
+        TmpA = EnableControls("Detail", True)
+        '  Move insertion point to FindStudentSub.
+        Me![FindStudentSub].SetFocus
+    End If
+
+End Sub
+
+
+Private Sub OpenFeesByStudent_Click()
+    DoCmd.OpenForm "frmFeesByStudent"
+Rem    DoCmd.OpenForm "frmFeesByStudent", acFormDS
+End Sub
+
+Private Sub PrintReceipts_Click()
+    On Error GoTo Exit1
+    DoCmd.OpenReport "rptFeesDailyEntryRecordReceipt", acViewPreview
+Exit1:
+    End
+End Sub
+
+Private Sub Show_Record_Click()
+
+    If Me![Look For Student No] >= 1 Then
+        StudentViewButtonsShow
+        Show_StudentsA
+        End
+    ElseIf Me![Look Class] >= 1 Then
+        StudentViewButtonsShow
+        Show_StudentsC
+        End
+    End If
+        StudentViewButtonsShow
+        Show_StudentsB
+End:
+    Exit Sub
+   
+End Sub
+
+Private Sub StudentViewButtonsShow()
+        Me![OpenFeesByStudent].Visible = True
+        Me![cmdEditStudentDetails].Visible = True
+        Me![FeesStatement].Visible = True
+        Me![FeesInvoice].Visible = True
+End Sub
+
+Private Sub StudentViewButtonsHide()
+        Me![OpenFeesByStudent].Visible = False
+        Me![cmdEditStudentDetails].Visible = False
+        Me![FeesStatement].Visible = False
+        Me![FeesInvoice].Visible = False
+End Sub

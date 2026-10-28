@@ -1,0 +1,885 @@
+Version =20
+VersionRequired =20
+Checksum =1352561951
+Begin Form
+    AllowEditing = NotDefault
+    AllowFilters = NotDefault
+    AutoResize = NotDefault
+    Modal = NotDefault
+    RecordSelectors = NotDefault
+    ShowGrid = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    BorderStyle =3
+    GridX =20
+    GridY =24
+    Width =14742
+    ItemSuffix =125
+    Left =3870
+    Top =330
+    Right =14700
+    Bottom =8475
+    RecSrcDt = Begin
+        0x77a6a9c33786e140
+    End
+    Caption ="ISM Main Menu"
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Helv"
+    PrtMip = Begin
+        0xa0050000a0050000a0050000a005000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x010400069c005803032f0000010009009a0b34086400010001002c0102000100 ,
+        0x2c01020000004134000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000010000000000000001000000 ,
+        0x0200000001000000ffffffff0000000000000000000000000000000044494e55 ,
+        0x220010014c030c00cad2f6720000000000000000000000000000000000000000 ,
+        0x0000000000000000090000000000000000000100000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000001000000000000000000000010010000534d544a ,
+        0x00000000100000014d006900630072006f0073006f0066007400200058005000 ,
+        0x5300200044006f00630075006d0065006e007400200057007200690074006500 ,
+        0x72000000496e70757442696e00464f524d534f5552434500524553444c4c0055 ,
+        0x6e69726573444c4c00496e7465726c656176696e67004f464600496d61676554 ,
+        0x797065004a5045474d6564004f7269656e746174696f6e00504f525452414954 ,
+        0x00436f6c6c617465004f4646005265736f6c7574696f6e004f7074696f6e3100 ,
+        0x506170657253697a65004c455454455200436f6c6f724d6f6465003234627070 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000c0000004d58445701010000
+    End
+    PrtDevNames = Begin
+        0x0800260044000100000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000585053506f72743a00
+    End
+    OnActivate ="[Event Procedure]"
+    Moveable =0
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            Width =15
+            Height =15
+        End
+        Begin Rectangle
+            OldBorderStyle =0
+        End
+        Begin Line
+            OldBorderStyle =0
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            AddColon = NotDefault
+        End
+        Begin CheckBox
+            AddColon = NotDefault
+        End
+        Begin OptionGroup
+            OldBorderStyle =0
+        End
+        Begin BoundObjectFrame
+            OldBorderStyle =0
+        End
+        Begin TextBox
+            OldBorderStyle =0
+        End
+        Begin ComboBox
+            OldBorderStyle =0
+        End
+        Begin Subform
+            CanGrow = NotDefault
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin PaletteButton
+            AutoLabel = NotDefault
+            AddColon = NotDefault
+        End
+        Begin ToggleButton
+            AutoLabel = NotDefault
+            AddColon = NotDefault
+        End
+        Begin Section
+            Height =9867
+            BackColor =32768
+            Name ="Detail0"
+            Begin
+                Begin Rectangle
+                    BackStyle =0
+                    OldBorderStyle =1
+                    BorderWidth =1
+                    OverlapFlags =93
+                    Left =566
+                    Top =2832
+                    Width =2265
+                    Height =1710
+                    BackColor =12632256
+                    Name ="Box64"
+                End
+                Begin Rectangle
+                    BackStyle =0
+                    OldBorderStyle =1
+                    BorderWidth =1
+                    OverlapFlags =93
+                    Left =6803
+                    Top =2775
+                    Width =2265
+                    Height =4635
+                    BackColor =12632256
+                    Name ="Box65"
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =11622
+                    Top =6472
+                    Width =1800
+                    Height =495
+                    FontSize =8
+                    Name ="LocationTable"
+                    Caption ="Location and Fees Rate Table"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =11623
+                    Top =4984
+                    Width =1800
+                    Height =495
+                    FontSize =8
+                    TabIndex =1
+                    Name ="TeachersTable"
+                    Caption ="Teachers Table"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =11254
+                    Top =8507
+                    Width =3270
+                    Height =555
+                    TabIndex =2
+                    ForeColor =255
+                    Name ="ExitProgram"
+                    Caption ="Exit Program"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =566
+                    Top =590
+                    Width =8505
+                    Height =570
+                    FontSize =18
+                    FontWeight =700
+                    Name ="Text44"
+                    Caption ="Islamic School Management Main Menu"
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =11593
+                    Top =3850
+                    Width =2520
+                    Height =495
+                    FontSize =8
+                    TabIndex =3
+                    Name ="ViewStudents"
+                    Caption ="View and Edit Students"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =11622
+                    Top =5716
+                    Width =1800
+                    Height =495
+                    FontSize =8
+                    TabIndex =4
+                    Name ="ClassTable"
+                    Caption ="Class Table"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                    GUID = Begin
+                        0x56b2c63483c7454ba24b664ea4821eec
+                    End
+                End
+                Begin Image
+                    SizeMode =1
+                    PictureType =1
+                    Left =11253
+                    Top =543
+                    Width =3231
+                    Height =1771
+                    Name ="Image99"
+                    Picture ="C:\\ISM_2016\\LOGO\\LOGO.jpg"
+                    GUID = Begin
+                        0x93d6b74d60b0f745b8a4a21dfcaa39a7
+                    End
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =566
+                    Top =2456
+                    Width =2055
+                    Height =300
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Label99"
+                    Caption ="Student Register"
+                    GUID = Begin
+                        0xbd2c66e006065f4a85515960d04fa727
+                    End
+                End
+                Begin Rectangle
+                    BackStyle =0
+                    OldBorderStyle =1
+                    BorderWidth =1
+                    OverlapFlags =223
+                    Left =11285
+                    Top =3436
+                    Width =3180
+                    Height =4485
+                    BackColor =12632256
+                    Name ="Box103"
+                    GUID = Begin
+                        0xf724cfd11d8b284d89421af74622aa72
+                    End
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =11281
+                    Top =3094
+                    Width =2520
+                    Height =300
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Label104"
+                    Caption ="Data Mantenance"
+                    GUID = Begin
+                        0x5efca22fbd505f4a8f2307ba6646a654
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =793
+                    Top =3118
+                    Width =1871
+                    Height =495
+                    FontSize =8
+                    TabIndex =5
+                    Name ="RegisterEvening"
+                    Caption ="Register Evening"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                    GUID = Begin
+                        0x3b866c719d54aa4db0d18b5844fcf82c
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =7029
+                    Top =3094
+                    Width =1871
+                    Height =495
+                    FontSize =8
+                    TabIndex =6
+                    Name ="FeesRecord"
+                    Caption ="Fees Record"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                    GUID = Begin
+                        0x688eaf38f1ca1a4a9b008e9bee796bdc
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =7058
+                    Top =6755
+                    Width =1871
+                    Height =495
+                    FontSize =8
+                    TabIndex =7
+                    Name ="MEI_EditAmount"
+                    Caption ="Incomes and Expeses Edit"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                    GUID = Begin
+                        0xc809dc28c8ad2a4cba11be5e634179ea
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =793
+                    Top =3850
+                    Width =1871
+                    Height =495
+                    FontSize =8
+                    TabIndex =8
+                    Name ="RegisterWeekend"
+                    Caption ="Register Weekend"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                    GUID = Begin
+                        0x99698cae7bf2224292e4d53a2a0bbe6c
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =850
+                    Top =6732
+                    Width =1871
+                    Height =495
+                    FontSize =8
+                    TabIndex =9
+                    Name ="InvoiceReminder"
+                    Caption ="Invoice and Reminder"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                    GUID = Begin
+                        0xbb7baa8d16dcc9498e22256c0ad1ef98
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =7058
+                    Top =5267
+                    Width =1871
+                    Height =495
+                    FontSize =8
+                    TabIndex =10
+                    Name ="FessForcast"
+                    Caption ="Montthly Account"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                    GUID = Begin
+                        0x3e07a55475bcce4ca8256933d7ddd0ab
+                    End
+                End
+                Begin Rectangle
+                    BackStyle =0
+                    OldBorderStyle =1
+                    BorderWidth =1
+                    OverlapFlags =93
+                    Left =3401
+                    Top =2832
+                    Width =2835
+                    Height =1695
+                    BackColor =12632256
+                    Name ="Box105"
+                    GUID = Begin
+                        0x1bf68f793a59f8448fb7b96820b9ed19
+                    End
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =3405
+                    Top =2460
+                    Width =2385
+                    Height =300
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Label106"
+                    Caption ="Signin Sheet"
+                    GUID = Begin
+                        0x52896550d2bc0849a60ea2d5826c2a86
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =850
+                    Top =6047
+                    Width =1871
+                    Height =495
+                    FontSize =8
+                    TabIndex =11
+                    Name ="FeesRateTable"
+                    Caption ="Exemption Entry Batch"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                    GUID = Begin
+                        0xc416dea111888e4f935d35f4cb3092ca
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =7029
+                    Top =3826
+                    Width =1871
+                    Height =495
+                    FontSize =8
+                    TabIndex =12
+                    Name ="FeesRecordFormer"
+                    Caption ="Fees Record Former"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                    GUID = Begin
+                        0xa66cfeb4893e524882db03365b1e5a52
+                    End
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =6803
+                    Top =2433
+                    Width =2385
+                    Height =300
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Label109"
+                    Caption ="Fee Record"
+                    GUID = Begin
+                        0x31d650b8cc19234ba866c71cce195084
+                    End
+                End
+                Begin Rectangle
+                    BackStyle =0
+                    OldBorderStyle =1
+                    BorderWidth =1
+                    OverlapFlags =223
+                    Left =538
+                    Top =5061
+                    Width =5700
+                    Height =2355
+                    BackColor =12632256
+                    Name ="Box111"
+                    GUID = Begin
+                        0x8adf45d9a7cafb4e957512f54239919a
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =850
+                    Top =5338
+                    Width =1871
+                    Height =495
+                    FontSize =8
+                    TabIndex =13
+                    Name ="FeeRecEntry"
+                    Caption ="Fee and Rec Entry Single"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                    GUID = Begin
+                        0x3a9a9b53c175b944bf1dcc1604073a37
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =3741
+                    Top =6046
+                    Width =1871
+                    Height =495
+                    FontSize =8
+                    TabIndex =14
+                    Name ="RecEntryBatch"
+                    Caption ="Rec Entry Batch"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                    GUID = Begin
+                        0x86f0fa2fcc6aec4aa3b91387954019a5
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =3741
+                    Top =5267
+                    Width =1871
+                    Height =495
+                    FontSize =8
+                    TabIndex =15
+                    Name ="FeeEntryBatch"
+                    Caption ="Monthly Fees Due Entry Batch"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                    GUID = Begin
+                        0x9c0bdc3a25e1464ba93fea51dcd4832b
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =566
+                    Top =1181
+                    Width =8503
+                    Height =515
+                    FontSize =14
+                    TabIndex =16
+                    Name ="Text112"
+                    ControlSource ="=DLookUp(\"[OrgName]\",\"tbl_Master\",\"[Current] = 'Y'\")"
+                    GUID = Begin
+                        0xd518019f1a86754992860b99dcbbcce8
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =11622
+                    Top =7204
+                    Width =1800
+                    Height =495
+                    FontSize =8
+                    TabIndex =17
+                    Name ="Command114"
+                    Caption ="Master Table"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                    GUID = Begin
+                        0x44fc8cfd3e373642adf3ceb1be009dfe
+                    End
+                End
+                Begin Rectangle
+                    BackStyle =0
+                    OldBorderStyle =1
+                    BorderWidth =1
+                    OverlapFlags =215
+                    Left =6803
+                    Top =4677
+                    Width =2265
+                    Height =135
+                    BackColor =12632256
+                    Name ="Box116"
+                    GUID = Begin
+                        0x62140969adceb84691441bd69e829735
+                    End
+                End
+                Begin Rectangle
+                    BackStyle =0
+                    OldBorderStyle =1
+                    BorderWidth =1
+                    OverlapFlags =93
+                    Left =566
+                    Top =7901
+                    Width =8505
+                    Height =1170
+                    BackColor =12632256
+                    Name ="Box117"
+                    GUID = Begin
+                        0x09e59ba6f44ccc45afb75484e6fee09f
+                    End
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =215
+                    TextAlign =2
+                    Left =935
+                    Top =8313
+                    Width =7710
+                    Height =525
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Developper"
+                    Caption ="Written By: Jamal Miah\015\012For further information, please contact on 07940 4"
+                        "42855"
+                    GUID = Begin
+                        0xc1e6291496bed243983121959eb7f572
+                    End
+                End
+                Begin Label
+                    BackStyle =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =538
+                    Top =4700
+                    Width =3090
+                    Height =300
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Label119"
+                    Caption ="Fees Maintenance"
+                    GUID = Begin
+                        0x6aa3fdf4a9641442acbb3639a11f24da
+                    End
+                End
+                Begin Rectangle
+                    BackStyle =0
+                    OldBorderStyle =1
+                    BorderWidth =1
+                    OverlapFlags =215
+                    Left =11281
+                    Top =4572
+                    Width =3180
+                    Height =120
+                    BackColor =12632256
+                    Name ="Box120"
+                    GUID = Begin
+                        0xe594cf95f320db488f10966ae79a2e76
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =7058
+                    Top =6047
+                    Width =1871
+                    Height =495
+                    FontSize =8
+                    TabIndex =18
+                    Name ="MEI_Entry"
+                    Caption ="Incomes and Expeses Entry"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                    GUID = Begin
+                        0x7b298a5900957c41b8d6a13af995be79
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =3685
+                    Top =3094
+                    Width =1871
+                    Height =495
+                    FontSize =8
+                    TabIndex =19
+                    Name ="SigninEvening"
+                    Caption ="Signin Evening"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                    GUID = Begin
+                        0x95d6dbb27ebb684eb47d89195c6daa3c
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =3685
+                    Top =3826
+                    Width =1871
+                    Height =495
+                    FontSize =8
+                    TabIndex =20
+                    Name ="SigninWeekend"
+                    Caption ="Signin Weekend"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                    GUID = Begin
+                        0xd011eb93d0ffda40850554806b7d7712
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =3741
+                    Top =6755
+                    Width =1871
+                    Height =495
+                    FontSize =8
+                    TabIndex =21
+                    Name ="DailyEntryReport"
+                    Caption ="Daily Entry Report"
+                    OnClick ="[Event Procedure]"
+                    FontName ="MS Sans Serif"
+                    GUID = Begin
+                        0xf18bc7e70dc9d84b89243001acf267fc
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+
+Private Sub AddNewStudent_Click()
+    DoCmd.OpenForm "frmStudentEntry"
+End Sub
+
+Private Sub ClassTable_Click()
+    DoCmd.OpenForm "frmTeachClass", acFormDS
+End Sub
+
+Private Sub Command114_Click()
+    DoCmd.OpenForm "frmMaster", acNormal
+End Sub
+
+
+Private Sub DailyEntryReport_Click()
+    On Error GoTo Exit1
+    DoCmd.OpenReport "rptFeesDailyEntryRecord", acViewPreview
+Exit1:
+    DoCmd.Maximize
+    End
+End Sub
+
+Private Sub ExitProgram_Click()
+    DoCmd.Quit
+End Sub
+
+Private Sub FeeEntryBatch_Click()
+   DoCmd.SetWarnings False
+   DoCmd.OpenQuery "qryFeesMonthlyDueUpload_S1"
+   DoCmd.SetWarnings True
+   DoCmd.OpenForm "frmFeesMonthlyDueUpload_S2", acFormDS
+End Sub
+
+Private Sub FeeRecEntry_Click()
+    DoCmd.SetWarnings False
+    DoCmd.OpenQuery "qryFeesRecEntryS1"
+    DoCmd.SetWarnings True
+    DoCmd.OpenForm "FrmFeePayEntry", acFormDS
+End Sub
+
+
+Private Sub FeesRateTable_Click()
+   DoCmd.OpenForm "FrmFeeExemptionEntry", acFormDS
+End Sub
+
+Private Sub FeesRecord_Click()
+    DoCmd.OpenReport "rptFeesRecord", acViewPreview
+End Sub
+
+Private Sub FeesRecordFormer_Click()
+    DoCmd.OpenReport "rptFeesRecordLeft", acViewPreview
+End Sub
+
+Private Sub FessForcast_Click()
+Rem    DoCmd.OpenReport "rptFeesMonthlyAccount", acViewPreview
+    Dim strSQL As String
+    Msg = "Please Enter Class Location ID"
+    varResponse = InputBox(Msg)
+        
+        If varResponse = "" Then
+            strSQL = "SELECT * FROM qryMEIDataSub2 WHERE qryMEIDataSub2.CLLocCode=" & 1 & ";"
+            CurrentDb.QueryDefs("qryMEIDataSub2Sel").SQL = strSQL
+            DoCmd.OpenReport "rptFeesMonthlyAccount", acViewPreview
+        Else
+            strSQL = "SELECT * FROM qryMEIDataSub2 WHERE qryMEIDataSub2.CLLocCode=" & varResponse & ";"
+            CurrentDb.QueryDefs("qryMEIDataSub2Sel").SQL = strSQL
+            DoCmd.OpenReport "rptFeesMonthlyAccount", acViewPreview
+        End If
+End Sub
+
+Private Sub Form_Activate()
+    DoCmd.Maximize
+End Sub
+
+Private Sub Form_Close()
+    DoCmd.Quit
+End Sub
+
+Private Sub Form_Open(Cancel As Integer)
+   DoCmd.SetWarnings False
+   DoCmd.OpenQuery "_qryAddFeeDafaultRecords"
+   DoCmd.SetWarnings True
+End Sub
+
+Private Sub InvoiceReminder_Click()
+On Error GoTo Exit1
+    Dim strSQL As String
+            strSQL = "SELECT * FROM qryFeesInvoice;"
+            CurrentDb.QueryDefs("qryFeesInvoiceSel").SQL = strSQL
+            DoCmd.OpenReport "rptFeessInvoiceSel", acViewPreview
+Exit1:
+    End
+End Sub
+
+Private Sub MEI_EditAmount_Click()
+On Error GoTo Exit1
+    Call SetReportDate
+    DoCmd.OpenForm "frmMEIData_EditAmt", acNormal
+Exit1:
+    End
+End Sub
+
+Private Sub MEI_Entry_Click()
+On Error GoTo Exit1
+    DoCmd.SetWarnings False
+    DoCmd.OpenQuery "qryMEIDataEntry1"
+    DoCmd.SetWarnings True
+    DoCmd.OpenForm "frmExpenseIncomeNotesUpload", acFormDS
+Exit1:
+    End
+End Sub
+
+Private Sub RecEntryBatch_Click()
+On Error GoTo Exit1
+    DoCmd.SetWarnings False
+    DoCmd.OpenQuery "qryFeesMonthlyRecUpload_S1A"
+    DoCmd.OpenQuery "qryFeesMonthlyRecUpload_S1B"
+    DoCmd.SetWarnings True
+    DoCmd.OpenForm "frmFeesMonthlyRecUpload_S2", acFormDS
+Exit1:
+    End
+End Sub
+
+Private Sub RegisterEvening_Click()
+    On Error GoTo Exit1
+    DoCmd.OpenReport "rptRegisterWeekDays", acViewPreview
+Exit1:
+    End
+End Sub
+
+Private Sub RegisterWeekend_Click()
+    On Error GoTo Exit1
+    DoCmd.OpenReport "rptRegisterWeekend", acViewPreview
+Exit1:
+    End
+End Sub
+
+Private Sub SigninEvening_Click()
+    On Error GoTo Exit1
+    DoCmd.OpenReport "rptTeachersDailySiginEve", acViewPreview
+Exit1:
+    End
+End Sub
+
+Private Sub SigninWeekend_Click()
+    On Error GoTo Exit1
+    DoCmd.OpenReport "rptTeachersDailySiginWE", acViewPreview
+Exit1:
+    End
+End Sub
+
+Private Sub ViewStudents_Click()
+    DoCmd.OpenForm "FindStudent"
+End Sub
+
+Private Sub LocationTable_Click()
+    DoCmd.OpenForm "frmClass", acNormal
+End Sub
+
+Private Sub TeachersTable_Click()
+    DoCmd.OpenForm "frmTeacher", acFormDS
+End Sub

@@ -1,0 +1,1336 @@
+Version =20
+VersionRequired =20
+Checksum =935064254
+Begin Report
+    LayoutForPrint = NotDefault
+    RecordLocks =1
+    DateGrouping =1
+    GridX =20
+    GridY =24
+    Width =10090
+    ItemSuffix =200
+    Left =945
+    Top =75
+    Right =12360
+    Bottom =6285
+    RecSrcDt = Begin
+        0xda176d5455e1e440
+    End
+    RecordSource ="qryMEIDataSub4"
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    PrtMip = Begin
+        0xec030000d0020000d00200008a050000000000006a2700000000000001000000 ,
+        0x010000006801000000000000a10700000100000000000000
+    End
+    PrtDevMode = Begin
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x010405019c002c0a032f0000010009009a0b34086400010001002c0102000100 ,
+        0x2c01010000004134000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000522d187700000000000000000000020000000000000000000000f604 ,
+        0xfa020000f604fa02000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000100000100000000000100000000010006000000 ,
+        0x0700070000000000000000000200000002010001000116000000000000010000 ,
+        0x02000000070000000000000000190000e40c000000000000b80b000070170000 ,
+        0x00000000dc05000058020000000000000000000000000000feff000000000000 ,
+        0x0000000000000000000000000000000000000000370c0000da0c000010270000 ,
+        0x102700001027000010270000a00a0000c2060000b80600002c04000040010000 ,
+        0xd200000018000000000010271027102700001027000000000000000000000000 ,
+        0x0100000000000200000000000000000100000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000100000000000000000100010005010000000000000000010000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000000000000000000000000000000000000ffffffff ,
+        0x6400000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000000000000cccccc00000000000000000000000000 ,
+        0x0000000000000000000000000000000041007200690061006c00000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000640000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000cccccc00000000000000000000000000000000000000000000000000 ,
+        0x0000000041007200690061006c00000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000640000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000000000000000000000000000cccccc0000000000 ,
+        0x0000000000000000000000000000000000000000000000004100720069006100 ,
+        0x6c00000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000090009006400 ,
+        0x0000000000000000fa02f604030100000000000000001027e404000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x410064006d0069006e006900730074007200610074006f007200000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000570037000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000300030001000000000000000200010001000100 ,
+        0x0000000000010100000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000024000000f5ffffff000000000000000000000000 ,
+        0x00000000000000010000000041007200690061006c0000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000000000000ffffff00010000000000000001000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000010108000001 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000001010002000000020000000100 ,
+        0x0000102700000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000002000000000000000454e474c4953480000000000000000000f000000 ,
+        0xbc0c000027000000a8010000270000005052495601ff4443502d38313130444e ,
+        0x0000000000000000000000000000003f00000000000000000000000021000000 ,
+        0x0000f4010000000000000000020100007b170000891000007b17000089100000 ,
+        0x7b170000891000007b1700008910000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000
+    End
+    PrtDevNames = Begin
+        0x080023003e000100000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000005553 ,
+        0x4230303100
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            TextFontFamily =18
+            FontSize =10
+            FontWeight =700
+            FontName ="Times New Roman"
+        End
+        Begin Rectangle
+            Width =850
+            Height =850
+        End
+        Begin Line
+            Width =1701
+        End
+        Begin Image
+            OldBorderStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin BoundObjectFrame
+            AutoLabel = NotDefault
+            OldBorderStyle =0
+        End
+        Begin TextBox
+            AutoLabel = NotDefault
+            OldBorderStyle =0
+            TextFontFamily =18
+            Height =300
+            FontSize =10
+            FontName ="Times New Roman"
+        End
+        Begin Subform
+            Width =1701
+            Height =1701
+        End
+        Begin Chart
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin UnboundObjectFrame
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin BreakLevel
+            GroupHeader = NotDefault
+            GroupFooter = NotDefault
+            ControlSource ="CLLocation"
+        End
+        Begin BreakLevel
+            GroupHeader = NotDefault
+            ControlSource ="StudentType"
+        End
+        Begin FormHeader
+            KeepTogether = NotDefault
+            Height =0
+            Name ="ReportHeader"
+            GUID = Begin
+                0x971a6c64e020d5448a9c0a24fce77aef
+            End
+        End
+        Begin PageHeader
+            Height =1983
+            Name ="PageHeader0"
+            GUID = Begin
+                0xe4b4355b5a1d9f469b9a3b123f0551ac
+            End
+            Begin
+                Begin Image
+                    SizeMode =1
+                    PictureType =1
+                    Width =9923
+                    Height =1205
+                    Name ="Image54"
+                    Picture ="C:\\ISM_2016\\LOGO\\LOGO_LH_P.jpg"
+                    GUID = Begin
+                        0x6d82be7f72df8a4ea7232af216d7bd5a
+                    End
+                End
+                Begin TextBox
+                    BorderWidth =3
+                    TextAlign =2
+                    Top =1488
+                    Width =10005
+                    Height =495
+                    FontSize =14
+                    FontWeight =700
+                    Name ="Text139"
+                    ControlSource ="=\"MONTHLY ACCOUNT - \" & [CLLocation] & \" - \" & Format(DLookUp(\"[RepMonDate]"
+                        "\",\"tblRepMon\",\"[RepMonID] = 1\"),\"mmmm yyyy\")"
+                    GUID = Begin
+                        0x22fcc0e44e9a5e4fbad0ba1098568372
+                    End
+                End
+            End
+        End
+        Begin BreakHeader
+            KeepTogether = NotDefault
+            Height =590
+            Name ="GroupHeader0"
+            GUID = Begin
+                0x817aa34e884d4a409a7143d2b5a4626c
+            End
+            Begin
+                Begin Label
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =2127
+                    Top =188
+                    Width =1077
+                    Height =270
+                    Name ="Label102"
+                    Caption ="Balance BF"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xcd268748ed270f4f9c8948801c1488b5
+                    End
+                End
+                Begin Label
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =5556
+                    Top =194
+                    Width =1077
+                    Height =285
+                    Name ="Label104"
+                    Caption ="Exemption"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xb444c399151cd74db51839a9dbf52aa7
+                    End
+                End
+                Begin Label
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =7797
+                    Top =188
+                    Width =1077
+                    Height =285
+                    Name ="Label106"
+                    Caption ="Received"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x0b118c0ca33d4e4c8855b73b32d5a7ac
+                    End
+                End
+                Begin Label
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =6663
+                    Top =188
+                    Width =1077
+                    Height =285
+                    Name ="Label108"
+                    Caption ="Written Off"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x37c49ddf6cfbf548bcc40bfa43fc70f9
+                    End
+                End
+                Begin Label
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =8931
+                    Top =188
+                    Width =1077
+                    Height =285
+                    Name ="Label133"
+                    Caption ="Balance CF"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x937e35a389595842a08fc1363f021925
+                    End
+                End
+                Begin Label
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =3261
+                    Top =188
+                    Width =1077
+                    Height =270
+                    Name ="Label143"
+                    Caption ="Due Cur M"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xd9f8933c31657b44853683445984c482
+                    End
+                End
+                Begin Label
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =4395
+                    Top =188
+                    Width =1077
+                    Height =285
+                    Name ="Label146"
+                    Caption ="Total Due"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xef10ed572971c54aaf4ebec0015122f3
+                    End
+                End
+                Begin Line
+                    LineSlant = NotDefault
+                    BorderWidth =3
+                    Width =10006
+                    Height =9
+                    Name ="Line150"
+                    GUID = Begin
+                        0x34c71039a1c5494facbbe260ec8af424
+                    End
+                End
+                Begin Label
+                    BackStyle =0
+                    OldBorderStyle =1
+                    TextAlign =1
+                    TextFontFamily =34
+                    Top =23
+                    Width =1977
+                    Height =270
+                    Name ="Label152"
+                    Caption ="FEES COLLECTION"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x0403c8e67b9d4f47aec324b30c26f47a
+                    End
+                End
+            End
+        End
+        Begin BreakHeader
+            KeepTogether = NotDefault
+            Height =449
+            BreakLevel =1
+            Name ="GroupHeader1"
+            GUID = Begin
+                0x4e057ccaa1dda549bdc1adde59f1badc
+            End
+            Begin
+                Begin TextBox
+                    TextAlign =1
+                    TextFontFamily =34
+                    Left =28
+                    Top =94
+                    Width =1954
+                    Name ="Text99"
+                    ControlSource ="=[StudentType] & \" (\" & [NoStud] & \")\""
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xd3087abcf9468948960f8934d2c62fc4
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =2120
+                    Top =94
+                    Width =1077
+                    Height =285
+                    TabIndex =1
+                    Name ="Text103"
+                    ControlSource ="BalBF"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x2fc10b9f3b73ed49ba537ae792243e69
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =5522
+                    Top =94
+                    Width =1077
+                    TabIndex =2
+                    Name ="Text105"
+                    ControlSource ="Exemp"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xa293d2b07951e24ca451e4731fa2060a
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =7790
+                    Top =94
+                    Width =1077
+                    TabIndex =3
+                    Name ="Text107"
+                    ControlSource ="ReceivedCur"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xd15092ff61b4c54c908336091aae40cc
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =6656
+                    Top =94
+                    Width =1077
+                    TabIndex =4
+                    Name ="Text109"
+                    ControlSource ="WrittenOFFCur"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x9b66d43b386f3a4682e497227448ff1e
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =8924
+                    Top =94
+                    Width =1077
+                    TabIndex =5
+                    Name ="Text134"
+                    ControlSource ="Defecit"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xbd0fbdd6f56f3d4d94fce7bd908d4c9c
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =3254
+                    Top =94
+                    Width =1077
+                    Height =285
+                    TabIndex =6
+                    Name ="Text144"
+                    ControlSource ="DueCur"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xdd308867e24ab9478d63ab468cd0572b
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =4388
+                    Top =94
+                    Width =1077
+                    TabIndex =7
+                    Name ="Text147"
+                    ControlSource ="TotalDue"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x69b4ae9d38e6ce49b505bac0aa0d6ec1
+                    End
+                End
+                Begin Line
+                    Left =5499
+                    Width =0
+                    Height =449
+                    Name ="Line170"
+                    GUID = Begin
+                        0x4eb1ebb64e6f3f42a3e3c251c37d1e10
+                    End
+                End
+                Begin Line
+                    Left =8900
+                    Width =0
+                    Height =449
+                    Name ="Line172"
+                    GUID = Begin
+                        0x93f8c60245e6a24dafcc148cd57b2ce7
+                    End
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            Height =0
+            Name ="Detail1"
+            GUID = Begin
+                0x0f256a30dff3f340af5a27ae29eb84b6
+            End
+        End
+        Begin BreakFooter
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            Height =9921
+            Name ="GroupFooter0"
+            GUID = Begin
+                0x0abcd4b9caa06949b54fdc8665b57db6
+            End
+            Begin
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =2125
+                    Top =141
+                    Width =1077
+                    Height =285
+                    FontWeight =700
+                    Name ="Text118"
+                    ControlSource ="=Sum([BalBF])"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xb771c4388303c64eab224e10a1f589c0
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =5527
+                    Top =141
+                    Width =1077
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="Text119"
+                    ControlSource ="=Sum([Exemp])"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x7e2ea51f75fe164fb2aa60a1faf3eecb
+                    End
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    OldBorderStyle =1
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =7795
+                    Top =141
+                    Width =1077
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="TotalRecThisMonth"
+                    ControlSource ="=Sum([ReceivedCur])"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x3b39dbae8752af4e8fcb72d543408d42
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =6661
+                    Top =141
+                    Width =1077
+                    FontWeight =700
+                    TabIndex =3
+                    Name ="Text121"
+                    ControlSource ="=Sum([WrittenOFFCur])"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x8fea94379090ce4aadcac00e2a8f4ab9
+                    End
+                End
+                Begin Label
+                    TextFontFamily =34
+                    Left =28
+                    Top =141
+                    Width =1950
+                    Height =300
+                    Name ="Label122"
+                    Caption ="Total"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x23e8e6fb826f98428584c9952ff10dbe
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =8929
+                    Top =141
+                    Width =1077
+                    FontWeight =700
+                    TabIndex =4
+                    Name ="Text135"
+                    ControlSource ="=Sum([Defecit])"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x9ed9ad7f86105145a768416bd9449126
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =3259
+                    Top =141
+                    Width =1077
+                    Height =285
+                    FontWeight =700
+                    TabIndex =5
+                    Name ="Text145"
+                    ControlSource ="=Sum([DueCur])"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x2d3fec85b873354f833adeefdb2b9e1f
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =4393
+                    Top =141
+                    Width =1077
+                    FontWeight =700
+                    TabIndex =6
+                    Name ="Text148"
+                    ControlSource ="=Sum([TotalDue])"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x49be717d82077946a8e1479fd2b0cae6
+                    End
+                End
+                Begin Line
+                    LineSlant = NotDefault
+                    BorderWidth =1
+                    Left =2126
+                    Top =23
+                    Width =7938
+                    Height =9
+                    Name ="Line151"
+                    GUID = Begin
+                        0x15e2e65ba439494d9ed7742b56ce0384
+                    End
+                End
+                Begin Line
+                    LineSlant = NotDefault
+                    BorderWidth =3
+                    Top =827
+                    Width =10006
+                    Height =9
+                    Name ="Line157"
+                    GUID = Begin
+                        0x88b53a8f6818804a83a83c7adad31115
+                    End
+                End
+                Begin Label
+                    BackStyle =0
+                    OldBorderStyle =1
+                    TextAlign =1
+                    TextFontFamily =34
+                    Top =827
+                    Width =1965
+                    Height =270
+                    Name ="Label158"
+                    Caption ="INCOMES"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x38f828f82a6a964397813237ef7f6fba
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =2891
+                    Top =1796
+                    Width =1077
+                    Height =285
+                    TabIndex =7
+                    Name ="IncBB"
+                    ControlSource ="MEI_IncBB"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x0b465b3a4ff0074ea6f7b30435831279
+                    End
+                End
+                Begin Label
+                    TextAlign =3
+                    TextFontFamily =34
+                    Top =1796
+                    Width =2265
+                    Height =270
+                    Name ="Label161"
+                    Caption ="Books and Bags"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xdaf90dab6eae1d4297bddcb134f3e470
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =7993
+                    Top =2193
+                    Width =1077
+                    Height =285
+                    TabIndex =8
+                    Name ="ExpST"
+                    ControlSource ="MEI_ExpST"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x7702f31958f06643a0a1ad56cc42340b
+                    End
+                End
+                Begin Label
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =5102
+                    Top =2193
+                    Width =2265
+                    Height =270
+                    Name ="Label163"
+                    Caption ="Stationeries and Others"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x870a326b4a236d438fb4f23eabc8bd5f
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =7993
+                    Top =1796
+                    Width =1077
+                    Height =285
+                    TabIndex =9
+                    Name ="ExpBB"
+                    ControlSource ="MEI_ExpBB"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x05424dc56fa07449a0622bd50357bb97
+                    End
+                End
+                Begin Label
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =5102
+                    Top =1796
+                    Width =2250
+                    Height =270
+                    Name ="Label165"
+                    Caption ="Books and Bags Purchase"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x27e35be829827145bb35c381008c0663
+                    End
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =2891
+                    Top =1399
+                    Width =1077
+                    TabIndex =10
+                    Name ="IncTotalRecThisMonth"
+                    ControlSource ="=[TotalRecThisMonth]"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xf80f8f582863274681103f32aa8f44be
+                    End
+                End
+                Begin Label
+                    TextAlign =3
+                    TextFontFamily =34
+                    Top =1399
+                    Width =2265
+                    Height =270
+                    Name ="Label167"
+                    Caption ="Fees Receipts This  Month"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x7ef350c00216274a8e8bc2d57c9ab9d7
+                    End
+                End
+                Begin Line
+                    Left =5499
+                    Top =47
+                    Width =0
+                    Height =449
+                    Name ="Line171"
+                    GUID = Begin
+                        0x617c8531e5b5054ab6180d81eaff5a25
+                    End
+                End
+                Begin Line
+                    Left =8900
+                    Top =47
+                    Width =0
+                    Height =449
+                    Name ="Line173"
+                    GUID = Begin
+                        0x5fb0d92b00ba674b8618f3d4dfbd9d27
+                    End
+                End
+                Begin Label
+                    BackStyle =0
+                    OldBorderStyle =1
+                    TextAlign =1
+                    TextFontFamily =34
+                    Left =5102
+                    Top =803
+                    Width =1965
+                    Height =270
+                    Name ="Label174"
+                    Caption ="EXPENSES"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xce847cf3ba41164999e408de90fba084
+                    End
+                End
+                Begin TextBox
+                    FELineBreak = NotDefault
+                    OldBorderStyle =1
+                    TextFontFamily =34
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =2891
+                    Top =2645
+                    Width =1077
+                    Height =270
+                    FontWeight =700
+                    TabIndex =11
+                    Name ="TotalIncome"
+                    ControlSource ="=[IncTotalRecThisMonth]+[IncBB]"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x21756cd8a91e734982457667aaa22d72
+                    End
+                    AsianLineBreak =255
+                End
+                Begin Label
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =5085
+                    Top =1395
+                    Width =2280
+                    Height =270
+                    Name ="Label175"
+                    Caption ="Wages of Teachers (See P2)"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x1576d8a7f87169488cd2cad7874f596f
+                    End
+                End
+                Begin TextBox
+                    FELineBreak = NotDefault
+                    OldBorderStyle =1
+                    TextFontFamily =34
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =7993
+                    Top =2645
+                    Width =1077
+                    Height =270
+                    FontWeight =700
+                    TabIndex =12
+                    Name ="TotalExpense"
+                    ControlSource ="=[ExpTotalWages]+[ExpBB]+[ExpST]"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x2efeadfe9e948646a760dc3a040f72ed
+                    End
+                    AsianLineBreak =255
+                End
+                Begin TextBox
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =7993
+                    Top =1399
+                    Width =1077
+                    Height =285
+                    TabIndex =13
+                    Name ="ExpTotalWages"
+                    ControlSource ="TotalWages"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xe5addaa1ac59f94c92e0f825bf293624
+                    End
+                End
+                Begin Label
+                    TextAlign =3
+                    TextFontFamily =34
+                    Top =2645
+                    Width =2265
+                    Height =270
+                    Name ="Label178"
+                    Caption ="Total Income"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x062a0eb41d4f0b43a77e3326d14b298c
+                    End
+                End
+                Begin Label
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =5102
+                    Top =2669
+                    Width =2265
+                    Height =270
+                    Name ="Label179"
+                    Caption ="Total Expense"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x21336c735d9700428c59ea7ac09accec
+                    End
+                End
+                Begin TextBox
+                    FELineBreak = NotDefault
+                    OldBorderStyle =1
+                    TextFontFamily =34
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =2947
+                    Top =3873
+                    Width =1077
+                    Height =270
+                    FontWeight =700
+                    TabIndex =14
+                    Name ="Text182"
+                    ControlSource ="=[TotalIncome]-[TotalExpense]"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x6df39a4ae5a6a946be6bdb8b77ca2c12
+                    End
+                    AsianLineBreak =255
+                End
+                Begin TextBox
+                    FELineBreak = NotDefault
+                    OldBorderStyle =1
+                    TextFontFamily =34
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =6803
+                    Top =3874
+                    Width =1077
+                    Height =270
+                    FontWeight =700
+                    TabIndex =15
+                    Name ="Text183"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x4a1ea5443e6984449ed426a6204921ad
+                    End
+                    AsianLineBreak =255
+                End
+                Begin Label
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =56
+                    Top =3873
+                    Width =2265
+                    Height =270
+                    Name ="Label184"
+                    Caption ="Profit / Deficit (-)"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xe1b0bb0901a96042ae3926dd516dd2b4
+                    End
+                End
+                Begin Label
+                    TextAlign =2
+                    TextFontFamily =34
+                    Left =170
+                    Top =7748
+                    Width =2835
+                    Height =270
+                    Name ="Label186"
+                    Caption ="Chairman"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xfc72baabbfa7f44a8861e24cd1ca96fb
+                    End
+                End
+                Begin Label
+                    TextAlign =2
+                    TextFontFamily =34
+                    Left =3546
+                    Top =7700
+                    Width =2835
+                    Height =270
+                    Name ="Label187"
+                    Caption ="Treasurer"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x077d98fde05f5a4dad1fd7f20daf3432
+                    End
+                End
+                Begin Label
+                    TextAlign =2
+                    TextFontFamily =34
+                    Left =6948
+                    Top =7677
+                    Width =2835
+                    Height =270
+                    Name ="Label188"
+                    Caption ="Head Teacher"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xcb30f057e2882a4682432fa61e464dbb
+                    End
+                End
+                Begin TextBox
+                    TextAlign =2
+                    TextFontFamily =34
+                    Left =170
+                    Top =8078
+                    Width =2835
+                    Height =285
+                    TabIndex =16
+                    Name ="Text192"
+                    ControlSource ="CLLSuper"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x589d6c67a67d7443848543ab7683f1f2
+                    End
+                End
+                Begin TextBox
+                    TextAlign =2
+                    TextFontFamily =34
+                    Left =3546
+                    Top =8055
+                    Width =2835
+                    Height =285
+                    TabIndex =17
+                    Name ="Text193"
+                    ControlSource ="CLLDeputy"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xcaca4f2fe7d7a7498b0a9a8a6b562150
+                    End
+                End
+                Begin TextBox
+                    TextAlign =2
+                    TextFontFamily =34
+                    Left =6948
+                    Top =8007
+                    Width =2835
+                    Height =285
+                    TabIndex =18
+                    Name ="Text194"
+                    ControlSource ="CLLHead"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x742613a93e77f94a828d24b696b3eb29
+                    End
+                End
+                Begin Line
+                    Left =116
+                    Top =9260
+                    Width =2835
+                    Name ="Line195"
+                    GUID = Begin
+                        0x2a41b7c6c7c33441acf3602d279e9614
+                    End
+                End
+                Begin Line
+                    Left =3517
+                    Top =9260
+                    Width =2835
+                    Name ="Line196"
+                    GUID = Begin
+                        0x6f22003bf45bf14aa547e540f74e01f9
+                    End
+                End
+                Begin Line
+                    Left =6948
+                    Top =9213
+                    Width =2835
+                    Name ="Line197"
+                    GUID = Begin
+                        0xd6b5ba7b400b7a42843c227ab0a1b743
+                    End
+                End
+                Begin Label
+                    TextAlign =2
+                    TextFontFamily =34
+                    Left =84
+                    Top =9307
+                    Width =2865
+                    Height =270
+                    FontWeight =400
+                    Name ="Label199"
+                    Caption ="Signature and Date"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xe83619df1855b34d95c2e491b62ba7ae
+                    End
+                End
+                Begin Label
+                    TextAlign =2
+                    TextFontFamily =34
+                    Left =3457
+                    Top =9307
+                    Width =2865
+                    Height =270
+                    FontWeight =400
+                    Name ="Label200"
+                    Caption ="Signature and Date"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x73897ef2a5072344a5dbdf1851bde9f2
+                    End
+                End
+                Begin Label
+                    TextAlign =2
+                    TextFontFamily =34
+                    Left =6915
+                    Top =9283
+                    Width =2865
+                    Height =270
+                    FontWeight =400
+                    Name ="Label201"
+                    Caption ="Signature and Date"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x3b890cb9ad1c2f4a9df21d27d35ada9d
+                    End
+                End
+                Begin Rectangle
+                    BackStyle =0
+                    BorderWidth =3
+                    Left =28
+                    Top =7299
+                    Width =10034
+                    Height =2528
+                    Name ="Box202"
+                    GUID = Begin
+                        0x6108fff8b883294696acce2de52ba4b4
+                    End
+                End
+                Begin TextBox
+                    FELineBreak = NotDefault
+                    OldBorderStyle =1
+                    TextAlign =2
+                    TextFontFamily =34
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =56
+                    Top =5102
+                    Width =10032
+                    Height =1800
+                    FontWeight =700
+                    TabIndex =19
+                    TopMargin =284
+                    Name ="Text195"
+                    ControlSource ="MEINote"
+                    Format ="£#,##0.00;-£#,##0.00"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xc575839d1e019c449d04f29567aee54a
+                    End
+                    AsianLineBreak =255
+                End
+                Begin Label
+                    TextAlign =1
+                    TextFontFamily =34
+                    Left =56
+                    Top =4818
+                    Width =2265
+                    Height =270
+                    Name ="Label196"
+                    Caption ="Notes"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x44228e0191a95a419c6e6ea306ca76b8
+                    End
+                End
+                Begin Label
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =4393
+                    Top =3874
+                    Width =2265
+                    Height =270
+                    Name ="Label198"
+                    Caption ="Balance Handed Over"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x01985371ab700f42b53f7f81c2298ba2
+                    End
+                End
+                Begin Rectangle
+                    BackStyle =0
+                    BorderWidth =1
+                    Left =56
+                    Top =3590
+                    Width =10034
+                    Height =818
+                    Name ="Box199"
+                    GUID = Begin
+                        0x4fce2fd4b0897446a62553363cf2abd6
+                    End
+                End
+            End
+        End
+        Begin PageFooter
+            Height =473
+            OnFormat ="[Event Procedure]"
+            Name ="PageFooter2"
+            GUID = Begin
+                0x68f8704e7f41634991282a7e536736b3
+            End
+            Begin
+                Begin TextBox
+                    TextAlign =3
+                    BackStyle =0
+                    Left =7256
+                    Top =188
+                    Width =2772
+                    Height =285
+                    FontSize =12
+                    Name ="Text33"
+                    ControlSource ="=\"Date: \" & Format(Now(),\"Long Date\")"
+                    GUID = Begin
+                        0xeceaf09587ca43479fc8c01b4425cfe4
+                    End
+                End
+                Begin TextBox
+                    TextAlign =1
+                    BackStyle =0
+                    Top =165
+                    Width =2772
+                    Height =285
+                    FontSize =12
+                    TabIndex =1
+                    Name ="Text197"
+                    ControlSource ="=\"Page: \" & [Page] & \" of  \" & [Pages]"
+                    GUID = Begin
+                        0xbaf858aa0743e8428e76fcb9fcddeb89
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            KeepTogether = NotDefault
+            CanGrow = NotDefault
+            Height =1598
+            Name ="ReportFooter"
+            GUID = Begin
+                0xacd8bda4e97ea64e8fc1235dfa723617
+            End
+            Begin
+                Begin Line
+                    LineSlant = NotDefault
+                    BorderWidth =3
+                    Top =141
+                    Width =10006
+                    Height =9
+                    Name ="Line125"
+                    GUID = Begin
+                        0x626aad98f8a07e4e991343c0d3852976
+                    End
+                End
+                Begin Subform
+                    OldBorderStyle =0
+                    Left =57
+                    Top =566
+                    Width =9933
+                    Height =1032
+                    Name ="rptFeesMonthlyAccountSub"
+                    SourceObject ="Report.rptFeesMonthlyAccountSub"
+                    LinkChildFields ="MEILocCode"
+                    LinkMasterFields ="CLLocCode"
+                    GUID = Begin
+                        0x5dadfef75a8cab459c878d709a65fd53
+                    End
+                End
+                Begin Label
+                    BackStyle =0
+                    OldBorderStyle =1
+                    TextAlign =1
+                    TextFontFamily =34
+                    Top =141
+                    Width =1965
+                    Height =270
+                    Name ="Label156"
+                    Caption ="WAGES DETAILS"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x6e8ecc1a2775ee4698b36cca6d2354ab
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
+Private Sub Report_Close()
+    DoCmd.Minimize
+End Sub
+Private Sub Report_Open(Cancel As Integer)
+    Call SetReportDate
+    DoCmd.Maximize
+End Sub

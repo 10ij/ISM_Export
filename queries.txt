@@ -1,0 +1,250 @@
+--- _qryAddFeeDafaultRecords [Type=64]
+INSERT INTO tblFees ( FESTID, FEAmtDue, FEDueDate, FEFDCode )
+SELECT tblFeesDefaultRecords.FESTID, tblFeesDefaultRecords.FEAmtDue, CDate("01/" & Format(Now(),"MM/YY")) AS Expr1, tblFeesDefaultRecords.FEFDCode
+FROM tblFeesDefaultRecords;
+
+--- qryCalendar1 [Type=0]
+SELECT tbl_NoLeapYear.DOY, DLookUp("[RepMonDate]","tblRepMon","[RepMonID] = 1") AS varPTYearD, CDate([DOY] & "/" & Format(CDate([varPTYearD]),"mm/yy")) AS [Date], Format([Date],"mmmm yyyy") AS MNY, CInt(Format([Date],"M")) AS [Month], CInt(Format([Date],"d")) AS [Day], Format([Date],"ddd") AS DayW
+FROM tbl_NoLeapYear;
+
+--- qryCalendar1a [Type=0]
+SELECT qryCalendar1.DOY, qryCalendar1.varPTYearD, qryCalendar1.Date, qryCalendar1.MNY, qryCalendar1.Month, qryCalendar1.Day, qryCalendar1.DayW
+FROM qryCalendar1
+WHERE (((qryCalendar1.MNY)=Format(CDate([varPTYearD]),"mmmm yyyy")));
+
+--- qryEditStudentsDetails [Type=0]
+SELECT tblStudent.STID, tblStudent.STSName, tblStudent.STFName, tblStudent.STDOB, tblStudent.STTCCode, tblStudent.STParents, tblStudent.STAddress1, tblStudent.STAddress2, tblStudent.STAddress3, tblStudent.STPCode, tblStudent.STTelNo, tblStudent.STStartDate, tblStudent.STLeft, tblStudent.STLDate, tblStudent.STFWTelNo, tblStudent.STMWTelNo, tblStudent.STEmgCont, tblStudent.STEmgTelNo, tblStudent.concode, tblStudent.STForm, *
+FROM tblStudent
+WHERE (((tblStudent.STID)=[Forms]![FindStudent]![FindStudentSub].[Form]![STID]));
+
+--- qryFeeDueMain [Type=0]
+SELECT qryFeeDueSubHead.FESTID, IIf([BalanceBF] Is Null,0,[BalanceBF]) AS PrevA, IIf([Due] Is Null,0,[Due]) AS CurB, IIf([WrittenOFF] Is Null,0,[WrittenOFF]) AS CurW, [PrevA]+[CurB]+[CurW] AS CurX, IIf([Exemption] Is Null,0,[Exemption]) AS CurC, [CurX]+[CurC] AS CurD, IIf([Received] Is Null,0,[Received]) AS CurE, [CurD]+[CurE] AS CurF, qryFeeDueSubHead.WrittenOFF
+FROM qryFeeDueSubHead
+WHERE (((qryFeeDueSubHead.FESTID)>0));
+
+--- qryFeeDueSub [Type=0]
+SELECT tblFees.FESTID, tblFees.FEAmtDue, tblFees.FEDueDate, tblFeesDesc.FDDeatails, tblFees.FEReceNo, IIf(Format([tblFees]![FEDueDate],"yymm")=Format(DLookUp("[RepMonDate]","tblRepMon","[RepMonID] = 1"),"yymm"),[FDDeatails],"BalanceBF") AS FEType, Format([FEDueDate],"yymm") AS FeeDueMon
+FROM tblFeesDesc INNER JOIN tblFees ON tblFeesDesc.FDCode = tblFees.FEFDCode
+WHERE (((tblFees.FESTID)=0)) OR (((Format([FEDueDate],"yymm"))<=Format(DLookUp("[RepMonDate]","tblRepMon","[RepMonID] = 1"),"yymm")));
+
+--- qryFeeDueSubHead [Type=16]
+TRANSFORM Sum(qryFeeDueSub.FEAmtDue) AS [The Value]
+SELECT qryFeeDueSub.FESTID, Sum(qryFeeDueSub.FEAmtDue) AS Total
+FROM qryFeeDueSub
+GROUP BY qryFeeDueSub.FESTID
+PIVOT qryFeeDueSub.FEType;
+
+--- qryFeesByStudent [Type=0]
+SELECT tblFees.FERefNo_Auto, tblFees.FESTID, tblFees.FEAmtDue, tblFees.FEDueDate, tblFees.FEFDCode, tblFees.FEReceNo, tblFees.FCC, tblFees.FEDue_RateP, tblFees.FEDateUpdated
+FROM tblFees
+WHERE (((tblFees.FESTID)=[Forms]![FindStudent]![FindStudentSub].[Form]![STID]));
+
+--- qryFeesDailyEntryRecord [Type=0]
+SELECT DISTINCTROW tblStudent.STID, tblFees.FEDueDate, tblFees.FERefNo_Auto, CDate(Format([FEDateUpdated],"DD/MM/YY")) AS DateUpdated, tblFees.FEFDCode, tblFees.FEDateUpdated, tblFeesDesc.FDDeatails, tblFees.FEAmtDue, [STFName] & " " & [STSName] AS STName, tblStudent.STSName, tblStudent.STFName, tblTeacher.TCCode, tblTeacher.TDCode, Trim([TCTitle]) & " " & Trim([TCFName]) & " " & Trim([TCSName]) & " (" & [TDCode] & ")" AS TCName, tblClass.CLLocCode, [tblClass]![CLLocation] & " - " & [tblTeacher]![TCCLDesc] AS STClass, tblClass.CLLocation, tblTeacher.TCCLDesc, tblStudent.STTelNo, tblStudent.STLeft, tblStudent.STLDate, tblStudent.STStartDate
+FROM (((tblStudent INNER JOIN tblTeacher ON tblStudent.STTCCode = tblTeacher.TCCode) INNER JOIN tblClass ON tblTeacher.TCCLLocCode = tblClass.CLLocCode) INNER JOIN tblFees ON tblStudent.STID = tblFees.FESTID) INNER JOIN tblFeesDesc ON tblFees.FEFDCode = tblFeesDesc.FDCode
+WHERE (((CDate(Format([FEDateUpdated],"DD/MM/YY")))=CVDate(GetTodaysDate())) AND ((tblFees.FEFDCode)="R"))
+ORDER BY tblStudent.STSName, tblStudent.STFName;
+
+--- qryFeesInvoice [Type=0]
+SELECT DISTINCTROW qryFeeDueMain.FESTID, Trim([STFName]) & " " & Trim([STSName]) AS STName, Trim([TCFName]) & " " & Trim([TCSName]) AS TCName, Trim([STID]) & "/" & Trim([TCCLDesc]) & "/" & Format(Now(),"yyyy") AS OurRef, tblTeacher.TCCode, tblClass.CLLocCode, tblClass.CLLocation, tblTeacher.TCCLDesc, qryFeeDueMain.PrevA AS BalBF, qryFeeDueMain.CurB AS DueCur, [PrevA]+[CurB] AS TotalDue, qryFeeDueMain.CurC AS Exemp, qryFeeDueMain.CurE AS ReceivedCur, qryFeeDueMain.CurF AS AmtDue, tblStudent.STParents, tblStudent.STAddress1, tblStudent.STAddress2, tblStudent.STAddress3, tblClass.FeeTerm, tblClass.FeeTerm, tblStudent.STLeft, IIf([STLeft]='Y',"FORMER STUDENT") AS [Note]
+FROM qryFeeDueMain RIGHT JOIN ((tblStudent INNER JOIN tblTeacher ON tblStudent.STTCCode = tblTeacher.TCCode) INNER JOIN tblClass ON tblTeacher.TCCLLocCode = tblClass.CLLocCode) ON qryFeeDueMain.FESTID = tblStudent.STID
+WHERE (((qryFeeDueMain.CurF)<>0));
+
+--- qryFeesInvoice1 [Type=0]
+SELECT DISTINCTROW qryFeeDueMain.FESTID, Trim([STFName]) & " " & Trim([STSName]) AS STName, Trim([TCFName]) & " " & Trim([TCSName]) AS TCName, Trim([STID]) & "/" & Trim([TCCLDesc]) & "/" & Format(Now(),"yyyy") AS OurRef, tblTeacher.TCCode, tblClass.CLLocCode, tblClass.CLLocation, tblTeacher.TCCLDesc, qryFeeDueMain.PrevA AS BalBF, qryFeeDueMain.CurB AS DueCur, [PrevA]+[CurB] AS TotalDue, qryFeeDueMain.CurC AS Exemp, qryFeeDueMain.CurE AS ReceivedCur, qryFeeDueMain.CurF AS AmtDue, tblStudent.STParents, tblStudent.STAddress1, tblStudent.STAddress2, tblStudent.STAddress3, tblClass.FeeTerm, tblStudent.STLeft
+FROM qryFeeDueMain RIGHT JOIN ((tblStudent INNER JOIN tblTeacher ON tblStudent.STTCCode = tblTeacher.TCCode) INNER JOIN tblClass ON tblTeacher.TCCLLocCode = tblClass.CLLocCode) ON qryFeeDueMain.FESTID = tblStudent.STID
+WHERE (((qryFeeDueMain.CurF)>0) AND ((tblStudent.STLeft)="N"));
+
+--- qryFeesInvoiceSel [Type=0]
+SELECT *
+FROM qryFeesInvoice
+WHERE qryFeesInvoice.FESTID=100391;
+
+--- qryFeesMonthlyDueUpload_S1 [Type=80]
+SELECT tblStudent.STTCCode, tblClass.CLLocation, tblTeacher.TCCLDesc, tblStudent.STID, Trim([STFName]) & " " & Trim([STSName]) AS STName, tblStudent.STStartDate, CVDate("01/" & Format(Now(),"MM/YY")) AS FeeDueDate, tblClass.FERate AS FeeRate INTO tmptblFeesMonthlyDueUpload
+FROM tblClass INNER JOIN (tblTeacher INNER JOIN tblStudent ON tblTeacher.TCCode = tblStudent.STTCCode) ON tblClass.CLLocCode = tblTeacher.TCCLLocCode
+WHERE (((tblStudent.STLeft)="N"))
+ORDER BY tblClass.CLLocation, tblTeacher.TCCLDesc, tblStudent.STID;
+
+--- qryFeesMonthlyDueUpload_S2 [Type=0]
+SELECT tmptblFeesMonthlyDueUpload.STTCCode, tmptblFeesMonthlyDueUpload.CLLocation, tmptblFeesMonthlyDueUpload.TCCLDesc, tmptblFeesMonthlyDueUpload.STID, tmptblFeesMonthlyDueUpload.STName, tblStudent.STStartDate, tmptblFeesMonthlyDueUpload.FeeDueDate, tmptblFeesMonthlyDueUpload.FeeRate
+FROM tmptblFeesMonthlyDueUpload INNER JOIN tblStudent ON tmptblFeesMonthlyDueUpload.STID = tblStudent.STID
+ORDER BY tmptblFeesMonthlyDueUpload.CLLocation, tmptblFeesMonthlyDueUpload.TCCLDesc, tmptblFeesMonthlyDueUpload.STID;
+
+--- qryFeesMonthlyDueUpload_S3 [Type=64]
+INSERT INTO tblFees ( FESTID, FEDueDate, FEDue_RateP, FEAmtDue, FEFDCode )
+SELECT qryFeesMonthlyDueUpload_S2.STID, qryFeesMonthlyDueUpload_S2.FeeDueDate, qryFeesMonthlyDueUpload_S2.FeeRate, qryFeesMonthlyDueUpload_S2.FeeRate, "D" AS Code
+FROM qryFeesMonthlyDueUpload_S2
+WHERE (((qryFeesMonthlyDueUpload_S2.FeeRate)>0));
+
+--- qryFeesMonthlyRecUpload_S1A [Type=80]
+SELECT tblStudent.STTCCode, tblClass.CLLocation, tblTeacher.TCCLDesc, tblStudent.STID, Trim([STFName]) & " " & Trim([STSName]) AS STName, qrySTFeesSummary.SumOfFEAmtDue AS AmtDue, CDate(Format(Now(),"dd/mm/yyyy")) AS FeeRecDate, 0 AS FeeRec, [STName] AS FeeRec_No INTO tmptblFeesMonthlyRecUpload
+FROM tblClass INNER JOIN (tblTeacher INNER JOIN (qrySTFeesSummary RIGHT JOIN tblStudent ON qrySTFeesSummary.FESTID = tblStudent.STID) ON tblTeacher.TCCode = tblStudent.STTCCode) ON tblClass.CLLocCode = tblTeacher.TCCLLocCode
+WHERE (((tblStudent.STLeft)="N"))
+ORDER BY tblClass.CLLocation, tblTeacher.TCCLDesc, tblStudent.STID;
+
+--- qryFeesMonthlyRecUpload_S1B [Type=48]
+UPDATE qryFeesMonthlyRecUpload_S2 SET qryFeesMonthlyRecUpload_S2.FeeRec = Null, qryFeesMonthlyRecUpload_S2.FeeRec_No = "";
+
+--- qryFeesMonthlyRecUpload_S2 [Type=0]
+SELECT tmptblFeesMonthlyRecUpload.STTCCode, tmptblFeesMonthlyRecUpload.CLLocation, tmptblFeesMonthlyRecUpload.TCCLDesc, tmptblFeesMonthlyRecUpload.STID, tmptblFeesMonthlyRecUpload.STName, tmptblFeesMonthlyRecUpload.AmtDue, tmptblFeesMonthlyRecUpload.FeeRecDate, tmptblFeesMonthlyRecUpload.FeeRec, tmptblFeesMonthlyRecUpload.FeeRec_No, [AmtDue]+[FeeRec]/-1 AS NewBalance
+FROM tmptblFeesMonthlyRecUpload
+ORDER BY tmptblFeesMonthlyRecUpload.TCCLDesc, tmptblFeesMonthlyRecUpload.STID;
+
+--- qryFeesMonthlyRecUpload_S3 [Type=64]
+INSERT INTO tblFees ( FESTID, FEDueDate, FEAmtDue, FEFDCode, FEReceNo )
+SELECT qryFeesMonthlyRecUpload_S2.STID, qryFeesMonthlyRecUpload_S2.FeeRecDate, CCur([FeeRec]/-1) AS Rec, "R" AS Code, qryFeesMonthlyRecUpload_S2.FeeRec_No
+FROM qryFeesMonthlyRecUpload_S2
+WHERE (((qryFeesMonthlyRecUpload_S2.FeeRec)>0));
+
+--- qryFeesRecEntryS1 [Type=80]
+SELECT tblFees.FESTID, tblFees.FEAmtDue, tblFees.FEDueDate, tblFees.FEFDCode, tblFees.FEReceNo, tblFees.FCC, tblFees.FEDue_RateP, tblFees.FEDateUpdated INTO tmptblFeesRecEntry
+FROM tblFees
+WHERE (((tblFees.FESTID)=0));
+
+--- qryFeesRecEntryS2 [Type=64]
+INSERT INTO tblFees ( FESTID, FEDueDate, FEAmtDue, FEFDCode, FEReceNo, FEDateUpdated )
+SELECT tmptblFeesRecEntry.FESTID, tmptblFeesRecEntry.FEDueDate, tmptblFeesRecEntry.FEAmtDue, tmptblFeesRecEntry.FEFDCode, tmptblFeesRecEntry.FEReceNo, tmptblFeesRecEntry.FEDateUpdated
+FROM tmptblFeesRecEntry
+WHERE (((tmptblFeesRecEntry.FEAmtDue)>=1 Or (tmptblFeesRecEntry.FEAmtDue)<=-1));
+
+--- qryFeesRecord [Type=0]
+SELECT DISTINCTROW tblStudent.STID, tblStudent.STSName, tblStudent.STFName, tblTeacher.TCCode, tblTeacher.TDCode, Trim([TCTitle]) & " " & Trim([TCFName]) & " " & Trim([TCSName]) & " (" & [TDCode] & ")" AS TCName, tblClass.CLLocCode, tblClass.CLLocation, tblTeacher.TCCLDesc, tblStudent.STTelNo, qryFeeDueMain.PrevA AS BalBF, qryFeeDueMain.CurB AS DueCur, qryFeeDueMain.CurW, qryFeeDueMain.CurC AS Exemp, qryFeeDueMain.CurD AS TotalDue, qryFeeDueMain.CurE AS ReceivedCur, qryFeeDueMain.CurF AS Defecit, tblStudent.STLeft, tblStudent.STLDate, tblStudent.STStartDate
+FROM qryFeeDueMain RIGHT JOIN ((tblStudent INNER JOIN tblTeacher ON tblStudent.STTCCode = tblTeacher.TCCode) INNER JOIN tblClass ON tblTeacher.TCCLLocCode = tblClass.CLLocCode) ON qryFeeDueMain.FESTID = tblStudent.STID
+ORDER BY tblStudent.STSName, tblStudent.STFName;
+
+--- qryFeesStatement [Type=0]
+SELECT tblFees.FESTID, tblTeacher.TCCLDesc, Trim([STID]) & "/" & Trim([TCCLDesc]) & "/" & Format(Now(),"yyyy") AS OurRef, tblTeacher.TCCode, tblTeacher.TDCode, Trim([TCFName]) & " " & Trim([TCSName]) AS TCName, Trim([STFName]) & " " & Trim([STSName]) AS STName, tblStudent.STSName, tblFees.FEReceNo, tblFeesDesc.FDDeatails AS FEDeatails, tblStudent.STFName, tblFees.FEAmtDue, tblFees.FEDueDate, tblStudent.STParents, tblStudent.STAddress1, tblStudent.STAddress2, tblStudent.STAddress3, tblStudent.STLeft
+FROM (tblFeesDesc INNER JOIN (tblStudent INNER JOIN tblFees ON tblStudent.STID = tblFees.FESTID) ON tblFeesDesc.FDCode = tblFees.FEFDCode) INNER JOIN tblTeacher ON tblStudent.STTCCode = tblTeacher.TCCode
+WHERE (((tblFees.FESTID)=[Forms]![FindStudent]![FindStudentSub].[Form]![STID]));
+
+--- qryLookStudent [Type=0]
+SELECT [STID] & " - " & Trim([STFName]) & " " & Trim([STSName]) AS Student, tblStudent.STID
+FROM tblStudent;
+
+--- qryMEIData [Type=0]
+SELECT tblTeachClass.TCCLLocCode AS LC, tblClass.CLLocation, tblTeachClass.TCCode AS TC, IIf(Trim([TDTitle])="ZMEI",Trim([TDSName]),([TDTitle]) & " " & Trim([TDFName]) & " " & Trim([TDSName])) AS TCName, tblTeachClass.TCCLDesc, tblTeachClass.TCMEIWgs, tblTeachClass.TCMEINotes, CVDate([EnterDate]) AS [Date]
+FROM (tblTechDetails INNER JOIN tblTeachClass ON tblTechDetails.TDCode = tblTeachClass.TCDCode) INNER JOIN tblClass ON tblTeachClass.TCCLLocCode = tblClass.CLLocCode
+WHERE (((tblTeachClass.TCCLLocCode)=1));
+
+--- qryMEIData_EditAmt [Type=0]
+SELECT tblMthIncExp.MEIDate, tblMthIncExp.MEILocCode, tblMthIncExp.MEITCCode, tblMthIncExp.MEIAmt
+FROM tblMthIncExp
+WHERE (((tblMthIncExp.MEIDate)=DLookUp("[RepMonDate]","tblRepMon","[RepMonID] = 1")))
+ORDER BY tblMthIncExp.MEILocCode, tblMthIncExp.MEITCCode;
+
+--- qryMEIData_EditNotes [Type=0]
+SELECT tblMthIncExpNote.MEIDate, tblMthIncExpNote.MEITCCode, tblMthIncExpNote.MEILocCode, tblMthIncExpNote.MEINote
+FROM tblMthIncExpNote
+WHERE (((tblMthIncExpNote.MEIDate)=DLookUp("[RepMonDate]","tblRepMon","[RepMonID] = 1")));
+
+--- qryMEIDataEntry1 [Type=80]
+SELECT tblTeachClass.TCCLLocCode AS LC, tblClass.CLLocation, tblTeachClass.TCCode AS TC, IIf(Trim([TDTitle])="ZMEI",Trim([TDSName]),([TDTitle]) & " " & Trim([TDFName]) & " " & Trim([TDSName])) AS TCName, tblTeachClass.TCCLDesc, IIf([TCCLDesc]="Notes","N/A",[TCMEIWgs]) AS TCMEIWgs1, IIf([TCCLDesc]="Notes","Please Enter This Months Notes","N/A") AS TCMEINotes, CVDate("01/" & Format(Now(),"MM/YY")) AS [Date] INTO tmptblMEIDataEntry
+FROM (tblTechDetails INNER JOIN tblTeachClass ON tblTechDetails.TDCode = tblTeachClass.TCDCode) INNER JOIN tblClass ON tblTeachClass.TCCLLocCode = tblClass.CLLocCode;
+
+--- qryMEIDataEntry2 [Type=0]
+SELECT tmptblMEIDataEntry.LC, tmptblMEIDataEntry.CLLocation, tmptblMEIDataEntry.TC, tmptblMEIDataEntry.TCName, tmptblMEIDataEntry.TCCLDesc, tmptblMEIDataEntry.TCMEIWgs1, tmptblMEIDataEntry.TCMEINotes, tmptblMEIDataEntry.Date
+FROM tmptblMEIDataEntry;
+
+--- qryMEIDataEntry3A [Type=64]
+INSERT INTO tblMthIncExp ( MEIDate, MEILocCode, MEITCCode, MEIAmt )
+SELECT qryMEIDataEntry2.Date, qryMEIDataEntry2.LC, qryMEIDataEntry2.TC, CCur([TCMEIWgs1]) AS Expr1
+FROM qryMEIDataEntry2
+WHERE (((qryMEIDataEntry2.TCName)<>"Notes"));
+
+--- qryMEIDataEntry3B [Type=64]
+INSERT INTO tblMthIncExpNote ( MEIDate, MEILocCode, MEITCCode, MEINote )
+SELECT qryMEIDataEntry2.Date, qryMEIDataEntry2.LC, qryMEIDataEntry2.TC, qryMEIDataEntry2.TCMEINotes
+FROM qryMEIDataEntry2
+WHERE (((qryMEIDataEntry2.TCName)="Notes"));
+
+--- qryMEIDataSub1 [Type=0]
+SELECT qryMEIDataSub1c.MEIDATE, qryMEIDataSub1c.MEILocCode, qryMEIDataSub1c.CLLocation, qryMEIDataSub1c.MEINote, qryMEIDataSub1b.MEI_ExpBB, qryMEIDataSub1b.MEI_ExpST, qryMEIDataSub1b.MEI_IncBB
+FROM qryMEIDataSub1b INNER JOIN qryMEIDataSub1c ON (qryMEIDataSub1b.MEIDATE = qryMEIDataSub1c.MEIDATE) AND (qryMEIDataSub1b.MEILocCode = qryMEIDataSub1c.MEILocCode);
+
+--- qryMEIDataSub1a [Type=0]
+SELECT qryMEIDataSub3.MEIDate, qryMEIDataSub3.MEILocCode, qryMEIDataSub3.CLLocation, Sum(qryMEIDataSub3.MEIAmt) AS TotalWages
+FROM qryMEIDataSub3
+GROUP BY qryMEIDataSub3.MEIDate, qryMEIDataSub3.MEILocCode, qryMEIDataSub3.CLLocation;
+
+--- qryMEIDataSub1b [Type=16]
+TRANSFORM Sum(tblMthIncExp.MEIAmt) AS SumOfMEIAmt
+SELECT tblMthIncExp.MEIDate, tblMthIncExp.MEILocCode, tblTeacher.CLLocation
+FROM tblMthIncExp INNER JOIN tblTeacher ON tblMthIncExp.MEITCCode = tblTeacher.TCCode
+WHERE (((tblMthIncExp.MEIDate)=DLookUp("[RepMonDate]","tblRepMon","[RepMonID] = 1")) AND ((tblTeacher.TCTitle)="ZMEI"))
+GROUP BY tblMthIncExp.MEIDate, tblMthIncExp.MEILocCode, tblTeacher.CLLocation
+PIVOT tblTeacher.TCCLDesc;
+
+--- qryMEIDataSub1c [Type=0]
+SELECT tblMthIncExpNote.MEIDate, tblMthIncExpNote.MEILocCode, tblTeacher.CLLocation, tblTeacher.TCSName, tblMthIncExpNote.MEINote
+FROM tblMthIncExpNote INNER JOIN tblTeacher ON tblMthIncExpNote.MEITCCode = tblTeacher.TCCode
+WHERE (((tblMthIncExpNote.MEIDate)=DLookUp("[RepMonDate]","tblRepMon","[RepMonID] = 1")) AND ((tblTeacher.TCTitle)="ZMEI"));
+
+--- qryMEIDataSub2 [Type=0]
+SELECT DISTINCTROW DLookUp("[RepMonDate]","tblRepMon","[RepMonID] = 1") AS MEIDATE, tblClass.CLLocCode, tblClass.CLLocation, tblClass.CLLSuper, tblClass.CLLDeputy, tblClass.CLLHead, IIf([STLeft]="Y","Former Students","Current Students") AS StudentType, Sum([PrevA]/-1) AS BalBF, Sum([CurB]/-1) AS DueCur, Sum([CurC]/-1) AS Exemp, (Sum([PrevA]+[CurB]))/-1 AS TotalDue, Sum([CurE]/-1) AS ReceivedCur, Sum([WrittenOFF]/-1) AS WrittenOFFCur, Sum([CurF]/-1) AS Defecit, Count(tblStudent.STID) AS NoStud
+FROM qryFeeDueMain RIGHT JOIN ((tblStudent RIGHT JOIN tblTeacher ON tblStudent.STTCCode = tblTeacher.TCCode) INNER JOIN tblClass ON tblTeacher.TCCLLocCode = tblClass.CLLocCode) ON qryFeeDueMain.FESTID = tblStudent.STID
+GROUP BY DLookUp("[RepMonDate]","tblRepMon","[RepMonID] = 1"), tblClass.CLLocCode, tblClass.CLLocation, tblClass.CLLSuper, tblClass.CLLDeputy, tblClass.CLLHead, IIf([STLeft]="Y","Former Students","Current Students");
+
+--- qryMEIDataSub2Sel [Type=0]
+SELECT *
+FROM qryMEIDataSub2
+WHERE qryMEIDataSub2.CLLocCode=1;
+
+--- qryMEIDataSub3 [Type=0]
+SELECT tblMthIncExp.MEIDate, Trim([TCTitle]) & " " & Trim([TCFName]) & " " & Trim([TCSName]) AS TCName, tblMthIncExp.MEILocCode, tblTeacher.CLLocation, tblTeacher.TCCLDesc, tblTeacher.TCSName, tblTeacher.TCSName, tblMthIncExp.MEIAmt
+FROM tblMthIncExp INNER JOIN tblTeacher ON tblMthIncExp.MEITCCode = tblTeacher.TCCode
+WHERE (((tblMthIncExp.MEIDate)=DLookUp("[RepMonDate]","tblRepMon","[RepMonID] = 1")) AND ((tblTeacher.TCTitle)<>"ZMEI"));
+
+--- qryMEIDataSub4 [Type=0]
+SELECT qryMEIDataSub2Sel.MEIDATE, qryMEIDataSub1a.TotalWages, qryMEIDataSub1.MEINote, qryMEIDataSub1.MEI_ExpBB, qryMEIDataSub1.MEI_ExpST, qryMEIDataSub1.MEI_IncBB, qryMEIDataSub2Sel.CLLocCode, qryMEIDataSub2Sel.CLLocation, qryMEIDataSub2Sel.CLLSuper, qryMEIDataSub2Sel.CLLDeputy, qryMEIDataSub2Sel.CLLHead, qryMEIDataSub2Sel.StudentType, qryMEIDataSub2Sel.BalBF, qryMEIDataSub2Sel.DueCur, qryMEIDataSub2Sel.Exemp, qryMEIDataSub2Sel.TotalDue, qryMEIDataSub2Sel.ReceivedCur, qryMEIDataSub2Sel.WrittenOFFCur, qryMEIDataSub2Sel.Defecit, qryMEIDataSub2Sel.NoStud
+FROM qryMEIDataSub1 INNER JOIN (qryMEIDataSub1a INNER JOIN qryMEIDataSub2Sel ON qryMEIDataSub1a.MEILocCode = qryMEIDataSub2Sel.CLLocCode) ON qryMEIDataSub1.MEILocCode = qryMEIDataSub2Sel.CLLocCode;
+
+--- qryRegister [Type=0]
+SELECT DISTINCTROW tblStudent.STID, tblStudent.STSName, tblStudent.STParents, tblStudent.STFName, tblTeacher.TCCode, tblTeacher.TDCode, Trim([TCTitle]) & " " & Trim([TCFName]) & " " & Trim([TCSName]) AS TCName, tblClass.CLLocCode, tblClass.CLLocation, tblTeacher.TCCLDesc, tblStudent.STTelNo, CDate(DLookUp("[RepMonDate]","tblRepMon","[RepMonID] = 1")) AS [DATE], [Sun1]-1 AS Sat1, IIf(Weekday([date])=2,[date]+6,IIf(Weekday([date])=3,[date]+5,IIf(Weekday([date])=4,[date]+4,IIf(Weekday([date])=5,[date]+3,IIf(Weekday([date])=6,[date]+2,IIf(Weekday([date])=7,[date]+1,[date])))))) AS Sun1, [Sat1]+7 AS Sat2, [Sun1]+7 AS Sun2, [Sat2]+7 AS Sat3, [Sun2]+7 AS Sun3, [Sat3]+7 AS Sat4, [Sun3]+7 AS Sun4, [Sat4]+7 AS Sat5, [Sun4]+7 AS Sun5, qrySTFeesSummary.SumOfFEAmtDue AS FEES, tblStudent.STLeft
+FROM qrySTFeesSummary RIGHT JOIN ((tblStudent INNER JOIN tblTeacher ON tblStudent.STTCCode = tblTeacher.TCCode) INNER JOIN tblClass ON tblTeacher.TCCLLocCode = tblClass.CLLocCode) ON qrySTFeesSummary.FESTID = tblStudent.STID
+WHERE (((tblStudent.STLeft)="N"));
+
+--- qryRegisterWeekDay [Type=0]
+SELECT DISTINCTROW tblStudent.STID, tblStudent.STSName, tblStudent.STParents, tblStudent.STFName, tblTeacher.TCCode, tblTeacher.TDCode, Trim([TCTitle]) & " " & Trim([TCFName]) & " " & Trim([TCSName]) AS TCName, tblClass.CLLocCode, tblClass.CLLocation, tblTeacher.TCCLDesc, tblStudent.STTelNo, CDate(DLookUp("[RepMonDate]","tblRepMon","[RepMonID] = 1")) AS [DATE], IIf(Weekday([date])=2,[date]+6,IIf(Weekday([date])=3,[date]+5,IIf(Weekday([date])=4,[date]+4,IIf(Weekday([date])=5,[date]+3,IIf(Weekday([date])=6,[date]+2,IIf(Weekday([date])=7,[date]+1,[date])))))) AS Sun1, IIf(Format([date],"m")=12,Format(CVDate("1/1" & Format([date],"YY")+1)-1,"d"),Format(CVDate("1/" & Format([date],"m")+1 & "/" & Format([date],"YY"))-1,"d")) AS LDay, IIf(Weekday([date])=3,[date]+6,IIf(Weekday([date])=4,[date]+5,IIf(Weekday([date])=5,[date]+4,IIf(Weekday([date])=6,[date]+3,IIf(Weekday([date])=7,[date]+2,IIf(Weekday([date])=1,[date]+1,[date])))))) AS Mon1, [Mon1]+7 AS Mon2, [Mon2]+7 AS Mon3, [Mon3]+7 AS Mon4, [Mon4]+7 AS Mon5, qrySTFeesSummary.SumOfFEAmtDue AS FEES, tblStudent.STLeft
+FROM qrySTFeesSummary RIGHT JOIN ((tblStudent INNER JOIN tblTeacher ON tblStudent.STTCCode = tblTeacher.TCCode) INNER JOIN tblClass ON tblTeacher.TCCLLocCode = tblClass.CLLocCode) ON qrySTFeesSummary.FESTID = tblStudent.STID
+WHERE (((tblClass.CLLocCode)=1) AND ((tblStudent.STLeft)="N"));
+
+--- qryRegisterWeekEnd [Type=0]
+SELECT DISTINCTROW tblStudent.STID, tblStudent.STSName, tblStudent.STParents, tblStudent.STFName, tblTeacher.TCCode, tblTeacher.TDCode, Trim([TCTitle]) & " " & Trim([TCFName]) & " " & Trim([TCSName]) AS TCName, tblClass.CLLocCode, tblClass.CLLocation, tblTeacher.TCCLDesc, tblStudent.STTelNo, CDate(DLookUp("[RepMonDate]","tblRepMon","[RepMonID] = 1")) AS [DATE], [Sun1]-1 AS Sat1, IIf(Weekday([date])=2,[date]+6,IIf(Weekday([date])=3,[date]+5,IIf(Weekday([date])=4,[date]+4,IIf(Weekday([date])=5,[date]+3,IIf(Weekday([date])=6,[date]+2,IIf(Weekday([date])=7,[date]+1,[date])))))) AS Sun1, [Sat1]+7 AS Sat2, [Sun1]+7 AS Sun2, [Sat2]+7 AS Sat3, [Sun2]+7 AS Sun3, [Sat3]+7 AS Sat4, [Sun3]+7 AS Sun4, [Sat4]+7 AS Sat5, [Sun4]+7 AS Sun5, qrySTFeesSummary.SumOfFEAmtDue AS FEES, tblStudent.STLeft
+FROM qrySTFeesSummary RIGHT JOIN ((tblStudent INNER JOIN tblTeacher ON tblStudent.STTCCode = tblTeacher.TCCode) INNER JOIN tblClass ON tblTeacher.TCCLLocCode = tblClass.CLLocCode) ON qrySTFeesSummary.FESTID = tblStudent.STID
+WHERE (((tblClass.CLLocCode)=2) AND ((tblStudent.STLeft)="N"));
+
+--- qrySTFeesSummary [Type=0]
+SELECT qrySTFeesSummarySub.FESTID, Sum(qrySTFeesSummarySub.FEAmtDue) AS SumOfFEAmtDue
+FROM qrySTFeesSummarySub
+GROUP BY qrySTFeesSummarySub.FESTID;
+
+--- qrySTFeesSummaryStatement [Type=0]
+SELECT qrySTFeesSummarySub.FESTID, Sum(qrySTFeesSummarySub.FEAmtDue) AS SumOfFEAmtDue
+FROM qrySTFeesSummarySub
+GROUP BY qrySTFeesSummarySub.FESTID;
+
+--- qrySTFeesSummarySub [Type=0]
+SELECT Format([tblFees]![FEDueDate],"yymm") AS RepDate, tblFees.*
+FROM tblFees
+WHERE (((Format([tblFees]![FEDueDate],"yymm"))<=Format(Now(),"yymm")));
+
+--- qryStudentList [Type=0]
+SELECT tblStudent.STID, tblStudent.STSName, tblStudent.STFName, tblStudent.STTCCode, tblStudent.STPCode, tblStudent.STParents, tblStudent.STAddress1, tblStudent.STAddress2, tblStudent.STAddress3, tblStudent.STTelNo, tblStudent.STFWTelNo, tblStudent.STMWTelNo, tblStudent.STEmgCont, tblStudent.STDOB, tblStudent.STEmgTelNo, tblStudent.STStartDate, tblStudent.STLeft, tblStudent.STLDate, tblStudent.STForm
+FROM tblStudent;
+
+--- qryUpdateFeesEXM [Type=64]
+INSERT INTO tblFees ( FESTID, FEAmtDue, FEDueDate, FEFDCode, FEReceNo )
+SELECT tblFeesEXM.FESTID, tblFeesEXM.FEAmtDue, CVDate("01/" & Format(Now(),"MM/YY")) AS Expr1, "E" AS Exp2, tblFeesEXM.FEDesc
+FROM tblFeesEXM;
+
+--- Query1 [Type=0]
+SELECT tblFees.FESTID, tblFees.FEAmtDue, tblFees.FEDueDate, tblFees.FEFDCode, tblFees.FCC, tblFees.FEDue_RateP, tblFees.FEDateUpdated
+FROM tblFees
+WHERE (((tblFees.FEFDCode)="E"))
+ORDER BY tblFees.FEDueDate DESC;
+
+--- tblTeacher [Type=0]
+SELECT tblTeachClass.TCCode, tblTechDetails.TDCode, tblTechDetails.TDTitle AS TCTitle, tblTechDetails.TDFName AS TCFName, tblTechDetails.TDSName AS TCSName, tblTeachClass.TCCLDesc, tblTeachClass.TCCLLocCode, tblClass.CLLocation, tblTechDetails.TDHomeTelNo AS TCHomeTelNo, tblTechDetails.TDMobileNo AS TCMobileNo, tblTechDetails.TDWorkTelNo AS TCWorkTelNo, tblTechDetails.TDADD AS TCADD
+FROM tblClass INNER JOIN (tblTechDetails INNER JOIN tblTeachClass ON tblTechDetails.TDCode = tblTeachClass.TCDCode) ON tblClass.CLLocCode = tblTeachClass.TCCLLocCode;
+

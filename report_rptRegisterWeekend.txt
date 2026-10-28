@@ -1,0 +1,812 @@
+Version =20
+VersionRequired =20
+Checksum =1006361377
+Begin Report
+    LayoutForPrint = NotDefault
+    RecordLocks =1
+    DateGrouping =1
+    GridX =20
+    GridY =24
+    Width =15176
+    ItemSuffix =182
+    Left =1905
+    Top =1065
+    Right =12330
+    Bottom =7635
+    RecSrcDt = Begin
+        0x6efec27498dae440
+    End
+    RecordSource ="qryRegisterWeekEnd"
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    PrtMip = Begin
+        0x8b030000d0020000d0020000d002000000000000483b00001b01000001000000 ,
+        0x010000006801000000000000a10700000100000000000000
+    End
+    PrtDevMode = Begin
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x010405019c002c0a03930100020009009a0b3408640001000700580201000100 ,
+        0x5802010000004134000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000323d187700000000000000000000020000000000000000000000f604 ,
+        0xfa020000f604fa02000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000100000100000000000100000000010006000000 ,
+        0x0700070000000000000000000200000002010001000116000000000000010000 ,
+        0x02000000070000000000000000190000e40c000000000000b80b000070170000 ,
+        0x00000000dc05000058020000000000000000000000000000feff000000000000 ,
+        0x0000000000000000000000000000000000000000370c0000da0c000010270000 ,
+        0x102700001027000010270000a00a0000c2060000b80600002c04000040010000 ,
+        0xd200000018000000000010271027102700001027000000000000000000000000 ,
+        0x0100000000000200000000000000000100000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000100000000000000000100010005010000000000000000010000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000000000000000000000000000000000000ffffffff ,
+        0x6400000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000000000000cccccc00000000000000000000000000 ,
+        0x0000000000000000000000000000000041007200690061006c00000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000640000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000cccccc00000000000000000000000000000000000000000000000000 ,
+        0x0000000041007200690061006c00000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000640000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000000000000000000000000000cccccc0000000000 ,
+        0x0000000000000000000000000000000000000000000000004100720069006100 ,
+        0x6c00000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000090009006400 ,
+        0x0000000000000000fa02f604030100000000000000001027e404000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x410064006d0069006e006900730074007200610074006f007200000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000570037000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000300030001000000000000000200010001000100 ,
+        0x0000000000010100000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000024000000f5ffffff000000000000000000000000 ,
+        0x00000000000000010000000041007200690061006c0000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000000000000ffffff00010000000000000001000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000010108000001 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000001010002000000020000000100 ,
+        0x0000102700000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000002000000000000000454e474c4953480000000000000000000f000000 ,
+        0xbc0c000027000000a8010000270000005052495601ff4443502d38313130444e ,
+        0x0000000000000000000000000000003f00000000000000000000000021000000 ,
+        0x0000f40100000000000000000201000089100000831300008910000083130000 ,
+        0x8910000083130000891000008313000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000
+    End
+    PrtDevNames = Begin
+        0x080012002e000100000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000000055534230303100205072696e746572005553 ,
+        0x423030310000
+    End
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            TextFontFamily =18
+            FontSize =10
+            FontWeight =700
+            FontName ="Times New Roman"
+        End
+        Begin Rectangle
+            Width =850
+            Height =850
+        End
+        Begin Line
+            Width =1701
+        End
+        Begin Image
+            OldBorderStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin BoundObjectFrame
+            AutoLabel = NotDefault
+            OldBorderStyle =0
+        End
+        Begin TextBox
+            AutoLabel = NotDefault
+            OldBorderStyle =0
+            TextFontFamily =18
+            Height =300
+            FontSize =10
+            FontName ="Times New Roman"
+        End
+        Begin UnboundObjectFrame
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin BreakLevel
+            ControlSource ="CLLocation"
+        End
+        Begin BreakLevel
+            ControlSource ="TCCLDesc"
+        End
+        Begin BreakLevel
+            GroupFooter = NotDefault
+            ControlSource ="TCName"
+        End
+        Begin BreakLevel
+            ControlSource ="STID"
+        End
+        Begin PageHeader
+            Height =2716
+            Name ="PageHeader0"
+            GUID = Begin
+                0x58820bd02fb9f448a34f574e35840a99
+            End
+            Begin
+                Begin Label
+                    OverlapFlags =81
+                    TextFontFamily =34
+                    Left =679
+                    Top =2368
+                    Width =1005
+                    Height =285
+                    Name ="Text5"
+                    Caption ="First Name"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xd54bc1233700174c8df87d76a98e13a8
+                    End
+                End
+                Begin Label
+                    OverlapFlags =81
+                    TextFontFamily =34
+                    Left =2112
+                    Top =2368
+                    Width =1320
+                    Height =285
+                    Name ="Text7"
+                    Caption ="Surname"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xac55ff48ac4d494da70cc812bbfe8bef
+                    End
+                End
+                Begin Label
+                    OverlapFlags =81
+                    TextAlign =1
+                    TextFontFamily =34
+                    Top =2368
+                    Width =600
+                    Height =285
+                    Name ="Text9"
+                    Caption ="STID"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xd0d9cfb09307fa44b8a6cb2fe9bf6ab3
+                    End
+                End
+                Begin Label
+                    OverlapFlags =81
+                    TextAlign =2
+                    TextFontFamily =34
+                    Left =13616
+                    Top =2416
+                    Width =1515
+                    Height =285
+                    Name ="Text83"
+                    Caption ="Tel No"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xd80a30efa905f642a09a40339671c504
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =81
+                    TextAlign =2
+                    Left =56
+                    Top =1299
+                    Width =15120
+                    Height =360
+                    FontSize =14
+                    FontWeight =700
+                    Name ="Field14"
+                    ControlSource ="=\"Daily Attendance Sheet: \" & Format([DATE],\"MMMM YYYY\")"
+                    GUID = Begin
+                        0x759875ffdb893941904886b3165bbf68
+                    End
+                End
+                Begin Label
+                    OverlapFlags =81
+                    TextFontFamily =34
+                    Left =3543
+                    Top =2375
+                    Width =855
+                    Height =285
+                    Name ="Label98"
+                    Caption ="Fees Due"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x3bb04b2863857c41a35b151ed70b3273
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =81
+                    TextAlign =3
+                    Left =10601
+                    Top =1748
+                    Width =4536
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="TCCode1"
+                    ControlSource ="=\"Class: \" & [TCCLDesc] & \" - \" & [CLLocation]"
+                    GUID = Begin
+                        0xa79c542749f3994d88c38dc5ab0948cb
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =81
+                    Left =28
+                    Top =1748
+                    Width =4506
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="Field89"
+                    ControlSource ="=\"Teacher: \" & [TCName]"
+                    GUID = Begin
+                        0xb468da30952bf24da2d6ccaa91023cd9
+                    End
+                End
+                Begin TextBox
+                    BorderWidth =3
+                    OverlapFlags =81
+                    TextAlign =1
+                    TextFontFamily =34
+                    Left =5442
+                    Top =2362
+                    Width =397
+                    Height =287
+                    FontWeight =700
+                    TabIndex =3
+                    BorderColor =12632256
+                    Name ="Text155"
+                    ControlSource ="Sat1"
+                    Format ="dd"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x2ea4ef4b2c3ee048864cdf4cdd8daa3a
+                    End
+                End
+                Begin TextBox
+                    BorderWidth =3
+                    OverlapFlags =81
+                    TextAlign =1
+                    TextFontFamily =34
+                    Left =5897
+                    Top =2362
+                    Width =397
+                    Height =287
+                    FontWeight =700
+                    TabIndex =4
+                    BorderColor =12632256
+                    Name ="Text160"
+                    ControlSource ="Sun1"
+                    Format ="dd"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x767c90ec845e63439056ce3d4036eb98
+                    End
+                End
+                Begin TextBox
+                    BorderWidth =3
+                    OverlapFlags =81
+                    TextAlign =1
+                    TextFontFamily =34
+                    Left =7001
+                    Top =2362
+                    Width =397
+                    Height =287
+                    FontWeight =700
+                    TabIndex =5
+                    BorderColor =12632256
+                    Name ="Text162"
+                    ControlSource ="Sat2"
+                    Format ="dd"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x61075f0f580ca147a6c7dc071b6645cf
+                    End
+                End
+                Begin TextBox
+                    BorderWidth =3
+                    OverlapFlags =81
+                    TextAlign =1
+                    TextFontFamily =34
+                    Left =7457
+                    Top =2362
+                    Width =397
+                    Height =287
+                    FontWeight =700
+                    TabIndex =6
+                    BorderColor =12632256
+                    Name ="Text164"
+                    ControlSource ="Sun2"
+                    Format ="dd"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x64d706063aac47409565a01c8b0cc4cf
+                    End
+                End
+                Begin TextBox
+                    BorderWidth =3
+                    OverlapFlags =81
+                    TextAlign =1
+                    TextFontFamily =34
+                    Left =8560
+                    Top =2362
+                    Width =397
+                    Height =287
+                    FontWeight =700
+                    TabIndex =7
+                    BorderColor =12632256
+                    Name ="Text166"
+                    ControlSource ="Sat3"
+                    Format ="dd"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xd2eeeaacb927e14db53284e22a76d2d1
+                    End
+                End
+                Begin TextBox
+                    BorderWidth =3
+                    OverlapFlags =81
+                    TextAlign =1
+                    TextFontFamily =34
+                    Left =9015
+                    Top =2362
+                    Width =397
+                    Height =287
+                    FontWeight =700
+                    TabIndex =8
+                    BorderColor =12632256
+                    Name ="Text168"
+                    ControlSource ="Sun3"
+                    Format ="dd"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x1794f868cda53047afe773a662bfe40c
+                    End
+                End
+                Begin TextBox
+                    BorderWidth =3
+                    OverlapFlags =81
+                    TextAlign =1
+                    TextFontFamily =34
+                    Left =10091
+                    Top =2362
+                    Width =397
+                    Height =287
+                    FontWeight =700
+                    TabIndex =9
+                    BorderColor =12632256
+                    Name ="Text170"
+                    ControlSource ="Sat4"
+                    Format ="dd"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x6264d4355377a24792d3daad4435ff4e
+                    End
+                End
+                Begin TextBox
+                    BorderWidth =3
+                    OverlapFlags =81
+                    TextAlign =1
+                    TextFontFamily =34
+                    Left =10546
+                    Top =2362
+                    Width =397
+                    Height =287
+                    FontWeight =700
+                    TabIndex =10
+                    BorderColor =12632256
+                    Name ="Text172"
+                    ControlSource ="Sun4"
+                    Format ="dd"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x7ff341bf79c33742b075a78d24ab3f7d
+                    End
+                End
+                Begin TextBox
+                    BorderWidth =3
+                    OverlapFlags =81
+                    TextAlign =2
+                    TextFontFamily =34
+                    Left =11621
+                    Top =2362
+                    Width =397
+                    Height =287
+                    FontWeight =700
+                    TabIndex =11
+                    BorderColor =12632256
+                    Name ="Text174"
+                    ControlSource ="=IIf(Month([date])=Month([Sat5]),[Sat5])"
+                    Format ="dd"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x3ab617b263871146af6d2dc8748ab546
+                    End
+                End
+                Begin TextBox
+                    BorderWidth =3
+                    OverlapFlags =81
+                    TextAlign =2
+                    TextFontFamily =34
+                    Left =12077
+                    Top =2362
+                    Width =397
+                    Height =287
+                    FontWeight =700
+                    TabIndex =12
+                    BorderColor =12632256
+                    Name ="Text176"
+                    ControlSource ="=IIf(Month([date])=Month([Sun5]),[Sun5])"
+                    Format ="dd"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x88d58c11011570478f9b9ccd72a368a2
+                    End
+                End
+                Begin Line
+                    OverlapFlags =81
+                    Top =2149
+                    Width =15114
+                    Height =15
+                    Name ="Line179"
+                    GUID = Begin
+                        0xd650faae02c8374095321995a11833cb
+                    End
+                End
+                Begin Image
+                    SizeMode =1
+                    PictureType =1
+                    Width =15133
+                    Height =1135
+                    Name ="Image167"
+                    Picture ="C:\\ISM_2016\\LOGO\\LOGO_LH_L.jpg"
+                    GUID = Begin
+                        0xc3315ad8512af64aae070e0817718b09
+                    End
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =283
+            Name ="Detail1"
+            GUID = Begin
+                0x5be1ccf9e6ed3e4caa0dcaeb497bb204
+            End
+            Begin
+                Begin TextBox
+                    OverlapFlags =81
+                    TextFontFamily =34
+                    Left =651
+                    Width =1404
+                    Height =256
+                    FontWeight =700
+                    Name ="STSName"
+                    ControlSource ="STFName"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x5eee31648775cf4f9b655f87c8b7afda
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =81
+                    TextFontFamily =34
+                    Left =2097
+                    Width =1359
+                    Height =256
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="STFName"
+                    ControlSource ="STSName"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x460776d9ce80704db0b315d8b4d84fc9
+                    End
+                End
+                Begin Rectangle
+                    OverlapFlags =81
+                    Left =5456
+                    Width =289
+                    Height =227
+                    Name ="Box21"
+                    GUID = Begin
+                        0x15a43fa25e43ee4e9280611fdff7869e
+                    End
+                End
+                Begin Rectangle
+                    OverlapFlags =81
+                    Left =5897
+                    Width =289
+                    Height =227
+                    Name ="Box23"
+                    GUID = Begin
+                        0xde82f4ef31821c49a835f703957180a8
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =1
+                    OverlapFlags =81
+                    TextAlign =2
+                    TextFontFamily =34
+                    Left =13605
+                    Width =1515
+                    Height =256
+                    TabIndex =2
+                    Name ="STTelNo"
+                    ControlSource ="STTelNo"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0x9d39ba7b21c8c140a7346b315b450da5
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =81
+                    TextAlign =1
+                    TextFontFamily =34
+                    Width =594
+                    Height =256
+                    FontWeight =700
+                    TabIndex =3
+                    Name ="Field90"
+                    ControlSource ="STID"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xb2a6c02cbe54ce4c8141fd8e9b19b5da
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =81
+                    TextAlign =3
+                    TextFontFamily =34
+                    Left =3543
+                    Width =834
+                    Height =256
+                    FontWeight =700
+                    TabIndex =4
+                    Name ="Text99"
+                    ControlSource ="FEES"
+                    FontName ="Arial Narrow"
+                    GUID = Begin
+                        0xd4c384d109a7f641bef9bcecae872ee3
+                    End
+                End
+                Begin Rectangle
+                    OverlapFlags =81
+                    Left =7010
+                    Width =289
+                    Height =227
+                    Name ="Box104"
+                    GUID = Begin
+                        0xd69aaa4ed64f4c49beedb6c99640b096
+                    End
+                End
+                Begin Rectangle
+                    OverlapFlags =81
+                    Left =7457
+                    Width =289
+                    Height =227
+                    Name ="Box105"
+                    GUID = Begin
+                        0x1c498d3d7aaab74c88b040309fcd14d9
+                    End
+                End
+                Begin Rectangle
+                    OverlapFlags =81
+                    Left =8569
+                    Width =289
+                    Height =227
+                    Name ="Box110"
+                    GUID = Begin
+                        0x46d65949b484db498644540ac3bd3bbf
+                    End
+                End
+                Begin Rectangle
+                    OverlapFlags =81
+                    Left =9015
+                    Width =289
+                    Height =227
+                    Name ="Box111"
+                    GUID = Begin
+                        0x41a1a8a9d7393c48bb1b9427c28a95ed
+                    End
+                End
+                Begin Rectangle
+                    OverlapFlags =81
+                    Left =10100
+                    Width =289
+                    Height =227
+                    Name ="Box116"
+                    GUID = Begin
+                        0x507d1d61d094a343970dbd1d082c633b
+                    End
+                End
+                Begin Rectangle
+                    OverlapFlags =81
+                    Left =10546
+                    Width =289
+                    Height =227
+                    Name ="Box117"
+                    GUID = Begin
+                        0x8b1c2e06db8e6d4aa1291ad74694ba2f
+                    End
+                End
+                Begin Rectangle
+                    OverlapFlags =211
+                    Left =10100
+                    Width =289
+                    Height =227
+                    Name ="Box122"
+                    GUID = Begin
+                        0x4fe5124fdac5c1449183dbd26da49081
+                    End
+                End
+                Begin Rectangle
+                    OverlapFlags =81
+                    Left =11630
+                    Width =289
+                    Height =227
+                    Name ="Box128"
+                    GUID = Begin
+                        0xcafe6f487c15b543879d6dc3ea3b41ba
+                    End
+                End
+                Begin Rectangle
+                    OverlapFlags =81
+                    Left =12077
+                    Width =289
+                    Height =227
+                    Name ="Box129"
+                    GUID = Begin
+                        0xabc0c4612bdf604ba2fade269699b9e9
+                    End
+                End
+                Begin Line
+                    LineSlant = NotDefault
+                    OverlapFlags =83
+                    Top =259
+                    Width =13608
+                    Height =24
+                    Name ="Line169"
+                    GUID = Begin
+                        0x1a0e9ef8cbf56247b606a38cbe6b70b4
+                    End
+                End
+            End
+        End
+        Begin BreakFooter
+            KeepTogether = NotDefault
+            ForceNewPage =2
+            Height =543
+            BreakLevel =2
+            Name ="GroupFooter0"
+            GUID = Begin
+                0xd2e1cc37470af140924ebe7e83dc294b
+            End
+            Begin
+                Begin TextBox
+                    OverlapFlags =81
+                    TextAlign =3
+                    Left =11537
+                    Top =118
+                    Width =3600
+                    FontWeight =700
+                    Name ="Field16"
+                    ControlSource ="=\"STUDENTS: \" & Count([STID])"
+                    GUID = Begin
+                        0x8e54e3271849a5458e8961a1f6c1b40b
+                    End
+                End
+            End
+        End
+        Begin PageFooter
+            Height =757
+            OnFormat ="[Event Procedure]"
+            Name ="PageFooter2"
+            GUID = Begin
+                0xb7ee65c3dae0d44dadea7e278610e0f9
+            End
+            Begin
+                Begin Label
+                    OverlapFlags =81
+                    TextAlign =3
+                    Left =3543
+                    Top =472
+                    Width =3180
+                    Height =285
+                    Name ="Text87"
+                    Caption ="TEACHERS SIGNATURE"
+                    GUID = Begin
+                        0x2db5ca38a7e4c442bb2177fba54d2dc4
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =81
+                    TextAlign =1
+                    Left =85
+                    Top =448
+                    Width =2400
+                    FontSize =8
+                    FontWeight =700
+                    Name ="Text91"
+                    ControlSource ="=\"Date Printed: \" & Format(Now(),\"Short Date\")"
+                    GUID = Begin
+                        0xfdcf4cbeb8a3024197e3b2f28caec260
+                    End
+                End
+                Begin Line
+                    OverlapFlags =83
+                    BorderLineStyle =3
+                    Left =6662
+                    Top =731
+                    Width =3441
+                    Name ="Line88"
+                    GUID = Begin
+                        0xb170b6111cb3d94dab1d8d47ff2daf5d
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
+Private Sub Report_Close()
+    DoCmd.Minimize
+End Sub
+Private Sub Report_Open(Cancel As Integer)
+    Call SetReportDate
+    DoCmd.Maximize
+End Sub

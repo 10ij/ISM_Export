@@ -1,0 +1,51 @@
+CURRENT_PROJECT_PROPERTIES
+CURRENT_DATA_PROPERTIES
+Name=C:\Users\Ismail\Desktop\projects\nea\main\Reference\ISM_2016.mdb
+Connect=
+Transactions=True
+Updatable=True
+CollatingOrder=1033
+QueryTimeout=60
+Version=4.0
+RecordsAffected=0
+ReplicaID=
+DesignMasterID=
+Connection=
+AccessVersion=09.50
+Build=30
+Track Name AutoCorrect Info=0
+Perform Name AutoCorrect=0
+ProjVer=142
+CpgConversion=1252
+NavPane Closed=1
+NavPane Width=524
+NavPane Category=0
+NavPane View By=2
+NavPane Sort By=1
+Show Navigation Pane Search Bar=0
+StartUpForm=Form.frmMenuMain
+StartUpShowDBWindow=False
+StartUpShowStatusBar=True
+AllowShortcutMenus=False
+AllowFullMenus=False
+AllowBuiltInToolbars=True
+AllowToolbarChanges=False
+AllowSpecialKeys=False
+UseAppIconForFrmRpt=False
+Auto Compact=1
+Show Values Limit=1000
+Show Values in Indexed=1
+Show Values in Non-Indexed=1
+Show Values in Remote=0
+Show Values in Snapshot=1
+Show Values in Server=0
+Use Default Page Folder=0
+Use Default Connection File=0
+Row Limit=10000
+ANSI Query Mode=0
+REFERENCES
+VBA=C:\Program Files\Common Files\Microsoft Shared\VBA\VBA7.1\VBE7.DLL GUID={000204EF-0000-0000-C000-000000000046}
+Access=C:\Program Files\Microsoft Office\root\Office16\MSACC.OLB GUID={4AFFC9A0-5F99-101B-AF4E-00AA003F0F07}
+stdole=C:\Windows\System32\stdole2.tlb GUID={00020430-0000-0000-C000-000000000046}
+VBIDE=C:\Program Files (x86)\Common Files\Microsoft Shared\VBA\VBA6\VBE6EXT.OLB GUID={0002E157-0000-0000-C000-000000000046}
+C:\Program Files\Common Files\Microsoft Shared\DAO\dao360.dll=C:\Program Files\Common Files\Microsoft Shared\DAO\dao360.dll GUID={00025E01-0000-0000-C000-000000000046}

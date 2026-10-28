@@ -1,0 +1,357 @@
+Version =20
+VersionRequired =20
+Checksum =1505243512
+Begin Form
+    AutoCenter = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =6294
+    DatasheetFontHeight =10
+    ItemSuffix =14
+    Left =1425
+    Top =1215
+    Right =8010
+    Bottom =3900
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xaee4b3cb13dbe440
+    End
+    RecordSource ="tbl_Master"
+    Caption ="frmMaster"
+    DatasheetFontName ="Arial"
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            BackColor =-2147483633
+            ForeColor =-2147483630
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Line
+            Width =1701
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            Width =1701
+            Height =1701
+        End
+        Begin BoundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+            AsianLineBreak =255
+        End
+        Begin ListBox
+            SpecialEffect =2
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin Subform
+            SpecialEffect =2
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin Tab
+            BackStyle =0
+            Width =5103
+            Height =3402
+        End
+        Begin FormHeader
+            Height =0
+            BackColor =-2147483633
+            Name ="FormHeader"
+            GUID = Begin
+                0xcc9c47ac97675946bca8dc809da38f64
+            End
+        End
+        Begin Section
+            Height =2706
+            BackColor =-2147483633
+            Name ="Detail"
+            GUID = Begin
+                0xc72c6aafbf10e149952f4824b40b75cf
+            End
+            Begin
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1677
+                    Top =114
+                    Width =4560
+                    Height =450
+                    ColumnWidth =3000
+                    Name ="OrgName"
+                    ControlSource ="OrgName"
+                    GUID = Begin
+                        0x9d057b1693f47b44afaa59d1a85bb0af
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =57
+                            Top =114
+                            Width =1560
+                            Height =255
+                            Name ="OrgName_Label"
+                            Caption ="OrgName"
+                            GUID = Begin
+                                0x14c4b80a403a1145bbe02756b45fc10d
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1677
+                    Top =627
+                    Width =2310
+                    Height =255
+                    ColumnWidth =2310
+                    TabIndex =1
+                    Name ="OrgTelNo"
+                    ControlSource ="OrgTelNo"
+                    GUID = Begin
+                        0x59aedf555405874eb15a022ef3a9b649
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =57
+                            Top =627
+                            Width =1560
+                            Height =255
+                            Name ="OrgTelNo_Label"
+                            Caption ="OrgTelNo"
+                            GUID = Begin
+                                0x1bd08e1412dd314281659a1d37b02354
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1677
+                    Top =969
+                    Width =2310
+                    Height =255
+                    ColumnWidth =2310
+                    TabIndex =2
+                    Name ="OrgAddress1"
+                    ControlSource ="OrgAddress1"
+                    GUID = Begin
+                        0x58d80663b4416849b1b0249b763e685e
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =57
+                            Top =969
+                            Width =1560
+                            Height =255
+                            Name ="OrgAddress1_Label"
+                            Caption ="OrgAddress1"
+                            GUID = Begin
+                                0x87acc58ae5b5994cafc8a278f0a79757
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1677
+                    Top =1311
+                    Width =2310
+                    Height =255
+                    ColumnWidth =2310
+                    TabIndex =3
+                    Name ="OrgAddress2"
+                    ControlSource ="OrgAddress2"
+                    GUID = Begin
+                        0xfb95175e23ca4a48a5a6fcb10a723af8
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =57
+                            Top =1311
+                            Width =1560
+                            Height =255
+                            Name ="OrgAddress2_Label"
+                            Caption ="OrgAddress2"
+                            GUID = Begin
+                                0xb7f9f3b32bc0d74aa96f3c04d6c5c460
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1677
+                    Top =1653
+                    Width =2310
+                    Height =255
+                    ColumnWidth =2310
+                    TabIndex =4
+                    Name ="OrgAddress3"
+                    ControlSource ="OrgAddress3"
+                    GUID = Begin
+                        0xad2dfea4e57d5942a1efcb96e36f146e
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =57
+                            Top =1653
+                            Width =1560
+                            Height =255
+                            Name ="OrgAddress3_Label"
+                            Caption ="OrgAddress3"
+                            GUID = Begin
+                                0x7596e7c67ab43641bd1675fc2a468b93
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1677
+                    Top =1995
+                    Width =2310
+                    Height =255
+                    ColumnWidth =2310
+                    TabIndex =5
+                    Name ="OrgAddressPC"
+                    ControlSource ="OrgAddressPC"
+                    GUID = Begin
+                        0x422ce56ab1d90c46a08f021d42ba1967
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =57
+                            Top =1995
+                            Width =1560
+                            Height =255
+                            Name ="OrgAddressPC_Label"
+                            Caption ="OrgAddressPC"
+                            GUID = Begin
+                                0x5a4b158b5ed40647bc4254f5faf6c099
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1677
+                    Top =2337
+                    Width =225
+                    Height =255
+                    ColumnWidth =225
+                    TabIndex =6
+                    Name ="Current"
+                    ControlSource ="Current"
+                    GUID = Begin
+                        0xffb5cae5fdf6f34193efab2a891c9238
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =57
+                            Top =2337
+                            Width =1560
+                            Height =255
+                            Name ="Current_Label"
+                            Caption ="Current"
+                            GUID = Begin
+                                0xe7df5c6086ae04479daaec84defc0ace
+                            End
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="FormFooter"
+            GUID = Begin
+                0x0fdd0a87f17dcc4ba1621392e9a10bb5
+            End
+        End
+    End
+End
